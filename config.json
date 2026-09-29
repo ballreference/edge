@@ -1,13 +1,15 @@
 {
   "timezone": "America/Detroit",
 
-  "books": ["draftkings", "fanduel", "betmgm", "williamhill_us", "fanatics", "espnbet",
-            "pinnacle", "lowvig", "betonlineag", "betrivers"],
-  "my_books": ["draftkings", "fanduel", "betmgm", "williamhill_us", "fanatics", "espnbet"],
+  "_books_note": "Caesars (williamhill_us) and Fanatics (fanatics) are paid-plan only on The Odds API. Add them back here and to my_books after upgrading.",
+  "books": ["draftkings", "fanduel", "betmgm", "espnbet",
+            "pinnacle", "lowvig", "betonlineag", "betrivers", "hardrockbet", "bovada"],
+  "my_books": ["draftkings", "fanduel", "betmgm", "espnbet"],
   "book_names": {
     "draftkings": "DraftKings", "fanduel": "FanDuel", "betmgm": "BetMGM",
     "williamhill_us": "Caesars", "fanatics": "Fanatics", "espnbet": "theScore Bet",
-    "pinnacle": "Pinnacle", "lowvig": "LowVig", "betonlineag": "BetOnline", "betrivers": "BetRivers"
+    "pinnacle": "Pinnacle", "lowvig": "LowVig", "betonlineag": "BetOnline", "betrivers": "BetRivers",
+    "hardrockbet": "Hard Rock", "bovada": "Bovada"
   },
   "sharp_weights": {"pinnacle": 3.0, "lowvig": 1.5, "betonlineag": 1.5},
 

@@ -36,7 +36,8 @@
   <b>Edge</b> is expected profit per $100 if the fair price is right. Only edges of <b id="min-ev">2.5%</b> or more
   are flagged, and every flag is logged automatically so the <a href="record.html">record</a> can't be cherry-picked.
   Lines move, so check the price in the app before you bet. If it's gone, so is the edge.</p>
-  <footer>Odds from The Odds API. bet365 isn't in the data; use <a href="props.html">Props</a> to check it by hand.</footer>
+  <footer>Odds from The Odds API. Caesars and Fanatics need a paid plan and bet365 isn't offered at all;
+  check those three by hand on <a href="props.html">Props</a>.</footer>
 </div>
 
 <script>
@@ -115,7 +116,7 @@ function render(){
   let alerts = "";
   (BOARD.errors || []).forEach(e => alerts += `<div class="alert">${esc(e)}</div>`);
   if(BOARD.check){
-    const missing = Object.entries(BOARD.check.books).filter(([, n]) => !n).map(([b]) => bookName(b));
+    const missing = Object.entries(BOARD.check.books).filter(([b, n]) => !n && b in BOARD.book_names).map(([b]) => bookName(b));
     if(missing.length) alerts += `<div class="alert" style="background:var(--warn-bg);color:var(--warn)">
       Not returned on the first check: ${esc(missing.join(", "))}. Those books aren't in the comparison yet.</div>`;
   }

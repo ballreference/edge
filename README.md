@@ -17,6 +17,12 @@ Runs free: GitHub Actions + GitHub Pages on a public repo, and The Odds API free
 
 The site lives at `https://<owner>.github.io/<repo>/`.
 
+## Books
+
+On the free plan the tool flags DraftKings, FanDuel, BetMGM and theScore Bet (formerly ESPN Bet).
+Caesars and Fanatics are paid-plan only on The Odds API, and bet365 isn't offered, so check those on the Props page.
+Pinnacle, LowVig, BetOnline, BetRivers, Hard Rock and Bovada are pulled only to sharpen the fair price.
+
 ## How it decides
 
 - **Fair price:** for each line, every book's price is converted to a no-vig probability, then averaged.
