@@ -1,10 +1,20 @@
 {
- "credits_remaining": 498,
- "credits_used": 2,
- "last_pull": {},
- "close_pulls": {},
+ "credits_remaining": 492,
+ "credits_used": 8,
+ "last_pull": {
+  "nfl": "2026-09-29T20:52:17Z",
+  "mlb": "2026-09-29T20:52:17Z"
+ },
+ "close_pulls": {
+  "mlb": {
+   "2026-09-29": 1
+  }
+ },
  "last_scores": {},
- "log": [],
+ "log": [
+  "09-29 16:52 nfl: routine pull, 31 games, 3 new flag(s), 495 credits left",
+  "09-29 16:52 mlb: close pull, 5 games, 0 new flag(s), 492 credits left"
+ ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
   "sport": "NFL",
@@ -20,5 +30,7 @@
    "betonlineag": 16,
    "betrivers": 16
   }
- }
+ },
+ "last_run": "2026-09-29T20:52:17Z",
+ "last_errors": []
 }
