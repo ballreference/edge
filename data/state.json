@@ -1,0 +1,24 @@
+{
+ "credits_remaining": 498,
+ "credits_used": 2,
+ "last_pull": {},
+ "close_pulls": {},
+ "last_scores": {},
+ "log": [],
+ "check": {
+  "at": "2026-09-29T15:35:17Z",
+  "sport": "NFL",
+  "books": {
+   "draftkings": 16,
+   "fanduel": 16,
+   "betmgm": 16,
+   "williamhill_us": 0,
+   "fanatics": 0,
+   "espnbet": 16,
+   "pinnacle": 16,
+   "lowvig": 16,
+   "betonlineag": 16,
+   "betrivers": 16
+  }
+ }
+}

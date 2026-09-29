@@ -1,0 +1,69 @@
+{
+ "generated": "2026-09-29T15:35:17Z",
+ "credits": {
+  "remaining": 498,
+  "used": 2
+ },
+ "min_ev": 0.025,
+ "book_names": {
+  "draftkings": "DraftKings",
+  "fanduel": "FanDuel",
+  "betmgm": "BetMGM",
+  "williamhill_us": "Caesars",
+  "fanatics": "Fanatics",
+  "espnbet": "theScore Bet",
+  "pinnacle": "Pinnacle",
+  "lowvig": "LowVig",
+  "betonlineag": "BetOnline",
+  "betrivers": "BetRivers"
+ },
+ "my_books": [
+  "draftkings",
+  "fanduel",
+  "betmgm",
+  "williamhill_us",
+  "fanatics",
+  "espnbet"
+ ],
+ "errors": [],
+ "log": [],
+ "check": {
+  "at": "2026-09-29T15:35:17Z",
+  "sport": "NFL",
+  "books": {
+   "draftkings": 16,
+   "fanduel": 16,
+   "betmgm": 16,
+   "williamhill_us": 0,
+   "fanatics": 0,
+   "espnbet": 16,
+   "pinnacle": 16,
+   "lowvig": 16,
+   "betonlineag": 16,
+   "betrivers": 16
+  }
+ },
+ "sports": {
+  "nfl": {
+   "label": "NFL",
+   "last_pull": null,
+   "games": 0,
+   "flags": [],
+   "watch": []
+  },
+  "nba": {
+   "label": "NBA",
+   "last_pull": null,
+   "games": 0,
+   "flags": [],
+   "watch": []
+  },
+  "mlb": {
+   "label": "MLB",
+   "last_pull": null,
+   "games": 0,
+   "flags": [],
+   "watch": []
+  }
+ }
+}
