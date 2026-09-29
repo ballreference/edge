@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Edge Props</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="brand">Edge<span>.</span></h1>
+    <nav class="tabs">
+      <a href="index.html">Board</a>
+      <a href="record.html">Record</a>
+      <a href="props.html" aria-current="page">Props</a>
+    </nav>
+  </header>
+
+  <h2 class="sec">Check a prop by hand</h2>
+  <p class="note" style="margin-top:0">Enter the same prop at the same number from two or more of your apps,
+  <b>both the over and the under</b>. The page removes each book's vig, averages them into a fair price,
+  and tells you if any book is paying more than fair. More books make a better fair price.</p>
+
+  <form id="f" autocomplete="off" style="margin-top:14px">
+    <div class="row2">
+      <div class="field"><label for="prop">Prop</label><input id="prop" placeholder="e.g. Jalen Brunson points"></div>
+      <div class="field"><label for="line">Line</label><input id="line" class="num" inputmode="decimal" placeholder="25.5"></div>
+    </div>
+    <div class="books" id="books">
+      <div class="bookrow"><span class="hd">Book</span><span class="hd">Over</span><span class="hd">Under</span><span></span></div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+      <button type="button" class="btn" id="add">+ Add book</button>
+      <button type="button" class="btn" id="clear">Clear</button>
+    </div>
+    <div class="field" style="margin-top:14px;max-width:260px">
+      <label for="mine">Your own estimate, over % (optional)</label>
+      <input id="mine" class="num" inputmode="decimal" placeholder="e.g. 58">
+    </div>
+  </form>
+
+  <div id="out"></div>
+
+  <footer>Odds are American: −115, +105, or just 105 for plus money. Pinnacle, if you can see its price on an odds
+  screen, counts three times as much as a retail book, because it's the sharpest line available.
+  The same 2.5% bar as the board applies.</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const BOOKS = ["DraftKings","FanDuel","BetMGM","Caesars","Fanatics","theScore Bet","bet365","BetRivers","Pinnacle","Other"];
+const WEIGHT = {Pinnacle: 3};
+const MIN_EV = 0.025, MAX_EV = 0.15;
+
+const profit = o => o > 0 ? o / 100 : 100 / Math.abs(o);
+const implied = o => 1 / (1 + profit(o));
+const ev = (p, o) => p * profit(o) - (1 - p);
+const fairOdds = p => p >= .5 ? -Math.round(100 * p / (1 - p)) : Math.round(100 * (1 - p) / p);
+const fmt = o => (o > 0 ? "+" : "") + o;
+const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+const sgn = x => (x >= 0 ? "+" : "−") + Math.abs(x * 100).toFixed(1) + "%";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function parseOdds(s){
+  s = String(s || "").trim().replace("−", "-");
+  if(!s) return null;
+  const n = parseInt(s, 10);
+  if(!isFinite(n) || Math.abs(n) < 100) return NaN;
+  return n;
+}
+
+let seq = 0;
+function addRow(book = "", over = "", under = ""){
+  const i = seq++;
+  const row = document.createElement("div");
+  row.className = "bookrow";
+  row.innerHTML = `<select id="b${i}" aria-label="Book">${BOOKS.map(b => `<option${b === book ? " selected" : ""}>${b}</option>`).join("")}</select>
+    <input id="o${i}" class="num" inputmode="text" placeholder="−115" aria-label="Over odds" value="${esc(over)}">
+    <input id="u${i}" class="num" inputmode="text" placeholder="−105" aria-label="Under odds" value="${esc(under)}">
+    <button type="button" class="x" aria-label="Remove book">×</button>`;
+  row.querySelector(".x").onclick = () => { row.remove(); calc(); };
+  $("books").appendChild(row);
+}
+
+function rows(){
+  return [...document.querySelectorAll("#books .bookrow")].slice(1).map(r => {
+    const [sel, o, u] = r.querySelectorAll("select,input");
+    return {book: sel.value, over: parseOdds(o.value), under: parseOdds(u.value), rawO: o.value, rawU: u.value};
+  });
+}
+
+function save(){
+  try{ localStorage.setItem("edge-props", JSON.stringify({prop: $("prop").value, line: $("line").value,
+    mine: $("mine").value, rows: rows().map(r => [r.book, r.rawO, r.rawU])})); }catch(e){}
+}
+
+function calc(){
+  save();
+  const R = rows();
+  const bad = R.filter(r => Number.isNaN(r.over) || Number.isNaN(r.under));
+  const two = R.filter(r => r.over && r.under);
+  const label = ($("prop").value.trim() || "the prop") + ($("line").value ? " " + $("line").value : "");
+  const out = $("out");
+  if(bad.length){
+    out.innerHTML = `<div class="verdict">An odds box has something that isn't American odds (${esc(bad[0].book)}). Use numbers like −115 or +105.</div>`;
+    return;
+  }
+  if(two.length < 2){
+    out.innerHTML = `<div class="verdict">Enter the over <b>and</b> under from at least two books to get a fair price.
+      ${two.length === 1 ? "One book so far." : ""}</div>`;
+    return;
+  }
+  let acc = 0, w = 0;
+  const per = two.map(r => {
+    const io = implied(r.over), iu = implied(r.under);
+    const q = io / (io + iu), wt = WEIGHT[r.book] || 1;
+    acc += wt * q; w += wt;
+    return {...r, q, hold: io + iu - 1};
+  });
+  const pOver = acc / w, pUnder = 1 - pOver;
+  const mine = parseFloat($("mine").value);
+  const pMine = isFinite(mine) && mine > 0 && mine < 100 ? mine / 100 : null;
+
+  const cands = [];
+  R.forEach(r => {
+    if(r.over) cands.push({book: r.book, side: "Over", price: r.over, e: ev(pOver, r.over), m: pMine != null ? ev(pMine, r.over) : null});
+    if(r.under) cands.push({book: r.book, side: "Under", price: r.under, e: ev(pUnder, r.under), m: pMine != null ? ev(1 - pMine, r.under) : null});
+  });
+  cands.sort((a, b) => b.e - a.e);
+  const best = cands[0];
+
+  let v;
+  if(best.e > MAX_EV){
+    v = `<div class="verdict"><b class="big">Check that price</b>${esc(best.book)} ${best.side} ${fmt(best.price)} is ${sgn(best.e)} over fair,
+      too big to be real most of the time. It's usually a typo or a line that's about to move.</div>`;
+  } else if(best.e >= MIN_EV){
+    v = `<div class="verdict go"><b class="big">${best.side} ${esc($("line").value || "")} at ${esc(best.book)} ${fmt(best.price)}</b>
+      ${sgn(best.e)} edge on ${esc(label)}. Fair is ${fmt(fairOdds(best.side === "Over" ? pOver : pUnder))}.</div>`;
+  } else {
+    v = `<div class="verdict"><b class="big">No bet</b>Best price is ${esc(best.book)} ${best.side} ${fmt(best.price)} at ${sgn(best.e)}, under the ${pct(MIN_EV)} bar.</div>`;
+  }
+
+  const hi = x => x >= MIN_EV ? "good" : x < 0 ? "bad" : "";
+  const table = `<div class="scroll" style="margin-top:12px"><table class="list">
+    <tr><th>Book</th><th class="r">Over</th><th class="r">Edge</th><th class="r">Under</th><th class="r">Edge</th><th class="r">Hold</th></tr>
+    ${R.map(r => {
+      const o = r.over ? ev(pOver, r.over) : null, u = r.under ? ev(pUnder, r.under) : null;
+      const h = r.over && r.under ? implied(r.over) + implied(r.under) - 1 : null;
+      return `<tr><td>${esc(r.book)}${WEIGHT[r.book] ? ' <span class="tag sharp">sharp</span>' : ""}</td>
+        <td class="r num">${r.over ? fmt(r.over) : "–"}</td><td class="r num ${o != null ? hi(o) : ""}">${o != null ? sgn(o) : "–"}</td>
+        <td class="r num">${r.under ? fmt(r.under) : "–"}</td><td class="r num ${u != null ? hi(u) : ""}">${u != null ? sgn(u) : "–"}</td>
+        <td class="r num">${h != null ? pct(h) : "–"}</td></tr>`;
+    }).join("")}</table></div>`;
+
+  const fair = `<div class="scoreboard">
+    <div class="stat"><div class="k">Fair over</div><div class="v">${pct(pOver)}</div><div class="s">${fmt(fairOdds(pOver))}</div></div>
+    <div class="stat"><div class="k">Fair under</div><div class="v">${pct(pUnder)}</div><div class="s">${fmt(fairOdds(pUnder))}</div></div>
+    ${pMine != null ? `<div class="stat"><div class="k">Your over</div><div class="v">${pct(pMine)}</div>
+      <div class="s">${Math.abs(pMine - pOver) < .03 ? "close to the market" : pMine > pOver ? "higher than the market" : "lower than the market"}</div></div>` : ""}
+  </div>`;
+
+  const mineNote = pMine != null && best
+    ? `<p class="note" style="margin-top:10px">By <b>your</b> ${pct(pMine)} estimate, the best price is
+       ${(() => { const c = [...cands].sort((a, b) => b.m - a.m)[0]; return `${esc(c.book)} ${c.side} ${fmt(c.price)} at ${sgn(c.m)}`; })()}.
+       When your number and the market disagree by a lot, the market is usually right.</p>` : "";
+
+  out.innerHTML = v + fair + table + mineNote;
+}
+
+$("add").onclick = () => { addRow(BOOKS[Math.min(rows().length, BOOKS.length - 1)]); calc(); };
+$("clear").onclick = () => {
+  $("prop").value = $("line").value = $("mine").value = "";
+  document.querySelectorAll("#books .bookrow").forEach((r, i) => { if(i) r.remove(); });
+  addRow("DraftKings"); addRow("FanDuel"); addRow("BetMGM"); calc();
+};
+$("f").addEventListener("input", calc);
+$("f").addEventListener("submit", e => e.preventDefault());
+
+let saved = null;
+try{ saved = JSON.parse(localStorage.getItem("edge-props") || "null"); }catch(e){}
+if(saved && saved.rows && saved.rows.length){
+  $("prop").value = saved.prop || ""; $("line").value = saved.line || ""; $("mine").value = saved.mine || "";
+  saved.rows.forEach(r => addRow(...r));
+} else {
+  // A worked example so the page shows what it does; clear it and enter your own.
+  $("prop").value = "Example: player points"; $("line").value = "24.5";
+  addRow("DraftKings", "-120", "-110"); addRow("FanDuel", "-115", "-115"); addRow("BetMGM", "+105", "-135");
+}
+calc();
+</script>
+</body>
+</html>

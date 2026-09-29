@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Edge Record</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="brand">Edge<span>.</span></h1>
+    <nav class="tabs">
+      <a href="index.html">Board</a>
+      <a href="record.html" aria-current="page">Record</a>
+      <a href="props.html">Props</a>
+    </nav>
+  </header>
+  <div class="status" id="status">Loading…</div>
+
+  <h2 class="sec">Every flag, graded</h2>
+  <div id="summary"></div>
+
+  <h2 class="sec">Beating the close</h2>
+  <div id="clv"></div>
+
+  <h2 class="sec">Breakdown</h2>
+  <div class="scroll"><table class="list" id="breakdown"></table></div>
+
+  <h2 class="sec" id="pending-h">Waiting on results</h2>
+  <div class="scroll"><table class="list" id="pending"></table></div>
+
+  <h2 class="sec">Recent results</h2>
+  <div class="scroll"><table class="list" id="recent"></table></div>
+
+  <footer>Flat 1 unit per flag at the price first flagged. Win % is compared with what the fair prices
+  expected, not a flat 52.4%, because underdog moneylines win less often and still pay.
+  55% at −110 works out to about +5% ROI, the number to watch.</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const fmtOdds = o => (o > 0 ? "+" : "") + o;
+const pct = (x, d = 1) => x == null ? "–" : (x * 100).toFixed(d) + "%";
+const sgn = (x, d = 1) => x == null ? "–" : (x >= 0 ? "+" : "−") + Math.abs(x * 100).toFixed(d) + "%";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const when = iso => new Date(iso).toLocaleString([], {month:"numeric", day:"numeric", hour:"numeric", minute:"2-digit"});
+function betText(r){
+  if(r.market === "totals") return `${r.side} ${r.point}`;
+  if(r.market === "h2h") return `${r.side} ML`;
+  return `${r.side} ${r.point > 0 ? "+" : ""}${r.point}`;
+}
+// 95% margin of error on a win rate after n decided bets.
+const moe = (p, n) => n ? 1.96 * Math.sqrt(p * (1 - p) / n) : null;
+
+function stat(k, v, s, cls = ""){
+  return `<div class="stat"><div class="k">${k}</div><div class="v ${cls}">${v}</div><div class="s">${s}</div></div>`;
+}
+
+function render(R){
+  const o = R.overall;
+  $("status").innerHTML = `<span>Updated <b>${new Date(R.generated).toLocaleString()}</b></span>`;
+  if(!o.n){
+    $("summary").innerHTML = `<p class="empty">No graded flags yet. Each flag is graded the morning after its game.</p>`;
+    $("clv").innerHTML = `<p class="empty">Appears once flagged games have kicked off.</p>`;
+  } else {
+    const decided = o.w + o.l, m = moe(o.win_pct, decided);
+    $("summary").innerHTML = `<div class="scoreboard">
+      ${stat("Record", `${o.w}-${o.l}${o.p ? "-" + o.p : ""}`, `${o.n} flags graded`)}
+      ${stat("Win rate", pct(o.win_pct), `fair prices expected ${pct(o.expected_pct)}`)}
+      ${stat("Units", (o.units >= 0 ? "+" : "") + o.units.toFixed(1) + "u", `1u flat per flag`, o.units >= 0 ? "good" : "bad")}
+      ${stat("ROI", sgn(o.roi), `edge at flag averaged ${sgn(o.avg_ev)}`, o.roi >= 0 ? "good" : "bad")}
+    </div>
+    <p class="note" style="margin-top:10px">After <b>${decided}</b> decided bets, the true win rate could be anywhere
+    within <b>±${pct(m)}</b> of ${pct(o.win_pct)} just from luck. ${decided < 300
+      ? "That's too wide to call it yet. Watch the closing-line numbers below; they settle much sooner."
+      : "That's getting narrow enough to take seriously."}</p>`;
+
+    if(o.clv_n){
+      const b = o.beat_close_pct;
+      $("clv").innerHTML = `<div class="scoreboard">
+        ${stat("Beat the close", pct(b, 0), `of ${o.clv_n} flags with a later closing line`, b >= 0.5 ? "good" : "bad")}
+        ${stat("Avg CLV", sgn(o.avg_clv), "edge left at the closing price", (o.avg_clv ?? 0) >= 0 ? "good" : "bad")}
+      </div>
+      <div class="bar" role="img" aria-label="Beat the close ${pct(b,0)}">
+        <div class="fill" style="width:${b * 100}%"></div>
+        <div class="mark" style="left:50%"></div>
+        <span class="lbl" style="left:calc(50% + 6px)">coin flip</span>
+      </div>
+      <p class="note" style="margin-top:10px">If the line keeps moving toward your price after the flag, the market is
+      agreeing with it. Bettors who beat the close <b>well over half the time</b> win long-term, even through cold streaks.</p>`;
+    } else {
+      $("clv").innerHTML = `<p class="empty">No flags have a later closing line yet.</p>`;
+    }
+  }
+
+  const rows = [];
+  let lastGrp = null;
+  const add = (grp, name, t) => {
+    if(grp !== lastGrp){ rows.push(`<tr class="grp"><td colspan="6">${grp}</td></tr>`); lastGrp = grp; }
+    rows.push(`<tr><td>${esc(name)}</td>
+    <td class="r num">${t.w}-${t.l}${t.p ? "-" + t.p : ""}</td><td class="r num">${pct(t.win_pct)}</td>
+    <td class="r num">${pct(t.expected_pct)}</td><td class="r num ${t.units >= 0 ? "good" : "bad"}">${(t.units >= 0 ? "+" : "") + t.units.toFixed(1)}</td>
+    <td class="r num">${pct(t.beat_close_pct, 0)}</td></tr>`);
+  };
+  const mk = {spreads: "Spreads", totals: "Totals", h2h: "Moneylines"};
+  Object.entries(R.by_sport || {}).forEach(([k, t]) => add("Sport", k, t));
+  Object.entries(R.by_market || {}).forEach(([k, t]) => add("Market", mk[k] || k, t));
+  Object.entries(R.by_ev || {}).forEach(([k, t]) => add("Edge", k, t));
+  $("breakdown").innerHTML = rows.length
+    ? `<tr><th></th><th class="r">W-L-P</th><th class="r">Win</th><th class="r">Exp.</th><th class="r">Units</th><th class="r">Beat CL</th></tr>` + rows.join("")
+    : `<tr><td class="empty">Nothing graded yet.</td></tr>`;
+
+  const allP = R.pending || [], P = allP.slice(0, 20);
+  $("pending-h").textContent = `Waiting on results (${allP.length})`;
+  $("pending").innerHTML = P.length
+    ? `<tr><th>Game</th><th>Bet</th><th>Book</th><th class="r">Price</th><th class="r">Edge</th><th class="r">Close</th></tr>` +
+      P.map(f => `<tr><td>${esc(f.away)} @ ${esc(f.home)}<br><small style="color:var(--muted)">${when(f.commence)}</small></td>
+        <td>${esc(betText(f))}</td><td>${esc(f.book_name || f.book)}</td><td class="r num">${fmtOdds(f.price)}</td>
+        <td class="r num">+${pct(f.ev)}</td>
+        <td class="r num">${f.close && f.close.later ? (f.close.beat ? "beat" : f.close.beat === false ? "lost" : "–") : "–"}</td></tr>`).join("")
+    + (allP.length > P.length ? `<tr><td colspan="6" style="color:var(--muted)">…and ${allP.length - P.length} more</td></tr>` : "")
+    : `<tr><td class="empty">Nothing waiting.</td></tr>`;
+
+  const Rc = (R.recent || []).slice(0, 30);
+  $("recent").innerHTML = Rc.length
+    ? `<tr><th></th><th>Bet</th><th class="r">Price</th><th class="r">Edge</th><th class="r">CLV</th><th>Final</th></tr>` +
+      Rc.map(f => `<tr><td><span class="res ${f.result}">${f.result}</span></td>
+        <td>${esc(betText(f))}<br><small style="color:var(--muted)">${esc(f.book_name || f.book)} · ${when(f.commence)}</small></td>
+        <td class="r num">${fmtOdds(f.price)}</td><td class="r num">+${pct(f.ev)}</td>
+        <td class="r num">${f.close && f.close.later && f.close.clv_ev != null ? sgn(f.close.clv_ev) : "–"}</td>
+        <td><small>${esc(f.final)}</small></td></tr>`).join("")
+    : `<tr><td class="empty">No results yet.</td></tr>`;
+}
+
+fetch("data/record.json?t=" + Date.now())
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(() => { $("status").textContent = ""; $("summary").innerHTML = `<p class="empty">No record yet. It appears after the first scheduled run.</p>`; });
+</script>
+</body>
+</html>

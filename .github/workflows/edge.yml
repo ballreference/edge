@@ -1,0 +1,43 @@
+name: Edge
+on:
+  schedule:
+    - cron: '23 * * * *'      # hourly; the script only spends credits when a pull is due
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'run = normal run · check = test the key and list which books come back (1 credit)'
+        default: 'run'
+        type: choice
+        options: [run, check]
+concurrency:
+  group: edge
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Edge
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python3 edge.py ${{ github.event.inputs.mode || 'run' }}
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A data docs/data
+          git diff --cached --quiet && exit 0
+          git commit -m "Edge update"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push attempt $i failed, retrying..."
+            sleep $((RANDOM % 20 + 5))
+          done
+          echo "push failed after 5 attempts"; exit 1

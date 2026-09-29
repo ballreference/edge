@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Edge Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="brand">Edge<span>.</span></h1>
+    <nav class="tabs">
+      <a href="index.html" aria-current="page">Board</a>
+      <a href="record.html">Record</a>
+      <a href="props.html">Props</a>
+    </nav>
+  </header>
+  <div class="status" id="status">Loading…</div>
+  <div id="alerts"></div>
+
+  <div class="chips" id="chips" role="group" aria-label="Sport"></div>
+  <h2 class="sec" id="flags-h">Bets with an edge</h2>
+  <div id="flags"></div>
+  <details class="watch" id="watch-box" hidden>
+    <summary id="watch-sum">Close, but under the bar</summary>
+    <div class="scroll"><table class="list" id="watch"></table></div>
+  </details>
+
+  <h2 class="sec">How to read this</h2>
+  <p class="note">Each card is a price at one of your books that pays more than the market's <b>fair price</b>,
+  the no-vig line averaged across up to ten books, with Pinnacle and other sharp books counted heavier.
+  <b>Edge</b> is expected profit per $100 if the fair price is right. Only edges of <b id="min-ev">2.5%</b> or more
+  are flagged, and every flag is logged automatically so the <a href="record.html">record</a> can't be cherry-picked.
+  Lines move, so check the price in the app before you bet. If it's gone, so is the edge.</p>
+  <footer>Odds from The Odds API. bet365 isn't in the data; use <a href="props.html">Props</a> to check it by hand.</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const fmtOdds = o => (o > 0 ? "+" : "") + o;
+const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+let BOARD = null, CUR = null;
+
+function ago(iso){
+  if(!iso) return "never";
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if(m < 1) return "just now";
+  if(m < 60) return m + " min ago";
+  const h = Math.round(m / 60);
+  return h < 48 ? h + " hr ago" : Math.round(h / 24) + " days ago";
+}
+function when(iso){
+  return new Date(iso).toLocaleString([], {weekday:"short", hour:"numeric", minute:"2-digit"});
+}
+function betText(r){
+  if(r.market === "totals") return `${r.side} ${r.point}`;
+  if(r.market === "h2h") return `${r.side} ML`;
+  return `${r.side} ${r.point > 0 ? "+" : ""}${r.point}`;
+}
+const bookName = k => (BOARD && BOARD.book_names[k]) || k;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function slip(r){
+  const moved = r.logged && (r.logged.price !== r.price || r.logged.book !== r.book || r.logged.point !== r.point);
+  const others = (r.others || []).map(([b, p]) =>
+    `<span>${esc(bookName(b))} <b>${fmtOdds(p)}</b></span>`).join("");
+  return `<article class="slip">
+    <div class="game"><span>${esc(r.away)} @ ${esc(r.home)}</span><span>· ${when(r.commence)}</span></div>
+    <div class="bet">${esc(betText(r))} <span class="price">${fmtOdds(r.price)}</span></div>
+    <div class="edge"><span class="pill ${r.ev >= BOARD.min_ev ? "" : "mid"}">+${pct(r.ev)}</span><small>EDGE</small></div>
+    <div class="where">at <b>${esc(bookName(r.book))}</b> · fair ${fmtOdds(r.fair_odds)} (${pct(r.fair_p)})
+      · ${r.n_books} books ${r.sharps && r.sharps.length ? '<span class="tag sharp">sharp</span>' : ""}
+      ${moved ? `<span class="tag moved">first seen ${fmtOdds(r.logged.price)} ${esc(bookName(r.logged.book))}</span>` : ""}</div>
+    ${others ? `<div class="others">${others}</div>` : ""}
+  </article>`;
+}
+
+function renderSport(key){
+  CUR = key;
+  document.querySelectorAll("#chips button").forEach(b => b.setAttribute("aria-pressed", b.dataset.k === key));
+  const s = BOARD.sports[key];
+  const flags = s.flags || [], watch = s.watch || [];
+  $("flags-h").textContent = `${s.label} · bets with an edge`;
+  if(!s.last_pull){
+    $("flags").innerHTML = `<p class="empty">No ${s.label} odds pulled yet. It pulls automatically once ${s.label} games are on the schedule.</p>`;
+  } else if(!flags.length){
+    $("flags").innerHTML = `<p class="empty">Nothing at ${(BOARD.min_ev*100).toFixed(1)}% or better across ${s.games} upcoming ${s.label} game${s.games===1?"":"s"} right now. No bet is a result too; most days most lines are fair.</p>`;
+  } else {
+    $("flags").innerHTML = flags.map(slip).join("");
+  }
+  $("watch-box").hidden = !watch.length;
+  $("watch-sum").textContent = `Close, but under the bar (${watch.length})`;
+  $("watch").innerHTML = `<tr><th>Bet</th><th>Book</th><th class="r">Price</th><th class="r">Fair</th><th class="r">Edge</th></tr>` +
+    watch.map(r => `<tr><td>${esc(betText(r))}<br><small style="color:var(--muted)">${esc(r.away)} @ ${esc(r.home)}</small></td>
+      <td>${esc(bookName(r.book))}</td><td class="r num">${fmtOdds(r.price)}</td>
+      <td class="r num">${fmtOdds(r.fair_odds)}</td><td class="r num">+${pct(r.ev)}</td></tr>`).join("");
+  try{ localStorage.setItem("edge-sport", key); }catch(e){}
+}
+
+function render(){
+  const c = BOARD.credits || {};
+  const rem = c.remaining, used = c.used, total = (rem ?? 0) + (used ?? 0) || 500;
+  const pulls = Object.values(BOARD.sports).filter(s => s.last_pull)
+    .map(s => `${s.label} odds <b>${ago(s.last_pull)}</b>`).join(" · ");
+  $("status").innerHTML = `<span>Updated <b>${ago(BOARD.generated)}</b></span>` +
+    (pulls ? `<span>${pulls}</span>` : "") +
+    (rem != null ? `<span>Credits <b class="num">${rem}</b>/<span class="num">${total}</span>
+      <span class="meter"><i style="width:${Math.max(0, Math.min(100, rem / total * 100))}%"></i></span></span>` : "");
+  $("min-ev").textContent = pct(BOARD.min_ev);
+
+  let alerts = "";
+  (BOARD.errors || []).forEach(e => alerts += `<div class="alert">${esc(e)}</div>`);
+  if(BOARD.check){
+    const missing = Object.entries(BOARD.check.books).filter(([, n]) => !n).map(([b]) => bookName(b));
+    if(missing.length) alerts += `<div class="alert" style="background:var(--warn-bg);color:var(--warn)">
+      Not returned on the first check: ${esc(missing.join(", "))}. Those books aren't in the comparison yet.</div>`;
+  }
+  $("alerts").innerHTML = alerts;
+
+  const keys = Object.keys(BOARD.sports);
+  $("chips").innerHTML = keys.map(k => {
+    const s = BOARD.sports[k];
+    return `<button type="button" data-k="${k}" aria-pressed="false">${s.label}<small>${s.flags.length}</small></button>`;
+  }).join("");
+  $("chips").onclick = e => { const b = e.target.closest("button"); if(b) renderSport(b.dataset.k); };
+  let saved = null; try{ saved = localStorage.getItem("edge-sport"); }catch(e){}
+  const pick = (saved && BOARD.sports[saved]) ? saved
+    : keys.find(k => BOARD.sports[k].flags.length) || keys.find(k => BOARD.sports[k].games) || keys[0];
+  renderSport(pick);
+}
+
+fetch("data/board.json?t=" + Date.now())
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => { BOARD = d; render(); })
+  .catch(() => {
+    $("status").textContent = "";
+    $("flags").innerHTML = `<p class="empty">No board yet. It appears after the first scheduled run finishes, usually within an hour of setup.</p>`;
+  });
+</script>
+</body>
+</html>

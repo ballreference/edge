@@ -1,0 +1,39 @@
+{
+  "timezone": "America/Detroit",
+
+  "books": ["draftkings", "fanduel", "betmgm", "williamhill_us", "fanatics", "espnbet",
+            "pinnacle", "lowvig", "betonlineag", "betrivers"],
+  "my_books": ["draftkings", "fanduel", "betmgm", "williamhill_us", "fanatics", "espnbet"],
+  "book_names": {
+    "draftkings": "DraftKings", "fanduel": "FanDuel", "betmgm": "BetMGM",
+    "williamhill_us": "Caesars", "fanatics": "Fanatics", "espnbet": "theScore Bet",
+    "pinnacle": "Pinnacle", "lowvig": "LowVig", "betonlineag": "BetOnline", "betrivers": "BetRivers"
+  },
+  "sharp_weights": {"pinnacle": 3.0, "lowvig": 1.5, "betonlineag": 1.5},
+
+  "min_ev": 0.025,
+  "max_ev": 0.15,
+  "min_books_for_fair": 2,
+  "min_books_without_sharp": 5,
+  "watch_ev": 0.01,
+
+  "credit_reserve": 30,
+  "grade_every_hours": 18,
+  "sports": {
+    "nfl": {"key": "americanfootball_nfl", "label": "NFL", "enabled": true,
+            "markets": ["spreads", "totals", "h2h"],
+            "lookahead_hours": 168, "routine_hours": [10],
+            "close_window_min": 80, "max_close_pulls_per_day": 3,
+            "grade_after_hours": 4},
+    "nba": {"key": "basketball_nba", "label": "NBA", "enabled": true,
+            "markets": ["spreads", "totals", "h2h"],
+            "lookahead_hours": 30, "routine_hours": [11],
+            "close_window_min": 80, "max_close_pulls_per_day": 1,
+            "grade_after_hours": 3.5},
+    "mlb": {"key": "baseball_mlb", "label": "MLB", "enabled": true,
+            "markets": ["spreads", "totals", "h2h"],
+            "lookahead_hours": 30, "routine_hours": [11],
+            "close_window_min": 80, "max_close_pulls_per_day": 1,
+            "grade_after_hours": 4}
+  }
+}
