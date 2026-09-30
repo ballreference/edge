@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T00:32:10Z",
+ "generated": "2026-09-30T05:12:55Z",
  "credits": {
   "remaining": 492,
   "used": 8
@@ -51,161 +51,7 @@
    "label": "NFL",
    "last_pull": "2026-09-29T20:52:17Z",
    "games": 31,
-   "flags": [
-    {
-     "market": "h2h",
-     "side": "Tennessee Titans",
-     "point": null,
-     "book": "espnbet",
-     "price": 550,
-     "fair_p": 0.1643,
-     "fair_odds": 509,
-     "ev": 0.0678,
-     "n_books": 9,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "fanduel",
-       530
-      ],
-      [
-       "draftkings",
-       525
-      ],
-      [
-       "betrivers",
-       500
-      ],
-      [
-       "betmgm",
-       500
-      ],
-      [
-       "hardrockbet",
-       500
-      ],
-      [
-       "betonlineag",
-       476
-      ]
-     ],
-     "home": "Baltimore Ravens",
-     "away": "Tennessee Titans",
-     "commence": "2026-10-04T17:00:00Z",
-     "logged": {
-      "price": 550,
-      "book": "espnbet",
-      "point": null,
-      "at": "2026-09-29T20:52:17Z"
-     }
-    },
-    {
-     "market": "h2h",
-     "side": "Miami Dolphins",
-     "point": null,
-     "book": "draftkings",
-     "price": 500,
-     "fair_p": 0.1758,
-     "fair_odds": 469,
-     "ev": 0.0549,
-     "n_books": 9,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "betrivers",
-       475
-      ],
-      [
-       "betmgm",
-       475
-      ],
-      [
-       "hardrockbet",
-       475
-      ],
-      [
-       "fanduel",
-       460
-      ],
-      [
-       "betonlineag",
-       452
-      ],
-      [
-       "lowvig",
-       452
-      ]
-     ],
-     "home": "Minnesota Vikings",
-     "away": "Miami Dolphins",
-     "commence": "2026-10-04T20:05:00Z",
-     "logged": {
-      "price": 500,
-      "book": "draftkings",
-      "point": null,
-      "at": "2026-09-29T20:52:17Z"
-     }
-    },
-    {
-     "market": "h2h",
-     "side": "New England Patriots",
-     "point": null,
-     "book": "fanduel",
-     "price": 275,
-     "fair_p": 0.2769,
-     "fair_odds": 261,
-     "ev": 0.0385,
-     "n_books": 9,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "betmgm",
-       270
-      ],
-      [
-       "espnbet",
-       260
-      ],
-      [
-       "betrivers",
-       250
-      ],
-      [
-       "bovada",
-       250
-      ],
-      [
-       "hardrockbet",
-       250
-      ],
-      [
-       "pinnacle",
-       246
-      ]
-     ],
-     "home": "Buffalo Bills",
-     "away": "New England Patriots",
-     "commence": "2026-10-04T17:00:00Z",
-     "logged": {
-      "price": 275,
-      "book": "fanduel",
-      "point": null,
-      "at": "2026-09-29T20:52:17Z"
-     }
-    }
-   ],
+   "flags": [],
    "watch": []
   },
   "nba": {
@@ -218,7 +64,7 @@
   "mlb": {
    "label": "MLB",
    "last_pull": "2026-09-29T20:52:17Z",
-   "games": 2,
+   "games": 1,
    "flags": [],
    "watch": []
   }

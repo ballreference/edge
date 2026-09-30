@@ -192,17 +192,38 @@ def two_way(book: dict, market: str) -> list[tuple[tuple, int, tuple, int]]:
     return []
 
 
+def devig(ia: float, ib: float) -> tuple[float, float]:
+    """Remove the vig with the power method: find k so ia^k + ib^k = 1.
+    Books load most of their margin onto the longshot; splitting it evenly
+    (ia / (ia + ib)) overrates underdogs on lopsided moneylines. For lines near
+    50/50 the two methods agree."""
+    if ia + ib <= 1.0:
+        tot = ia + ib
+        return ia / tot, ib / tot
+    lo, hi = 1.0, 8.0
+    for _ in range(60):
+        k = (lo + hi) / 2
+        if ia ** k + ib ** k > 1.0:
+            lo = k
+        else:
+            hi = k
+    k = (lo + hi) / 2
+    qa, qb = ia ** k, ib ** k
+    tot = qa + qb
+    return qa / tot, qb / tot
+
+
 def novig_table(event: dict, market: str) -> dict:
     """{side: {book: (price, fair_prob_from_that_book)}} for one event+market."""
     table: dict = {}
     for bk in event.get("bookmakers", []):
         for sa, pa, sb, pb in two_way(bk, market):
             ia, ib = implied(pa), implied(pb)
-            tot = ia + ib
-            if tot <= 0:
+            if ia <= 0 or ib <= 0:
                 continue
-            table.setdefault(sa, {})[bk["key"]] = (pa, ia / tot)
-            table.setdefault(sb, {})[bk["key"]] = (pb, ib / tot)
+            qa, qb = devig(ia, ib)
+            table.setdefault(sa, {})[bk["key"]] = (pa, qa)
+            table.setdefault(sb, {})[bk["key"]] = (pb, qb)
     return table
 
 

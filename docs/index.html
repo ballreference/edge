@@ -116,7 +116,7 @@ function render(){
   let alerts = "";
   (BOARD.errors || []).forEach(e => alerts += `<div class="alert">${esc(e)}</div>`);
   if(BOARD.check){
-    const missing = Object.entries(BOARD.check.books).filter(([b, n]) => !n && b in BOARD.book_names).map(([b]) => bookName(b));
+    const missing = Object.entries(BOARD.check.books).filter(([b, n]) => !n && BOARD.my_books.includes(b)).map(([b]) => bookName(b));
     if(missing.length) alerts += `<div class="alert" style="background:var(--warn-bg);color:var(--warn)">
       Not returned on the first check: ${esc(missing.join(", "))}. Those books aren't in the comparison yet.</div>`;
   }

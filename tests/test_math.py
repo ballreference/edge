@@ -26,3 +26,8 @@ fd = c[("fanduel", "A", 3)]
 assert abs(fd["fair_p"] - 0.5) < 1e-9 and abs(fd["ev"] - 0.025) < 1e-9, fd
 assert ("draftkings", "A", 3.5) not in c     # -3.5 has no other book on that number -> no fair price
 print("all math checks pass")
+# Power devig: even lines unchanged, lopsided lines push the vig onto the longshot.
+a, b = edge.devig(edge.implied(-110), edge.implied(-110)); assert abs(a - 0.5) < 1e-9
+fav, dog = edge.devig(edge.implied(-649), edge.implied(461))
+assert abs(fav + dog - 1) < 1e-9 and 0.14 < dog < 0.155, dog     # multiplicative would say ~0.171
+print("devig checks pass")
