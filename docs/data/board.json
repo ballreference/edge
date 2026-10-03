@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-03T17:59:58Z",
+ "generated": "2026-10-03T21:24:49Z",
  "credits": {
-  "remaining": 494,
-  "used": 6
+  "remaining": 491,
+  "used": 9
  },
  "min_ev": 0.025,
  "book_names": {
@@ -31,7 +31,8 @@
   "09-29 16:52 mlb: close pull, 5 games, 0 new flag(s), 492 credits left",
   "09-30 19:55 mlb: close pull, 4 games, 0 new flag(s), 489 credits left",
   "10-01 19:56 nfl: close pull, 31 games, 0 new flag(s), 497 credits left",
-  "10-01 19:56 mlb: close pull, 4 games, 0 new flag(s), 494 credits left"
+  "10-01 19:56 mlb: close pull, 4 games, 0 new flag(s), 494 credits left",
+  "10-03 17:24 mlb: close pull, 4 games, 0 new flag(s), 491 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -66,8 +67,8 @@
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-01T23:56:05Z",
-   "games": 2,
+   "last_pull": "2026-10-03T21:24:49Z",
+   "games": 3,
    "flags": [],
    "watch": []
   }
