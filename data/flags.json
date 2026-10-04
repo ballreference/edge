@@ -1,3 +1,40 @@
 {
- "flags": []
+ "flags": [
+  {
+   "market": "spreads",
+   "side": "Jacksonville Jaguars",
+   "point": -3.0,
+   "book": "draftkings",
+   "price": -102,
+   "fair_p": 0.5241,
+   "fair_odds": -110,
+   "ev": 0.0379,
+   "n_books": 2,
+   "sharps": [
+    "betonlineag",
+    "lowvig"
+   ],
+   "others": [
+    [
+     "lowvig",
+     -116
+    ],
+    [
+     "betonlineag",
+     -120
+    ]
+   ],
+   "id": "21b26266f3d78af02eb672e606275d95|spreads|Jacksonville Jaguars",
+   "sport": "nfl",
+   "event_id": "21b26266f3d78af02eb672e606275d95",
+   "home": "Jacksonville Jaguars",
+   "away": "Philadelphia Eagles",
+   "commence": "2026-10-11T13:30:00Z",
+   "flagged_at": "2026-10-04T13:15:44Z",
+   "last_seen": "2026-10-04T13:15:44Z",
+   "last_ev": 0.0379,
+   "peak_ev": 0.0379,
+   "status": "open"
+  }
+ ]
 }
