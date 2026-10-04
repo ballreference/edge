@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T13:15:44Z",
+ "generated": "2026-10-04T17:37:33Z",
  "credits": {
   "remaining": 488,
   "used": 12
@@ -55,7 +55,7 @@
   "nfl": {
    "label": "NFL",
    "last_pull": "2026-10-04T13:15:44Z",
-   "games": 28,
+   "games": 19,
    "flags": [
     {
      "market": "spreads",
