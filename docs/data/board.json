@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-04T21:34:40Z",
+ "generated": "2026-10-05T01:00:34Z",
  "credits": {
-  "remaining": 488,
-  "used": 12
+  "remaining": 485,
+  "used": 15
  },
  "min_ev": 0.025,
  "book_names": {
@@ -33,7 +33,8 @@
   "10-01 19:56 nfl: close pull, 31 games, 0 new flag(s), 497 credits left",
   "10-01 19:56 mlb: close pull, 4 games, 0 new flag(s), 494 credits left",
   "10-03 17:24 mlb: close pull, 4 games, 0 new flag(s), 491 credits left",
-  "10-04 09:15 nfl: close pull, 28 games, 1 new flag(s), 488 credits left"
+  "10-04 09:15 nfl: close pull, 28 games, 1 new flag(s), 488 credits left",
+  "10-04 21:00 nhl: close pull, 14 games, 0 new flag(s), 485 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -55,7 +56,7 @@
   "nfl": {
    "label": "NFL",
    "last_pull": "2026-10-04T13:15:44Z",
-   "games": 15,
+   "games": 14,
    "flags": [
     {
      "market": "spreads",
@@ -107,6 +108,59 @@
    "games": 1,
    "flags": [],
    "watch": []
+  },
+  "nhl": {
+   "label": "NHL",
+   "last_pull": "2026-10-05T01:00:34Z",
+   "games": 12,
+   "flags": [],
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "Vegas Golden Knights",
+     "point": -1.5,
+     "book": "espnbet",
+     "price": 100,
+     "fair_p": 0.512,
+     "fair_odds": -105,
+     "ev": 0.0241,
+     "n_books": 8,
+     "sharps": [
+      "betonlineag",
+      "lowvig",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "pinnacle",
+       -107
+      ],
+      [
+       "hardrockbet",
+       -110
+      ],
+      [
+       "draftkings",
+       -115
+      ],
+      [
+       "bovada",
+       -117
+      ],
+      [
+       "betonlineag",
+       -118
+      ],
+      [
+       "lowvig",
+       -118
+      ]
+     ],
+     "home": "Vancouver Canucks",
+     "away": "Vegas Golden Knights",
+     "commence": "2026-10-05T01:10:00Z"
+    }
+   ]
   }
  }
 }
