@@ -36,6 +36,11 @@
             "markets": ["spreads", "totals", "h2h"],
             "lookahead_hours": 30, "routine_hours": [11],
             "close_window_min": 80, "max_close_pulls_per_day": 1,
-            "grade_after_hours": 4}
+            "grade_after_hours": 4},
+    "nhl": {"key": "icehockey_nhl", "label": "NHL", "enabled": true,
+            "markets": ["spreads", "totals", "h2h"],
+            "lookahead_hours": 30, "routine_hours": [11],
+            "close_window_min": 80, "max_close_pulls_per_day": 1,
+            "grade_after_hours": 3.5}
   }
 }

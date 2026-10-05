@@ -1,6 +1,6 @@
 # Edge
 
-Finds prices at your sportsbooks that pay more than the market's fair price, for NFL, NBA and MLB
+Finds prices at your sportsbooks that pay more than the market's fair price, for NFL, NBA, MLB and NHL
 spreads, totals and moneylines. Logs every flag, records the closing line, and grades it, so the
 record shows whether it's really beating the market.
 
@@ -47,5 +47,5 @@ Routine pulls stop when fewer than 30 credits are left, so the closing-line pull
 - `edge.py` — the engine (standard library only)
 - `config.json` — books, thresholds, schedule per sport
 - `data/` — snapshots (kept 10 days), `flags.json` (every flag ever), `state.json`
-- `docs/` — the site: board, record, props calculator
+- `docs/` — the site: board, record, props calculator, parlay builder
 - `tests/` — `test_math.py` and `simulate.py` (a month of fake odds against a fake API)

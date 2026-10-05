@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Edge Parlays</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+ .pool{display:grid;gap:6px}
+ .leg{display:grid;grid-template-columns:auto 1fr auto auto auto;gap:4px 10px;align-items:center;background:var(--surface);
+      border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:14px}
+ .leg .what b{font-weight:600}
+ .leg .what small{display:block;color:var(--muted);font-size:12px}
+ .leg .ex{grid-column:1/-1;font-size:11.5px;color:var(--warn)}
+ .parlay{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .parlay + .parlay{margin-top:8px}
+ .parlay .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+ .parlay .odds{font:600 20px/1.2 var(--mono)}
+ .parlay ol{margin:8px 0 0;padding-left:20px;font-size:14px}
+ .parlay ol li{padding:2px 0}
+ .parlay ol li small{color:var(--muted);font-family:var(--mono);font-size:12px}
+ .parlay .meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin-top:8px;
+               border-top:1px dashed var(--line);padding-top:8px}
+ .parlay .meta b{color:var(--ink);font-family:var(--mono)}
+ .toggle{display:flex;gap:8px;align-items:center;font-size:14px;margin-top:10px}
+ .toggle input{width:auto}
+ .row3{display:grid;grid-template-columns:1fr 1.6fr 0.9fr;gap:8px;margin-top:8px}
+ @media (max-width:520px){.row3{grid-template-columns:1fr 1fr}.row3 .field:nth-child(2){grid-column:1/-1;order:-1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="brand">Edge<span>.</span></h1>
+    <nav class="tabs">
+      <a href="index.html">Board</a>
+      <a href="record.html">Record</a>
+      <a href="props.html">Props</a>
+      <a href="parlay.html" aria-current="page">Parlays</a>
+    </nav>
+  </header>
+
+  <h2 class="sec">Best parlays</h2>
+  <div class="chips" id="sizes" role="group" aria-label="Parlay size"></div>
+  <div id="parlays" style="margin-top:12px"></div>
+
+  <h2 class="sec" id="pool-h">Leg pool</h2>
+  <div class="pool" id="pool"></div>
+  <label class="toggle"><input type="checkbox" id="use-board" checked> Include game lines from the Board (spreads, totals, moneylines)</label>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+    <button type="button" class="btn" id="clear-ex" hidden>Remove examples</button>
+    <button type="button" class="btn" id="clear-all">Clear my props</button>
+  </div>
+
+  <h2 class="sec">Add a player prop</h2>
+  <p class="note" style="margin-top:0">Copy one prop from two or more of your apps: <b>both the over and the under</b> at the same line.
+  The more books, the better the fair price. Pinnacle counts triple if you can see it on an odds screen.</p>
+  <form id="f" autocomplete="off">
+    <div class="row3">
+      <div class="field"><label for="sport">Sport</label>
+        <select id="sport"><option>NFL</option><option>NBA</option><option>MLB</option><option>NHL</option></select></div>
+      <div class="field"><label for="game">Game</label><input id="game" placeholder="e.g. BUF @ NE" list="games"></div>
+      <div class="field"><label for="line">Line</label><input id="line" class="num" inputmode="decimal" placeholder="245.5"></div>
+    </div>
+    <datalist id="games"></datalist>
+    <div class="field" style="margin-top:8px"><label for="prop">Player and stat</label><input id="prop" placeholder="e.g. Josh Allen passing yards"></div>
+    <div class="books" id="books">
+      <div class="bookrow"><span class="hd">Book</span><span class="hd">Over</span><span class="hd">Under</span><span></span></div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+      <button type="button" class="btn" id="add-book">+ Book</button>
+      <button type="submit" class="btn primary" id="add-leg">Add to pool</button>
+    </div>
+    <p id="preview" class="note" style="margin-top:10px" hidden></p>
+  </form>
+
+  <h2 class="sec">How it builds them</h2>
+  <p class="note">A parlay is only worth playing when <b>every leg</b> pays more than its fair price at the same book.
+  The edges then multiply. One bad leg multiplies the book's cut instead, which is why most parlays lose money.
+  This page only combines legs that are positive at the book you'd place it at, and never two legs from the same game,
+  because books price same-game parlays differently. <b>Hit chance</b> is how often it should cash; even a good
+  4-leg parlay loses most of the time, so bet less on bigger parlays.</p>
+  <footer>Your props are saved in this browser only. Prop prices go stale fast: re-check each leg in the app before you place it.</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const BOOKS = ["DraftKings","FanDuel","BetMGM","theScore Bet","Caesars","Fanatics","bet365","BetRivers","Pinnacle","Other"];
+const MY_BOOKS = ["DraftKings","FanDuel","BetMGM","theScore Bet","Caesars","Fanatics","bet365"];
+const WEIGHT = {Pinnacle: 3};
+const KEYNAME = {draftkings:"DraftKings", fanduel:"FanDuel", betmgm:"BetMGM", espnbet:"theScore Bet",
+                 williamhill_us:"Caesars", fanatics:"Fanatics"};
+const STORE = "edge-parlay-legs";
+
+const profit = o => o > 0 ? o / 100 : 100 / Math.abs(o);
+const dec = o => 1 + profit(o);
+const implied = o => 1 / (1 + profit(o));
+const toAm = d => d >= 2 ? Math.round((d - 1) * 100) : -Math.round(100 / (d - 1));
+const fmt = o => (o > 0 ? "+" : "") + o;
+const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+const sgn = x => (x >= 0 ? "+" : "−") + Math.abs(x * 100).toFixed(1) + "%";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const gameKey = s => String(s).toLowerCase().replace(/[^a-z0-9@]/g, "");
+
+// Power method: the book's margin sits mostly on the longshot side.
+function devig(ia, ib){
+  if(ia + ib <= 1) return [ia / (ia + ib), ib / (ia + ib)];
+  let lo = 1, hi = 8, k = 1;
+  for(let i = 0; i < 60; i++){ k = (lo + hi) / 2; (ia ** k + ib ** k > 1) ? lo = k : hi = k; }
+  const a = ia ** k, b = ib ** k;
+  return [a / (a + b), b / (a + b)];
+}
+function parseOdds(s){
+  s = String(s || "").trim().replace("−", "-");
+  if(!s) return null;
+  const n = parseInt(s, 10);
+  return (!isFinite(n) || Math.abs(n) < 100) ? NaN : n;
+}
+
+/* ---------- leg pool ---------- */
+let LEGS = [], BOARD_LEGS = [], SIZE = 2;
+function load(){
+  try{ LEGS = JSON.parse(localStorage.getItem(STORE) || "null"); }catch(e){ LEGS = null; }
+  if(!Array.isArray(LEGS)) LEGS = examples();
+  const cutoff = Date.now() - 36 * 3600e3;               // props older than 36 h are stale
+  LEGS = LEGS.filter(l => l.example || l.added > cutoff);
+}
+function save(){ try{ localStorage.setItem(STORE, JSON.stringify(LEGS)); }catch(e){} }
+
+// Build two legs (over, under) from a prop's quotes at several books.
+function legsFromQuotes(sport, game, prop, line, rows, extra = {}){
+  const qs = {};
+  rows.forEach(r => { qs[r.book] = devig(implied(r.over), implied(r.under))[0]; });
+  const pOver = weighted(qs), now = Date.now();
+  const mk = (side, p, key) => ({
+    id: [sport, gameKey(game), prop.toLowerCase(), line, side].join("|"),
+    sport, game, label: `${prop} ${side === "Over" ? "o" : "u"}${line}`, side, fair: p, n: rows.length,
+    qs: Object.fromEntries(Object.entries(qs).map(([b, q]) => [b, side === "Over" ? q : 1 - q])),
+    prices: Object.fromEntries(rows.filter(r => r[key]).map(r => [r.book, r[key]])), added: now, ...extra });
+  return [mk("Over", pOver, "over"), mk("Under", 1 - pOver, "under")];
+}
+function examples(){
+  const ex = {example: true};
+  const q = (b, o, u) => ({book: b, over: o, under: u});
+  return [
+    ...legsFromQuotes("NBA", "BOS @ NYK", "Jalen Brunson points", 26.5, [q("DraftKings",+105,-130), q("FanDuel",-115,-105), q("BetMGM",-118,-102)], ex),
+    ...legsFromQuotes("NFL", "KC @ DEN", "Courtland Sutton rec yds", 58.5, [q("DraftKings",-128,+104), q("FanDuel",-110,-110), q("BetMGM",-112,-108)], ex),
+    ...legsFromQuotes("NHL", "TOR @ MTL", "Auston Matthews shots", 4.5, [q("DraftKings",+104,-128), q("FanDuel",-112,-108), q("BetMGM",-110,-110)], ex),
+    ...legsFromQuotes("MLB", "LAD @ SD", "Yu Darvish strikeouts", 5.5, [q("DraftKings",-110,-110), q("FanDuel",-112,-108), q("BetMGM",-125,+102)], ex),
+    ...legsFromQuotes("NBA", "LAL @ PHX", "Kevin Durant points", 27.5, [q("DraftKings",-115,-105), q("FanDuel",-118,-102), q("BetMGM",+100,-122)], ex),
+  ];
+}
+
+function weighted(qs, skip){
+  let acc = 0, w = 0;
+  for(const [b, q] of Object.entries(qs)) if(b !== skip){ const wt = WEIGHT[b] || 1; acc += wt * q; w += wt; }
+  return w ? acc / w : null;
+}
+// A book never judges its own price: fair at a book comes from the other books.
+function fairAt(l, book){ return (l.qs && Object.keys(l.qs).length > 1 && book in l.qs) ? weighted(l.qs, book) : l.fair; }
+function legEv(l, book){ const o = l.prices[book]; return o ? fairAt(l, book) * dec(o) - 1 : null; }
+function bestBook(l){
+  let best = null;
+  for(const [b, o] of Object.entries(l.prices)) if(MY_BOOKS.includes(b) && (!best || dec(o) > dec(best[1]))) best = [b, o];
+  return best;
+}
+function allLegs(){ return LEGS.concat($("use-board").checked ? BOARD_LEGS : []); }
+
+/* ---------- parlay search ---------- */
+function combos(arr, k, start = 0, cur = [], out = [], used = new Set()){
+  if(out.length > 20000) return out;
+  if(cur.length === k){ out.push(cur.slice()); return out; }
+  for(let i = start; i < arr.length; i++){
+    const g = arr[i].sport + gameKey(arr[i].game);
+    if(used.has(g)) continue;                              // one leg per game
+    used.add(g); cur.push(arr[i]);
+    combos(arr, k, i + 1, cur, out, used);
+    cur.pop(); used.delete(g);
+  }
+  return out;
+}
+function bestParlays(k){
+  const res = [];
+  for(const book of MY_BOOKS){
+    // Only legs that beat fair at this book, best first, capped to keep the search quick.
+    const legs = allLegs().filter(l => (legEv(l, book) ?? -1) > 0)
+      .sort((a, b) => legEv(b, book) - legEv(a, book)).slice(0, 18);
+    if(legs.length < k) continue;
+    for(const c of combos(legs, k)){
+      const p = c.reduce((m, l) => m * fairAt(l, book), 1);
+      const d = c.reduce((m, l) => m * dec(l.prices[book]), 1);
+      res.push({book, legs: c, p, d, ev: p * d - 1});
+    }
+  }
+  res.sort((a, b) => b.ev - a.ev);
+  // Don't show near-duplicates: at most two parlays sharing the same top leg.
+  const seen = {}, out = [];
+  for(const r of res){
+    const key = r.legs[0].id;
+    seen[key] = (seen[key] || 0) + 1;
+    if(seen[key] <= 2) out.push(r);
+    if(out.length === 5) break;
+  }
+  return out;
+}
+
+/* ---------- render ---------- */
+function renderParlays(){
+  $("sizes").innerHTML = [2,3,4,5].map(n => `<button type="button" data-n="${n}" aria-pressed="${n === SIZE}">${n}-leg</button>`).join("");
+  const P = bestParlays(SIZE);
+  const stake = {2: "1 unit", 3: "½ unit", 4: "¼ unit", 5: "¼ unit"}[SIZE];
+  if(!P.length){
+    const plus = new Set(allLegs().filter(l => MY_BOOKS.some(b => (legEv(l, b) ?? -1) > 0)).map(l => l.sport + gameKey(l.game))).size;
+    $("parlays").innerHTML = `<p class="empty">No ${SIZE}-leg parlay where every leg beats fair at one book. You have positive legs in
+      ${plus} different game${plus === 1 ? "" : "s"}; a ${SIZE}-leg needs ${SIZE}, all at the same book. Add more props below,
+      or drop to a smaller parlay. No bet beats a bad bet.</p>`;
+    return;
+  }
+  $("parlays").innerHTML = P.map(r => `<article class="parlay">
+    <div class="top"><div><span class="odds">${fmt(toAm(r.d))}</span> <span style="color:var(--muted)">at <b style="color:var(--ink)">${esc(r.book)}</b></span></div>
+      <span class="pill">${sgn(r.ev)}</span></div>
+    <ol>${r.legs.map(l => `<li>${esc(l.label)} <small>${fmt(l.prices[r.book])} · fair ${pct(fairAt(l, r.book), 0)} · ${esc(l.sport)} ${esc(l.game)}</small>${l.example ? ' <span class="tag moved">example</span>' : ""}</li>`).join("")}</ol>
+    <div class="meta"><span>Hit chance <b>${pct(r.p)}</b></span><span>$10 pays <b>$${(10 * r.d).toFixed(2)}</b></span>
+      <span>Expected profit per $10 <b>${r.ev >= 0 ? "+" : "−"}$${Math.abs(10 * r.ev).toFixed(2)}</b></span><span>Suggested stake <b>${stake}</b></span></div>
+  </article>`).join("");
+}
+
+function renderPool(){
+  const L = allLegs().map(l => ({l, bb: bestBook(l)})).filter(x => x.bb)
+    .map(x => ({...x, ev: legEv(x.l, x.bb[0])})).sort((a, b) => b.ev - a.ev);
+  const mine = LEGS.length, board = $("use-board").checked ? BOARD_LEGS.length : 0;
+  $("pool-h").textContent = `Leg pool · ${mine} prop side${mine === 1 ? "" : "s"}${board ? ` + ${board} game line${board === 1 ? "" : "s"}` : ""}`;
+  $("clear-ex").hidden = !LEGS.some(l => l.example);
+  if(!L.length){ $("pool").innerHTML = `<p class="empty">No legs yet. Add a prop below.</p>`; return; }
+  // Show positive legs, plus a count of the rest.
+  const pos = L.filter(x => x.ev > 0), neg = L.length - pos.length;
+  $("pool").innerHTML = pos.map(({l, bb, ev}) => `<div class="leg">
+      <span class="tag">${esc(l.sport)}</span>
+      <span class="what"><b>${esc(l.label)}</b>${l.example ? ' <span class="tag moved">example</span>' : ""}<small>${esc(l.game)} · fair ${pct(fairAt(l, bb[0]), 1)} · ${l.n} book${l.n === 1 ? "" : "s"}${l.source === "board" ? " · from Board" : ""}</small></span>
+      <span class="num">${fmt(bb[1])}<br><small style="color:var(--muted)">${esc(bb[0])}</small></span>
+      <span class="pill ${ev >= .025 ? "" : "mid"}">${sgn(ev)}</span>
+      ${l.source !== "board" ? `<button type="button" class="x" data-del="${esc(l.id)}" aria-label="Remove">×</button>` : "<span></span>"}
+      ${l.n < 3 && l.source !== "board" ? `<span class="ex">Only ${l.n} books; the fair price is rough. Add a third if you can.</span>` : ""}
+    </div>`).join("") + (neg ? `<p class="empty" style="padding:6px 0">${neg} more side${neg === 1 ? "" : "s"} priced at or below fair everywhere; left out.</p>` : "");
+}
+function render(){ renderPool(); renderParlays(); }
+
+/* ---------- add-prop form ---------- */
+let seq = 0;
+function addRow(book = "", o = "", u = ""){
+  const i = seq++, row = document.createElement("div");
+  row.className = "bookrow";
+  row.innerHTML = `<select id="b${i}" aria-label="Book">${BOOKS.map(b => `<option${b === book ? " selected" : ""}>${b}</option>`).join("")}</select>
+    <input id="o${i}" class="num" placeholder="−115" aria-label="Over odds" value="${esc(o)}">
+    <input id="u${i}" class="num" placeholder="−105" aria-label="Under odds" value="${esc(u)}">
+    <button type="button" class="x" aria-label="Remove book">×</button>`;
+  row.querySelector(".x").onclick = () => { row.remove(); preview(); };
+  $("books").appendChild(row);
+}
+function formRows(){
+  return [...document.querySelectorAll("#books .bookrow")].slice(1).map(r => {
+    const [s, o, u] = r.querySelectorAll("select,input");
+    return {book: s.value, over: parseOdds(o.value), under: parseOdds(u.value)};
+  });
+}
+function readForm(){
+  const rows = formRows();
+  if(rows.some(r => Number.isNaN(r.over) || Number.isNaN(r.under))) return {err: "An odds box has something that isn't American odds. Use numbers like −115 or +105."};
+  const two = rows.filter(r => r.over && r.under);
+  const game = $("game").value.trim(), prop = $("prop").value.trim(), line = $("line").value.trim();
+  if(!game || !prop || !line) return {err: "Fill in the game, the player and stat, and the line."};
+  if(two.length < 2) return {err: "Enter the over and under from at least two books."};
+  return {legs: legsFromQuotes($("sport").value, game, prop, line, two)};
+}
+function preview(){
+  const r = readForm(), el = $("preview");
+  if(r.err){ el.hidden = !($("prop").value || $("game").value); el.textContent = r.err; return; }
+  el.hidden = false;
+  el.innerHTML = r.legs.map(l => { const bb = bestBook(l); const ev = bb ? legEv(l, bb[0]) : null;
+    return `<b>${esc(l.side)}</b> fair ${pct(bb ? fairAt(l, bb[0]) : l.fair)} · best ${bb ? `${fmt(bb[1])} at ${esc(bb[0])} (${sgn(ev)})` : "none at your books"}`; }).join("<br>");
+}
+$("f").addEventListener("input", preview);
+$("f").addEventListener("submit", e => {
+  e.preventDefault();
+  const r = readForm();
+  if(r.err){ $("preview").hidden = false; $("preview").textContent = r.err; return; }
+  const ids = new Set(r.legs.map(l => l.id));
+  LEGS = LEGS.filter(l => !ids.has(l.id)).concat(r.legs);
+  save(); render();
+  $("prop").value = $("line").value = "";
+  document.querySelectorAll("#books .bookrow input").forEach(i => i.value = "");
+  $("preview").hidden = false;
+  $("preview").textContent = "Added. Both sides are in the pool; only a side that beats fair somewhere gets used.";
+  $("prop").focus();
+});
+$("add-book").onclick = () => addRow(BOOKS[Math.min(formRows().length, BOOKS.length - 1)]);
+$("pool").onclick = e => { const b = e.target.closest("[data-del]"); if(!b) return;
+  const base = b.dataset.del.split("|").slice(0, 4).join("|");
+  LEGS = LEGS.filter(l => l.id.split("|").slice(0, 4).join("|") !== base); save(); render(); };
+$("sizes").onclick = e => { const b = e.target.closest("button"); if(b){ SIZE = +b.dataset.n; renderParlays(); } };
+$("use-board").onchange = render;
+$("clear-ex").onclick = () => { LEGS = LEGS.filter(l => !l.example); save(); render(); };
+let armed = null;
+$("clear-all").onclick = () => {
+  const b = $("clear-all");
+  if(armed){ clearTimeout(armed); armed = null; LEGS = []; save(); render(); b.textContent = "Clear my props"; return; }
+  b.textContent = "Tap again to clear"; armed = setTimeout(() => { armed = null; b.textContent = "Clear my props"; }, 4000);
+};
+
+/* ---------- game lines from the Board ---------- */
+function boardLegs(B){
+  const out = [], now = Date.now();
+  for(const [key, s] of Object.entries(B.sports || {})){
+    for(const r of (s.flags || []).concat(s.watch || [])){
+      if(new Date(r.commence) <= now) continue;
+      const prices = {};
+      prices[KEYNAME[r.book] || r.book] = r.price;
+      (r.others || []).forEach(([b, p]) => { if(KEYNAME[b]) prices[KEYNAME[b]] = p; });
+      const label = r.market === "totals" ? `${r.side} ${r.point}` : r.market === "h2h" ? `${r.side} ML` : `${r.side} ${r.point > 0 ? "+" : ""}${r.point}`;
+      out.push({id: `board|${r.away}@${r.home}|${r.market}|${r.side}`, sport: s.label, game: `${r.away} @ ${r.home}`,
+                label, fair: r.fair_p, n: r.n_books, prices, source: "board"});
+    }
+  }
+  return out;
+}
+
+for(const [b, o, u] of [["DraftKings"], ["FanDuel"], ["BetMGM"]]) addRow(b, o, u);
+load(); render();
+fetch("data/board.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(B => {
+  if(!B) return;
+  BOARD_LEGS = boardLegs(B);
+  render();
+}).catch(() => {});
+</script>
+</body>
+</html>
