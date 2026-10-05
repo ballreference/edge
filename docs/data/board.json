@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T01:00:34Z",
+ "generated": "2026-10-05T07:08:50Z",
  "credits": {
   "remaining": 485,
   "used": 15
@@ -112,55 +112,9 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-10-05T01:00:34Z",
-   "games": 12,
+   "games": 11,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Vegas Golden Knights",
-     "point": -1.5,
-     "book": "espnbet",
-     "price": 100,
-     "fair_p": 0.512,
-     "fair_odds": -105,
-     "ev": 0.0241,
-     "n_books": 8,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "pinnacle",
-       -107
-      ],
-      [
-       "hardrockbet",
-       -110
-      ],
-      [
-       "draftkings",
-       -115
-      ],
-      [
-       "bovada",
-       -117
-      ],
-      [
-       "betonlineag",
-       -118
-      ],
-      [
-       "lowvig",
-       -118
-      ]
-     ],
-     "home": "Vancouver Canucks",
-     "away": "Vegas Golden Knights",
-     "commence": "2026-10-05T01:10:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
