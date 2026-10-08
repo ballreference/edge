@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T22:02:35Z",
+ "generated": "2026-10-08T02:00:51Z",
  "credits": {
   "remaining": 470,
   "used": 30
@@ -109,14 +109,14 @@
   "mlb": {
    "label": "MLB",
    "last_pull": "2026-10-07T22:02:35Z",
-   "games": 3,
+   "games": 0,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-10-07T01:37:00Z",
-   "games": 6,
+   "games": 3,
    "flags": [],
    "watch": []
   }
