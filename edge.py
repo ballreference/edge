@@ -355,7 +355,12 @@ def due_pull(ctx: Ctx, sport: str, sc: dict, events: list) -> str | None:
     closes = ctx.state["close_pulls"].get(sport, {}).get(today, 0)
     if soon and since >= timedelta(minutes=45) and closes < sc["max_close_pulls_per_day"]:
         return "close"
-    if ctx.local(now).hour in sc["routine_hours"] and since >= timedelta(hours=3):
+    # GitHub runs the hourly schedule only a few times a day, at uneven times,
+    # so "pull during hour 10" misses for days. Pull on the first run at or
+    # after the routine hour once 20 hours have passed, and never go 30 without.
+    if since >= timedelta(hours=20) and ctx.local(now).hour >= min(sc["routine_hours"]):
+        return "routine"
+    if since >= timedelta(hours=30):
         return "routine"
     if last is None:
         return "routine"
