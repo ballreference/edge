@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-10T13:47:56Z",
+ "generated": "2026-10-10T18:40:39Z",
  "credits": {
-  "remaining": 446,
-  "used": 54
+  "remaining": 437,
+  "used": 63
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-05 18:42 nhl: close pull, 17 games, 0 new flag(s), 479 credits left",
-  "10-06 17:41 mlb: close pull, 4 games, 0 new flag(s), 476 credits left",
-  "10-06 21:37 nhl: close pull, 15 games, 0 new flag(s), 473 credits left",
   "10-07 18:02 mlb: close pull, 4 games, 0 new flag(s), 470 credits left",
   "10-08 05:05 nfl: routine pull, 29 games, 0 new flag(s), 467 credits left",
   "10-08 05:05 nhl: routine pull, 11 games, 0 new flag(s), 464 credits left",
@@ -38,7 +35,10 @@
   "10-08 18:08 nhl: close pull, 15 games, 0 new flag(s), 455 credits left",
   "10-09 16:58 nfl: routine pull, 26 games, 0 new flag(s), 452 credits left",
   "10-09 16:58 mlb: routine pull, 2 games, 0 new flag(s), 449 credits left",
-  "10-09 16:58 nhl: close pull, 18 games, 0 new flag(s), 446 credits left"
+  "10-09 16:58 nhl: close pull, 18 games, 0 new flag(s), 446 credits left",
+  "10-10 14:40 nfl: routine pull, 26 games, 0 new flag(s), 443 credits left",
+  "10-10 14:40 mlb: routine pull, 2 games, 0 new flag(s), 440 credits left",
+  "10-10 14:40 nhl: close pull, 17 games, 0 new flag(s), 437 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,7 +59,7 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-09T20:58:18Z",
+   "last_pull": "2026-10-10T18:40:39Z",
    "games": 26,
    "flags": [],
    "watch": []
@@ -73,63 +73,17 @@
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-09T20:58:18Z",
+   "last_pull": "2026-10-10T18:40:39Z",
    "games": 2,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-09T20:58:18Z",
-   "games": 14,
+   "last_pull": "2026-10-10T18:40:39Z",
+   "games": 16,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Vancouver Canucks",
-     "point": 1.5,
-     "book": "betmgm",
-     "price": -105,
-     "fair_p": 0.5176,
-     "fair_odds": -107,
-     "ev": 0.0105,
-     "n_books": 8,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "hardrockbet",
-       -105
-      ],
-      [
-       "pinnacle",
-       -112
-      ],
-      [
-       "espnbet",
-       -115
-      ],
-      [
-       "draftkings",
-       -118
-      ],
-      [
-       "fanduel",
-       -118
-      ],
-      [
-       "betrivers",
-       -121
-      ]
-     ],
-     "home": "New Jersey Devils",
-     "away": "Vancouver Canucks",
-     "commence": "2026-10-10T19:40:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
