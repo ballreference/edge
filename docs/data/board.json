@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-11T20:21:35Z",
+ "generated": "2026-10-11T23:44:56Z",
  "credits": {
-  "remaining": 420,
-  "used": 80
+  "remaining": 414,
+  "used": 86
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,8 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-09 16:58 mlb: routine pull, 2 games, 0 new flag(s), 449 credits left",
-  "10-09 16:58 nhl: close pull, 18 games, 0 new flag(s), 446 credits left",
   "10-10 14:40 nfl: routine pull, 26 games, 0 new flag(s), 443 credits left",
   "10-10 14:40 mlb: routine pull, 2 games, 0 new flag(s), 440 credits left",
   "10-10 14:40 nhl: close pull, 17 games, 0 new flag(s), 437 credits left",
@@ -38,7 +36,9 @@
   "10-11 11:46 nhl: routine pull, 3 games, 0 new flag(s), 428 credits left",
   "10-11 16:21 nfl: 0 closing line(s) recorded, 1 graded",
   "10-11 16:21 mlb: routine pull, 2 games, 0 new flag(s), 423 credits left",
-  "10-11 16:21 nhl: close pull, 6 games, 0 new flag(s), 420 credits left"
+  "10-11 16:21 nhl: close pull, 6 games, 0 new flag(s), 420 credits left",
+  "10-11 19:44 nfl: close pull, 17 games, 0 new flag(s), 417 credits left",
+  "10-11 19:44 mlb: close pull, 2 games, 0 new flag(s), 414 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,8 +59,8 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-11T15:46:22Z",
-   "games": 14,
+   "last_pull": "2026-10-11T23:44:55Z",
+   "games": 16,
    "flags": [],
    "watch": []
   },
@@ -73,60 +73,15 @@
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-11T20:21:35Z",
+   "last_pull": "2026-10-11T23:44:56Z",
    "games": 2,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Milwaukee Brewers",
-     "point": 1.5,
-     "book": "fanduel",
-     "price": -182,
-     "fair_p": 0.6521,
-     "fair_odds": -187,
-     "ev": 0.0104,
-     "n_books": 8,
-     "sharps": [
-      "lowvig",
-      "betonlineag"
-     ],
-     "others": [
-      [
-       "draftkings",
-       -188
-      ],
-      [
-       "hardrockbet",
-       -195
-      ],
-      [
-       "betmgm",
-       -200
-      ],
-      [
-       "bovada",
-       -200
-      ],
-      [
-       "betrivers",
-       -200
-      ],
-      [
-       "lowvig",
-       -209
-      ]
-     ],
-     "home": "Milwaukee Brewers",
-     "away": "Los Angeles Dodgers",
-     "commence": "2026-10-12T00:00:00Z"
-    }
-   ]
+   "watch": []
   },
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-10-11T20:21:35Z",
-   "games": 6,
+   "games": 3,
    "flags": [],
    "watch": []
   }
