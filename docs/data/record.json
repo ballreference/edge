@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T08:59:32Z",
+ "generated": "2026-10-11T15:46:22Z",
  "overall": {
   "n": 0,
   "w": 0,
@@ -39,11 +39,17 @@
    ],
    "flagged_at": "2026-10-04T13:15:44Z",
    "last_ev": 0.0379,
-   "status": "open",
+   "status": "closed",
    "result": null,
    "units": null,
    "final": null,
-   "close": null,
+   "close": {
+    "pulled_at": "2026-10-10T18:40:39Z",
+    "mins_before": 1129,
+    "later": true,
+    "point": -7.5,
+    "beat": true
+   },
    "others": [
     [
      "lowvig",
