@@ -1,23 +1,69 @@
 {
- "generated": "2026-10-11T15:46:22Z",
+ "generated": "2026-10-11T20:21:35Z",
  "overall": {
-  "n": 0,
+  "n": 1,
   "w": 0,
-  "l": 0,
+  "l": 1,
   "p": 0,
-  "win_pct": null,
-  "expected_pct": null,
-  "units": 0,
-  "roi": null,
-  "avg_ev": null,
-  "clv_n": 0,
-  "beat_close_pct": null,
+  "win_pct": 0.0,
+  "expected_pct": 0.5241,
+  "units": -1.0,
+  "roi": -1.0,
+  "avg_ev": 0.0379,
+  "clv_n": 1,
+  "beat_close_pct": 1.0,
   "avg_clv": null
  },
- "by_sport": {},
- "by_market": {},
- "by_ev": {},
- "pending": [
+ "by_sport": {
+  "NFL": {
+   "n": 1,
+   "w": 0,
+   "l": 1,
+   "p": 0,
+   "win_pct": 0.0,
+   "expected_pct": 0.5241,
+   "units": -1.0,
+   "roi": -1.0,
+   "avg_ev": 0.0379,
+   "clv_n": 1,
+   "beat_close_pct": 1.0,
+   "avg_clv": null
+  }
+ },
+ "by_market": {
+  "spreads": {
+   "n": 1,
+   "w": 0,
+   "l": 1,
+   "p": 0,
+   "win_pct": 0.0,
+   "expected_pct": 0.5241,
+   "units": -1.0,
+   "roi": -1.0,
+   "avg_ev": 0.0379,
+   "clv_n": 1,
+   "beat_close_pct": 1.0,
+   "avg_clv": null
+  }
+ },
+ "by_ev": {
+  "2.5\u20134%": {
+   "n": 1,
+   "w": 0,
+   "l": 1,
+   "p": 0,
+   "win_pct": 0.0,
+   "expected_pct": 0.5241,
+   "units": -1.0,
+   "roi": -1.0,
+   "avg_ev": 0.0379,
+   "clv_n": 1,
+   "beat_close_pct": 1.0,
+   "avg_clv": null
+  }
+ },
+ "pending": [],
+ "recent": [
   {
    "id": "21b26266f3d78af02eb672e606275d95|spreads|Jacksonville Jaguars",
    "sport": "nfl",
@@ -39,10 +85,10 @@
    ],
    "flagged_at": "2026-10-04T13:15:44Z",
    "last_ev": 0.0379,
-   "status": "closed",
-   "result": null,
-   "units": null,
-   "final": null,
+   "status": "graded",
+   "result": "L",
+   "units": -1.0,
+   "final": "Philadelphia Eagles 17 @ Jacksonville Jaguars 19",
    "close": {
     "pulled_at": "2026-10-10T18:40:39Z",
     "mins_before": 1129,
@@ -62,6 +108,5 @@
    ],
    "book_name": "DraftKings"
   }
- ],
- "recent": []
+ ]
 }

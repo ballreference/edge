@@ -34,14 +34,17 @@
    "last_seen": "2026-10-04T13:15:44Z",
    "last_ev": 0.0379,
    "peak_ev": 0.0379,
-   "status": "closed",
+   "status": "graded",
    "close": {
     "pulled_at": "2026-10-10T18:40:39Z",
     "mins_before": 1129,
     "later": true,
     "point": -7.5,
     "beat": true
-   }
+   },
+   "result": "L",
+   "units": -1.0,
+   "final": "Philadelphia Eagles 17 @ Jacksonville Jaguars 19"
   }
  ]
 }
