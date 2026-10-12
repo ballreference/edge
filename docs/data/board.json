@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-12T06:06:28Z",
+ "generated": "2026-10-12T15:37:39Z",
  "credits": {
-  "remaining": 414,
-  "used": 86
+  "remaining": 411,
+  "used": 89
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-10 14:40 nfl: routine pull, 26 games, 0 new flag(s), 443 credits left",
   "10-10 14:40 mlb: routine pull, 2 games, 0 new flag(s), 440 credits left",
   "10-10 14:40 nhl: close pull, 17 games, 0 new flag(s), 437 credits left",
   "10-10 18:37 mlb: close pull, 2 games, 0 new flag(s), 434 credits left",
@@ -38,7 +37,8 @@
   "10-11 16:21 mlb: routine pull, 2 games, 0 new flag(s), 423 credits left",
   "10-11 16:21 nhl: close pull, 6 games, 0 new flag(s), 420 credits left",
   "10-11 19:44 nfl: close pull, 17 games, 0 new flag(s), 417 credits left",
-  "10-11 19:44 mlb: close pull, 2 games, 0 new flag(s), 414 credits left"
+  "10-11 19:44 mlb: close pull, 2 games, 0 new flag(s), 414 credits left",
+  "10-12 11:37 nhl: close pull, 3 games, 0 new flag(s), 411 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -80,7 +80,7 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-11T20:21:35Z",
+   "last_pull": "2026-10-12T15:37:39Z",
    "games": 3,
    "flags": [],
    "watch": []
