@@ -1,17 +1,17 @@
 {
- "credits_remaining": 411,
- "credits_used": 89,
+ "credits_remaining": 405,
+ "credits_used": 95,
  "last_pull": {
-  "nfl": "2026-10-11T23:44:55Z",
-  "mlb": "2026-10-11T23:44:56Z",
+  "nfl": "2026-10-12T23:02:13Z",
+  "mlb": "2026-10-12T23:02:13Z",
   "nhl": "2026-10-12T15:37:39Z"
  },
  "close_pulls": {
   "mlb": {
-   "2026-10-11": 1
+   "2026-10-12": 1
   },
   "nfl": {
-   "2026-10-11": 2
+   "2026-10-12": 1
   },
   "nhl": {
    "2026-10-12": 1
@@ -54,7 +54,9 @@
   "10-11 16:21 nhl: close pull, 6 games, 0 new flag(s), 420 credits left",
   "10-11 19:44 nfl: close pull, 17 games, 0 new flag(s), 417 credits left",
   "10-11 19:44 mlb: close pull, 2 games, 0 new flag(s), 414 credits left",
-  "10-12 11:37 nhl: close pull, 3 games, 0 new flag(s), 411 credits left"
+  "10-12 11:37 nhl: close pull, 3 games, 0 new flag(s), 411 credits left",
+  "10-12 19:02 nfl: close pull, 15 games, 0 new flag(s), 408 credits left",
+  "10-12 19:02 mlb: close pull, 2 games, 0 new flag(s), 405 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -72,6 +74,6 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-10-12T15:37:39Z",
+ "last_run": "2026-10-12T23:02:13Z",
  "last_errors": []
 }
