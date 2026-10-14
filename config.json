@@ -1,46 +1,161 @@
 {
   "timezone": "America/Detroit",
-
   "_books_note": "Caesars (williamhill_us) and Fanatics (fanatics) are paid-plan only on The Odds API. Add them back here and to my_books after upgrading.",
-  "books": ["draftkings", "fanduel", "betmgm", "espnbet",
-            "pinnacle", "lowvig", "betonlineag", "betrivers", "hardrockbet", "bovada"],
-  "my_books": ["draftkings", "fanduel", "betmgm", "espnbet"],
+  "books": [
+    "draftkings",
+    "fanduel",
+    "betmgm",
+    "espnbet",
+    "pinnacle",
+    "lowvig",
+    "betonlineag",
+    "betrivers",
+    "hardrockbet",
+    "bovada"
+  ],
+  "my_books": [
+    "draftkings",
+    "fanduel",
+    "betmgm",
+    "espnbet"
+  ],
   "book_names": {
-    "draftkings": "DraftKings", "fanduel": "FanDuel", "betmgm": "BetMGM",
-    "williamhill_us": "Caesars", "fanatics": "Fanatics", "espnbet": "theScore Bet",
-    "pinnacle": "Pinnacle", "lowvig": "LowVig", "betonlineag": "BetOnline", "betrivers": "BetRivers",
-    "hardrockbet": "Hard Rock", "bovada": "Bovada"
+    "draftkings": "DraftKings",
+    "fanduel": "FanDuel",
+    "betmgm": "BetMGM",
+    "williamhill_us": "Caesars",
+    "fanatics": "Fanatics",
+    "espnbet": "theScore Bet",
+    "pinnacle": "Pinnacle",
+    "lowvig": "LowVig",
+    "betonlineag": "BetOnline",
+    "betrivers": "BetRivers",
+    "hardrockbet": "Hard Rock",
+    "bovada": "Bovada"
   },
-  "sharp_weights": {"pinnacle": 3.0, "lowvig": 1.5, "betonlineag": 1.5},
-
+  "sharp_weights": {
+    "pinnacle": 3.0,
+    "lowvig": 1.5,
+    "betonlineag": 1.5
+  },
   "min_ev": 0.025,
   "max_ev": 0.15,
   "min_books_for_fair": 2,
   "min_books_without_sharp": 5,
   "watch_ev": 0.01,
-
   "credit_reserve": 30,
   "grade_every_hours": 18,
   "sports": {
-    "nfl": {"key": "americanfootball_nfl", "label": "NFL", "enabled": true,
-            "markets": ["spreads", "totals", "h2h"],
-            "lookahead_hours": 168, "routine_hours": [10],
-            "close_window_min": 180, "max_close_pulls_per_day": 3,
-            "grade_after_hours": 4},
-    "nba": {"key": "basketball_nba", "label": "NBA", "enabled": true,
-            "markets": ["spreads", "totals", "h2h"],
-            "lookahead_hours": 30, "routine_hours": [11],
-            "close_window_min": 180, "max_close_pulls_per_day": 1,
-            "grade_after_hours": 3.5},
-    "mlb": {"key": "baseball_mlb", "label": "MLB", "enabled": true,
-            "markets": ["spreads", "totals", "h2h"],
-            "lookahead_hours": 30, "routine_hours": [11],
-            "close_window_min": 180, "max_close_pulls_per_day": 1,
-            "grade_after_hours": 4},
-    "nhl": {"key": "icehockey_nhl", "label": "NHL", "enabled": true,
-            "markets": ["spreads", "totals", "h2h"],
-            "lookahead_hours": 30, "routine_hours": [11],
-            "close_window_min": 180, "max_close_pulls_per_day": 1,
-            "grade_after_hours": 3.5}
+    "nfl": {
+      "key": "americanfootball_nfl",
+      "label": "NFL",
+      "enabled": true,
+      "markets": [
+        "spreads",
+        "totals",
+        "h2h"
+      ],
+      "lookahead_hours": 168,
+      "routine_hours": [
+        10
+      ],
+      "close_window_min": 180,
+      "max_close_pulls_per_day": 3,
+      "grade_after_hours": 4
+    },
+    "nba": {
+      "key": "basketball_nba",
+      "label": "NBA",
+      "enabled": true,
+      "markets": [
+        "spreads",
+        "totals",
+        "h2h"
+      ],
+      "lookahead_hours": 30,
+      "routine_hours": [
+        11
+      ],
+      "close_window_min": 180,
+      "max_close_pulls_per_day": 1,
+      "grade_after_hours": 3.5
+    },
+    "mlb": {
+      "key": "baseball_mlb",
+      "label": "MLB",
+      "enabled": true,
+      "markets": [
+        "spreads",
+        "totals",
+        "h2h"
+      ],
+      "lookahead_hours": 30,
+      "routine_hours": [
+        11
+      ],
+      "close_window_min": 180,
+      "max_close_pulls_per_day": 1,
+      "grade_after_hours": 4
+    },
+    "nhl": {
+      "key": "icehockey_nhl",
+      "label": "NHL",
+      "enabled": true,
+      "markets": [
+        "spreads",
+        "totals",
+        "h2h"
+      ],
+      "lookahead_hours": 30,
+      "routine_hours": [
+        11
+      ],
+      "close_window_min": 180,
+      "max_close_pulls_per_day": 1,
+      "grade_after_hours": 3.5
+    }
+  },
+  "props": {
+    "_note": "Player props, pulled once a day per sport for that day's games. Each prop type in each game costs 1 credit. NFL goes first; the others only while the month's prop spending is on pace.",
+    "enabled": true,
+    "monthly_budget": 180,
+    "keep_free": 80,
+    "pull_after_hour": 9,
+    "min_books": 3,
+    "min_ev": 0.01,
+    "parlay_legs_max": 16,
+    "sports": {
+      "nfl": {
+        "markets": [
+          "player_pass_yds",
+          "player_rush_yds",
+          "player_reception_yds"
+        ],
+        "max_events": 16,
+        "priority": 1
+      },
+      "nba": {
+        "markets": [
+          "player_points",
+          "player_rebounds"
+        ],
+        "max_events": 3,
+        "priority": 2
+      },
+      "nhl": {
+        "markets": [
+          "player_shots_on_goal"
+        ],
+        "max_events": 4,
+        "priority": 3
+      },
+      "mlb": {
+        "markets": [
+          "pitcher_strikeouts"
+        ],
+        "max_events": 2,
+        "priority": 4
+      }
+    }
   }
 }

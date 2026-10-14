@@ -43,6 +43,17 @@
     </nav>
   </header>
 
+  <section id="auto">
+    <h2 class="sec">Today's props · automatic</h2>
+    <p class="status" id="auto-status" style="padding:0">Loading today's props…</p>
+    <div class="chips" id="auto-sizes" role="group" aria-label="Parlay size" style="margin-top:10px"></div>
+    <div id="auto-parlays" style="margin-top:12px"></div>
+    <details id="auto-legs-box" style="margin-top:12px">
+      <summary style="cursor:pointer;font-size:13.5px;color:var(--muted);padding:6px 0">Every leg with an edge today</summary>
+      <div class="pool" id="auto-legs"></div>
+    </details>
+  </section>
+
   <p class="note" style="margin-top:16px">Want Claude to research your props for you? Use
   <a href="https://claude.ai/artifact/MBNJRdA6NpfGnoZaj6BAuD" target="_blank" rel="noopener"><b>Parlay Lab</b></a>:
   paste or screenshot props from one app and it grades each one and builds the parlays. This page is for comparing prices you copy from several apps.</p>
@@ -332,6 +343,45 @@ function boardLegs(B){
 
 for(const [b, o, u] of [["DraftKings"], ["FanDuel"], ["BetMGM"]]) addRow(b, o, u);
 load(); render();
+/* ---------- today's props, pulled automatically by Edge ---------- */
+let AUTO = null, AUTO_SIZE = 2;
+const legText = l => `${l.player} ${l.side === "Over" ? "o" : "u"}${l.line} ${l.prop}`;
+function renderAuto(){
+  const A = AUTO, st = $("auto-status");
+  if(!A){ st.textContent = "No props pulled yet. Edge pulls them each morning for that day's games."; return; }
+  const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/Detroit"});
+  const sports = Object.keys(A.pulled || {});
+  if(A.error){ st.textContent = A.error; return; }
+  if(A.date !== today || !sports.length){
+    st.textContent = "No props for today yet. They're pulled once a day, after 9 AM, for games that day.";
+    $("auto-sizes").innerHTML = ""; $("auto-parlays").innerHTML = ""; $("auto-legs-box").hidden = true; return;
+  }
+  const bn = k => (A.book_names || {})[k] || k;
+  st.innerHTML = `${sports.join(", ")} · ${A.n_legs} props across your books · <b>${A.n_good}</b> priced better than fair
+    · props credits this month ${A.budget.spent}/${A.monthly_budget}`;
+  $("auto-sizes").innerHTML = [2,3,4,5].map(n => `<button type="button" data-n="${n}" aria-pressed="${n === AUTO_SIZE}">${n}-leg</button>`).join("");
+  const byId = {}; A.legs.forEach(l => byId[l.id] = l);
+  const P = (A.parlays[String(AUTO_SIZE)] || []).filter(r => r.legs.every(i => byId[i]));
+  const stake = {2: "1 unit", 3: "½ unit", 4: "¼ unit", 5: "¼ unit"}[AUTO_SIZE];
+  $("auto-parlays").innerHTML = P.length ? P.map((r, i) => `<article class="parlay">
+      <div class="top"><div><span class="odds">${fmt(r.odds)}</span> <span style="color:var(--muted)">at <b style="color:var(--ink)">${esc(bn(r.book))}</b>
+        · ${r.safest ? "most likely to hit" : i === 0 ? "best value" : "also good"}</span></div><span class="pill">${sgn(r.ev)}</span></div>
+      <ol>${r.legs.map(id => { const l = byId[id]; return `<li>${esc(legText(l))} <small>${fmt(l.price)} · hits ${pct(l.fair_p, 0)} · ${esc(l.sport)} ${esc(l.game)}</small></li>`; }).join("")}</ol>
+      <div class="meta"><span>Hit chance <b>${pct(r.p)}</b></span><span>$10 pays <b>$${(10 * r.decimal).toFixed(2)}</b></span>
+        <span>Expected per $10 <b>+$${(10 * r.ev).toFixed(2)}</b></span><span>Stake <b>${stake}</b></span></div>
+    </article>`).join("")
+    : `<p class="empty">No ${AUTO_SIZE}-leg parlay today where every leg beats fair at one book, from ${AUTO_SIZE} different games. Try a smaller size; no bet beats a bad bet.</p>`;
+  const good = A.legs.filter(l => l.ev >= 0.01).slice(0, 25);
+  $("auto-legs-box").hidden = !good.length;
+  $("auto-legs").innerHTML = good.map(l => `<div class="leg">
+      <span class="tag">${esc(l.sport)}</span>
+      <span class="what"><b>${esc(legText(l))}</b>${l.suspect ? ' <span class="tag moved">check price</span>' : ""}<small>${esc(l.game)} · fair ${fmt(l.fair_odds)} (${pct(l.fair_p, 0)}) · ${l.n_books} books</small></span>
+      <span class="num">${fmt(l.price)}<br><small style="color:var(--muted)">${esc(bn(l.book))}</small></span>
+      <span class="pill ${l.ev >= .025 ? "" : "mid"}">${sgn(l.ev)}</span><span></span>
+    </div>`).join("");
+}
+$("auto-sizes").onclick = e => { const b = e.target.closest("button"); if(b){ AUTO_SIZE = +b.dataset.n; renderAuto(); } };
+fetch("data/props.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(d => { AUTO = d; renderAuto(); }).catch(() => renderAuto());
 fetch("data/board.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(B => {
   if(!B) return;
   BOARD_LEGS = boardLegs(B);

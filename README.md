@@ -35,6 +35,15 @@ Pinnacle, LowVig, BetOnline, BetRivers, Hard Rock and Bovada are pulled only to 
 
 All thresholds are in `config.json`.
 
+## Player props
+
+Each morning after 9 AM, Edge pulls player props for that day's games (NFL pass/rush/receiving yards,
+NBA points and rebounds, NHL shots, MLB strikeouts), one credit per prop type per game. Each prop's fair
+chance comes from the other books' prices with the vig removed; the Parlays page then shows the best
+2-5 leg parlays where every leg beats fair at the same book and no two legs share a game.
+Props spending is capped at `props.monthly_budget` (180) a month, NFL first, and stops while fewer than
+`props.keep_free` (80) credits are left, so the game lines never run out.
+
 ## Credits
 
 Asking for 10 specific books costs the same as one region, so a pull is 3 credits (spreads, totals, moneylines).

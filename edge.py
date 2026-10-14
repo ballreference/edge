@@ -567,11 +567,219 @@ def run(ctx: Ctx) -> int:
         except (OSError, ValueError, KeyError) as e:
             ctx.note(f"{sport}: {type(e).__name__}: {e}")
             errors.append(f"{sport}: {e}")
+    pc = ctx.cfg.get("props", {})
+    if pc.get("enabled"):
+        for sport, psc in sorted(pc["sports"].items(), key=lambda kv: kv[1].get("priority", 9)):
+            sc = ctx.cfg["sports"].get(sport)
+            if not sc or not sc.get("enabled") or not props_due(ctx, sport):
+                continue
+            if not props_on_pace(ctx, psc.get("priority", 9)):
+                continue
+            try:
+                events = ctx.get(f"/sports/{sc['key']}/events", {"dateFormat": "iso"})
+                pull_props(ctx, sport, sc, events)
+            except ApiError as e:
+                ctx.note(f"{sport} props: {e}")
     ctx.state["last_run"] = iso(ctx.now())
     ctx.state["last_errors"] = errors
     ctx.save()
     build_site(ctx)
+    try:
+        build_props_site(ctx)
+    except Exception as e:  # props page must never break the main run
+        ctx.note(f"props page: {type(e).__name__}: {e}")
+        ctx.save()
     return 1 if errors and len(errors) == sum(1 for s in ctx.cfg["sports"].values() if s.get("enabled")) else 0
+
+
+
+# --------------------------------------------------------------------------- #
+# Player props: one pull a day per sport for today's games, then the best
+# 2-5 leg parlays from legs priced better than fair at one of your books.
+# --------------------------------------------------------------------------- #
+MARKET_LABEL = {
+    "player_pass_yds": "pass yds", "player_rush_yds": "rush yds", "player_reception_yds": "rec yds",
+    "player_receptions": "receptions", "player_anytime_td": "anytime TD", "player_pass_tds": "pass TDs",
+    "player_points": "points", "player_rebounds": "rebounds", "player_assists": "assists", "player_threes": "threes",
+    "player_shots_on_goal": "shots on goal", "pitcher_strikeouts": "strikeouts", "batter_total_bases": "total bases",
+    "batter_hits": "hits",
+}
+
+
+def props_due(ctx: Ctx, sport: str) -> bool:
+    pc = ctx.cfg.get("props", {})
+    today = ctx.local(ctx.now()).strftime("%Y-%m-%d")
+    return (pc.get("enabled") and ctx.state.get("props_pulled", {}).get(sport) != today
+            and ctx.local(ctx.now()).hour >= pc.get("pull_after_hour", 9))
+
+
+def props_month(ctx: Ctx) -> dict:
+    m = ctx.local(ctx.now()).strftime("%Y-%m")
+    pm = ctx.state.setdefault("props_month", {})
+    if pm.get("month") != m:
+        pm.clear(); pm.update({"month": m, "spent": 0})
+    return pm
+
+
+def props_on_pace(ctx: Ctx, priority: int) -> bool:
+    """NFL (priority 1) may use the whole budget; other sports only while the
+    month's prop spending is at or below an even daily pace."""
+    pc, pm = ctx.cfg["props"], props_month(ctx)
+    if pm["spent"] >= pc["monthly_budget"]:
+        return False
+    if priority == 1:
+        return True
+    now = ctx.local(ctx.now())
+    days = 31 if now.month in (1, 3, 5, 7, 8, 10, 12) else 30 if now.month != 2 else 28
+    return pm["spent"] <= pc["monthly_budget"] * now.day / days * 0.8
+
+
+def pull_props(ctx: Ctx, sport: str, sc: dict, events: list) -> int:
+    pc, psc = ctx.cfg["props"], ctx.cfg["props"]["sports"][sport]
+    now = ctx.now()
+    today = ctx.local(now).date()
+    todays = sorted((e for e in events if parse_ts(e["commence_time"]) > now + timedelta(minutes=10)
+                     and ctx.local(parse_ts(e["commence_time"])).date() == today),
+                    key=lambda e: e["commence_time"])[:psc["max_events"]]
+    ctx.state.setdefault("props_pulled", {})[sport] = ctx.local(now).strftime("%Y-%m-%d")
+    if not todays:
+        return 0
+    out, pm, spent = [], props_month(ctx), 0
+    mk = psc["markets"]
+    for e in todays:
+        cost = len(mk)
+        rem = ctx.state.get("credits_remaining")
+        if pm["spent"] + cost > pc["monthly_budget"] or (rem is not None and rem - cost < pc["keep_free"]):
+            ctx.note(f"{sport}: props stopped at {len(out)} games to protect credits")
+            break
+        try:
+            ev_odds = ctx.get(f"/sports/{sc['key']}/events/{e['id']}/odds", {
+                "bookmakers": ",".join(ctx.cfg["books"]), "markets": ",".join(mk),
+                "oddsFormat": "american", "dateFormat": "iso"})
+        except ApiError as err:
+            if err.status in (401, 403, 422):
+                ctx.state["props_error"] = "The odds plan refused player props: " + err.body[:160]
+                ctx.note(f"{sport}: props refused ({err.status})")
+                break
+            raise
+        pm["spent"] += cost; spent += cost
+        out.append(ev_odds)
+    d = ctx.data / "props" / sport
+    d.mkdir(parents=True, exist_ok=True)
+    (d / f"{ctx.local(now).strftime('%Y-%m-%d')}.json").write_text(
+        json.dumps({"pulled_at": iso(now), "events": out}, separators=(",", ":")))
+    for old in sorted(d.glob("*.json"))[:-7]:
+        old.unlink()
+    ctx.state.pop("props_error", None) if out else None
+    ctx.note(f"{sport}: props for {len(out)} game(s), {spent} credits ({pm['spent']}/{pc['monthly_budget']} this month)")
+    return spent
+
+
+def prop_legs(ctx: Ctx, sport: str, event: dict) -> list[dict]:
+    """Every (player, prop, line): fair chance from the other books, best price
+    at your books, and which side is worth more."""
+    pc, w = ctx.cfg["props"], ctx.cfg.get("sharp_weights", {})
+    mine = set(ctx.cfg["my_books"])
+    quotes: dict = {}   # (market, player, point) -> {book: (over_price, under_price)}
+    for bk in event.get("bookmakers", []):
+        for m in bk.get("markets", []):
+            sides: dict = {}
+            for o in m.get("outcomes", []):
+                if o.get("point") is None or not o.get("description"):
+                    continue
+                sides.setdefault((o["description"], o["point"]), {})[o["name"]] = o["price"]
+            for (player, pt), pr in sides.items():
+                if "Over" in pr and "Under" in pr:
+                    quotes.setdefault((m["key"], player, pt), {})[bk["key"]] = (pr["Over"], pr["Under"])
+    legs = []
+    game = f"{event['away_team']} @ {event['home_team']}"
+    for (mkey, player, pt), books in quotes.items():
+        if len(books) < pc["min_books"]:
+            continue
+        q = {b: devig(implied(o), implied(u))[0] for b, (o, u) in books.items()}
+        best = None
+        for side in ("Over", "Under"):
+            for b, (o, u) in books.items():
+                if b not in mine:
+                    continue
+                others = [(float(w.get(x, 1.0)), qq) for x, qq in q.items() if x != b]
+                if len(others) < 2:
+                    continue
+                p_over = sum(a * qq for a, qq in others) / sum(a for a, _ in others)
+                p = p_over if side == "Over" else 1 - p_over
+                price = o if side == "Over" else u
+                e = ev(p, price)
+                if best is None or e > best["ev"]:
+                    best = {"sport": ctx.cfg["sports"][sport]["label"], "game": game, "event_id": event["id"],
+                            "commence": event["commence_time"], "player": player,
+                            "prop": MARKET_LABEL.get(mkey, mkey), "side": side, "line": pt,
+                            "book": b, "price": price, "fair_p": round(p, 4), "fair_odds": fair_american(p),
+                            "ev": round(e, 4), "n_books": len(books)}
+        if best:
+            legs.append(best)
+    return legs
+
+
+def build_parlays(ctx: Ctx, legs: list[dict]) -> dict:
+    """Best 2-5 leg parlays: every leg beats fair at the SAME book, one leg per game."""
+    from itertools import combinations
+    pc = ctx.cfg["props"]
+    out = {}
+    for k in (2, 3, 4, 5):
+        found = []
+        for book in ctx.cfg["my_books"]:
+            pool = sorted((l for l in legs if l["book"] == book and pc["min_ev"] <= l["ev"] <= ctx.cfg["max_ev"]),
+                          key=lambda l: -l["ev"])[:pc["parlay_legs_max"]]
+            for combo in combinations(pool, k):
+                if len({l["event_id"] for l in combo}) < k:
+                    continue
+                p, d = 1.0, 1.0
+                for l in combo:
+                    p *= l["fair_p"]; d *= 1 + profit(l["price"])
+                found.append({"book": book, "legs": [l["id"] for l in combo], "p": round(p, 4),
+                              "odds": int(round((d - 1) * 100)) if d >= 2 else -int(round(100 / (d - 1))),
+                              "decimal": round(d, 3), "ev": round(p * d - 1, 4)})
+        found.sort(key=lambda r: -r["ev"])
+        best, lead = [], set()
+        for r in found:
+            if r["legs"][0] in lead:
+                continue
+            lead.add(r["legs"][0]); best.append(r)
+            if len(best) == 3:
+                break
+        safest = sorted((r for r in found if r["ev"] > 0), key=lambda r: -r["p"])[:1]
+        if safest and safest[0] not in best:
+            best.append(dict(safest[0], safest=True))
+        out[str(k)] = best
+    return out
+
+
+def build_props_site(ctx: Ctx):
+    now = ctx.now()
+    legs, pulled = [], {}
+    for sport in ctx.cfg.get("props", {}).get("sports", {}):
+        d = ctx.data / "props" / sport
+        f = d / f"{ctx.local(now).strftime('%Y-%m-%d')}.json"
+        if not f.exists():
+            continue
+        snap = json.loads(f.read_text())
+        pulled[ctx.cfg["sports"][sport]["label"]] = snap["pulled_at"]
+        for e in snap["events"]:
+            if parse_ts(e["commence_time"]) <= now:
+                continue
+            legs.extend(prop_legs(ctx, sport, e))
+    legs.sort(key=lambda l: -l["ev"])
+    for i, l in enumerate(legs):
+        l["id"] = i
+    for l in legs:
+        l["suspect"] = l["ev"] > ctx.cfg["max_ev"]      # too good to be true: stale or mistyped line
+    good = [l for l in legs if ctx.cfg["props"]["min_ev"] <= l["ev"] <= ctx.cfg["max_ev"]]
+    data = {"generated": iso(now), "date": ctx.local(now).strftime("%Y-%m-%d"), "pulled": pulled,
+            "budget": props_month(ctx), "monthly_budget": ctx.cfg["props"]["monthly_budget"],
+            "error": ctx.state.get("props_error"), "book_names": ctx.cfg["book_names"],
+            "legs": legs[:120], "n_legs": len(legs), "n_good": len(good),
+            "parlays": build_parlays(ctx, legs)}
+    (ctx.docs / "props.json").write_text(json.dumps(data, indent=1))
 
 
 def check(ctx: Ctx) -> int:
@@ -706,6 +914,7 @@ def main(argv=None) -> int:
         if a.cmd == "check":
             return check(ctx)
         build_site(ctx)
+        build_props_site(ctx)
         return 0
     except ApiError as e:
         print(f"API error: {e}")
