@@ -26,6 +26,7 @@ jobs:
       - name: Edge
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDSPAPI_KEY: ${{ secrets.ODDSPAPI_KEY }}
         run: python3 edge.py ${{ github.event.inputs.mode || 'run' }}
       - name: Save results
         if: always()

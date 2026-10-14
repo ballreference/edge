@@ -580,6 +580,10 @@ def run(ctx: Ctx) -> int:
                 pull_props(ctx, sport, sc, events)
             except ApiError as e:
                 ctx.note(f"{sport} props: {e}")
+    try:
+        oddspapi_probe(ctx)
+    except Exception as e:
+        ctx.note(f"oddspapi probe: {type(e).__name__}: {e}")
     ctx.state["last_run"] = iso(ctx.now())
     ctx.state["last_errors"] = errors
     ctx.save()
@@ -780,6 +784,58 @@ def build_props_site(ctx: Ctx):
             "legs": legs[:120], "n_legs": len(legs), "n_good": len(good),
             "parlays": build_parlays(ctx, legs)}
     (ctx.docs / "props.json").write_text(json.dumps(data, indent=1))
+
+
+
+# --------------------------------------------------------------------------- #
+# OddsPapi probe: one-time sample of real responses (4 requests) so the props
+# parser can be built against the actual format. Saved to data/oddspapi/.
+# --------------------------------------------------------------------------- #
+OP_API = "https://api.oddspapi.io/v4"
+
+
+def oddspapi_probe(ctx: Ctx):
+    key = os.environ.get("ODDSPAPI_KEY", "")
+    d = ctx.data / "oddspapi"
+    if not key or (d / "probe_done.json").exists():
+        return
+    d.mkdir(parents=True, exist_ok=True)
+    log = []
+
+    def get(path, params, fname, keep=200000):
+        q = dict(params); q["apiKey"] = key
+        url = f"{OP_API}{path}?{urllib.parse.urlencode(q)}"
+        status, headers, body = ctx.http(url)
+        safe_headers = {k: v for k, v in headers.items() if "key" not in k.lower()}
+        (d / fname).write_text(json.dumps({"path": path, "params": params, "status": status,
+                                           "headers": safe_headers, "body_head": body[:keep]}, indent=1))
+        log.append(f"{path} -> {status} ({len(body)} bytes)")
+        try:
+            return json.loads(body) if status == 200 else None
+        except ValueError:
+            return None
+
+    sports = get("/sports", {}, "sports.json") or []
+    nfl = None
+    for sp in sports if isinstance(sports, list) else []:
+        name = (sp.get("sportName") or sp.get("name") or sp.get("slug") or "").lower()
+        if "american" in name and "football" in name:
+            nfl = sp.get("sportId") or sp.get("id")
+    if nfl is None:
+        nfl = 14
+    today = ctx.local(ctx.now()).date()
+    fx = get("/fixtures", {"sportId": nfl, "from": today.isoformat(),
+                           "to": (today + timedelta(days=6)).isoformat()}, "fixtures.json") or []
+    get("/markets", {"sportId": nfl}, "markets.json", keep=400000)
+    rows = fx if isinstance(fx, list) else (fx.get("data") or fx.get("fixtures") or []) if isinstance(fx, dict) else []
+    pick = next((f for f in rows if f.get("hasOdds") and "nfl" in str(f.get("tournamentSlug", "")).lower()), None) \
+        or next((f for f in rows if f.get("hasOdds")), None)
+    if pick:
+        get("/odds", {"fixtureId": pick.get("fixtureId") or pick.get("id"),
+                      "bookmakers": "draftkings,fanduel,betmgm,thescore,caesars,fanatics,pinnacle,hardrockbet,betrivers"},
+            "odds.json", keep=600000)
+    (d / "probe_done.json").write_text(json.dumps({"at": iso(ctx.now()), "nfl_sport_id": nfl, "log": log}, indent=1))
+    ctx.note("oddspapi probe: " + "; ".join(log))
 
 
 def check(ctx: Ctx) -> int:
