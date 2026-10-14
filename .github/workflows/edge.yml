@@ -5,10 +5,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'run = normal run · check = test the key and list which books come back (1 credit)'
+        description: 'run = normal run · check = test the key (1 credit) · oddspapi = pull OddsPapi props (manual only, about 4 requests)'
         default: 'run'
         type: choice
-        options: [run, check]
+        options: [run, check, oddspapi]
 concurrency:
   group: edge
   cancel-in-progress: false

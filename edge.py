@@ -580,10 +580,6 @@ def run(ctx: Ctx) -> int:
                 pull_props(ctx, sport, sc, events)
             except ApiError as e:
                 ctx.note(f"{sport} props: {e}")
-    try:
-        oddspapi_probe(ctx)
-    except Exception as e:
-        ctx.note(f"oddspapi probe: {type(e).__name__}: {e}")
     ctx.state["last_run"] = iso(ctx.now())
     ctx.state["last_errors"] = errors
     ctx.save()
@@ -795,9 +791,11 @@ OP_API = "https://api.oddspapi.io/v4"
 
 
 def oddspapi_probe(ctx: Ctx):
+    """Manual only: runs when the workflow is started with mode 'oddspapi'. Never on the hourly schedule."""
     key = os.environ.get("ODDSPAPI_KEY", "")
     d = ctx.data / "oddspapi"
-    if not key or (d / "probe_done.json").exists():
+    if not key:
+        print("No ODDSPAPI_KEY secret set. Nothing pulled.")
         return
     d.mkdir(parents=True, exist_ok=True)
     log = []
@@ -835,7 +833,9 @@ def oddspapi_probe(ctx: Ctx):
                       "bookmakers": "draftkings,fanduel,betmgm,thescore,caesars,fanatics,pinnacle,hardrockbet,betrivers"},
             "odds.json", keep=600000)
     (d / "probe_done.json").write_text(json.dumps({"at": iso(ctx.now()), "nfl_sport_id": nfl, "log": log}, indent=1))
-    ctx.note("oddspapi probe: " + "; ".join(log))
+    print("OddsPapi requests used: " + str(len(log)))
+    for line in log:
+        print("  " + line)
 
 
 def check(ctx: Ctx) -> int:
@@ -961,7 +961,7 @@ def build_site(ctx: Ctx):
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["run", "check", "site"])
+    ap.add_argument("cmd", choices=["run", "check", "site", "oddspapi"])
     a = ap.parse_args(argv)
     ctx = Ctx()
     try:
@@ -969,6 +969,9 @@ def main(argv=None) -> int:
             return run(ctx)
         if a.cmd == "check":
             return check(ctx)
+        if a.cmd == "oddspapi":
+            oddspapi_probe(ctx)
+            return 0
         build_site(ctx)
         build_props_site(ctx)
         return 0
