@@ -1,0 +1,34 @@
+{
+ "generated": "2026-10-14T07:43:33Z",
+ "date": "2026-10-14",
+ "pulled": {},
+ "budget": {
+  "month": "2026-10",
+  "spent": 0
+ },
+ "monthly_budget": 180,
+ "error": null,
+ "book_names": {
+  "draftkings": "DraftKings",
+  "fanduel": "FanDuel",
+  "betmgm": "BetMGM",
+  "williamhill_us": "Caesars",
+  "fanatics": "Fanatics",
+  "espnbet": "theScore Bet",
+  "pinnacle": "Pinnacle",
+  "lowvig": "LowVig",
+  "betonlineag": "BetOnline",
+  "betrivers": "BetRivers",
+  "hardrockbet": "Hard Rock",
+  "bovada": "Bovada"
+ },
+ "legs": [],
+ "n_legs": 0,
+ "n_good": 0,
+ "parlays": {
+  "2": [],
+  "3": [],
+  "4": [],
+  "5": []
+ }
+}
