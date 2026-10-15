@@ -1,8 +1,8 @@
 {
- "credits_remaining": 378,
- "credits_used": 122,
+ "credits_remaining": 367,
+ "credits_used": 133,
  "last_pull": {
-  "nfl": "2026-10-14T18:41:25Z",
+  "nfl": "2026-10-15T17:06:42Z",
   "mlb": "2026-10-14T22:20:30Z",
   "nhl": "2026-10-14T22:20:30Z"
  },
@@ -66,7 +66,11 @@
   "10-14 14:41 nfl: routine pull, 28 games, 0 new flag(s), 387 credits left",
   "10-14 14:41 nhl: routine pull, 13 games, 0 new flag(s), 384 credits left",
   "10-14 18:20 mlb: close pull, 2 games, 0 new flag(s), 381 credits left",
-  "10-14 18:20 nhl: close pull, 13 games, 0 new flag(s), 378 credits left"
+  "10-14 18:20 nhl: close pull, 13 games, 0 new flag(s), 378 credits left",
+  "10-15 13:06 nfl: routine pull, 28 games, 1 new flag(s), 375 credits left",
+  "10-15 13:06 nfl: props for 1 game(s), 3 credits (6/180 this month)",
+  "10-15 13:06 nhl: props for 4 game(s), 4 credits (10/180 this month)",
+  "10-15 13:06 mlb: props for 1 game(s), 1 credits (11/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -84,16 +88,16 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-10-15T11:38:20Z",
+ "last_run": "2026-10-15T17:06:45Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-10",
-  "spent": 3
+  "spent": 11
  },
  "props_pulled": {
-  "nfl": "2026-10-14",
-  "nba": "2026-10-14",
-  "nhl": "2026-10-14",
-  "mlb": "2026-10-14"
+  "nfl": "2026-10-15",
+  "nba": "2026-10-15",
+  "nhl": "2026-10-15",
+  "mlb": "2026-10-15"
  }
 }

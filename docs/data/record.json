@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T11:38:20Z",
+ "generated": "2026-10-15T17:06:45Z",
  "overall": {
   "n": 1,
   "w": 0,
@@ -62,7 +62,63 @@
    "avg_clv": null
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "id": "caca2d752fe1a1779029082e95332fcc|h2h|Carolina Panthers",
+   "sport": "nfl",
+   "home": "Philadelphia Eagles",
+   "away": "Carolina Panthers",
+   "commence": "2026-10-18T17:00:00Z",
+   "market": "h2h",
+   "side": "Carolina Panthers",
+   "point": null,
+   "book": "draftkings",
+   "price": -115,
+   "fair_p": 0.5547,
+   "fair_odds": -125,
+   "ev": 0.037,
+   "n_books": 9,
+   "sharps": [
+    "lowvig",
+    "betonlineag",
+    "pinnacle"
+   ],
+   "flagged_at": "2026-10-15T17:06:42Z",
+   "last_ev": 0.037,
+   "status": "open",
+   "result": null,
+   "units": null,
+   "final": null,
+   "close": null,
+   "others": [
+    [
+     "pinnacle",
+     -111
+    ],
+    [
+     "bovada",
+     -115
+    ],
+    [
+     "betonlineag",
+     -117
+    ],
+    [
+     "lowvig",
+     -120
+    ],
+    [
+     "betrivers",
+     -159
+    ],
+    [
+     "hardrockbet",
+     -160
+    ]
+   ],
+   "book_name": "DraftKings"
+  }
+ ],
  "recent": [
   {
    "id": "21b26266f3d78af02eb672e606275d95|spreads|Jacksonville Jaguars",
