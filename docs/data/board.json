@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-16T12:29:42Z",
+ "generated": "2026-10-16T17:29:36Z",
  "credits": {
-  "remaining": 355,
-  "used": 145
+  "remaining": 349,
+  "used": 151
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-14 14:41 nfl: routine pull, 28 games, 0 new flag(s), 387 credits left",
-  "10-14 14:41 nhl: routine pull, 13 games, 0 new flag(s), 384 credits left",
-  "10-14 18:20 mlb: close pull, 2 games, 0 new flag(s), 381 credits left",
   "10-14 18:20 nhl: close pull, 13 games, 0 new flag(s), 378 credits left",
   "10-15 13:06 nfl: routine pull, 28 games, 1 new flag(s), 375 credits left",
   "10-15 13:06 nfl: props for 1 game(s), 3 credits (6/180 this month)",
@@ -38,7 +35,10 @@
   "10-15 16:22 mlb: routine pull, 2 games, 0 new flag(s), 364 credits left",
   "10-15 16:22 nhl: close pull, 13 games, 0 new flag(s), 361 credits left",
   "10-15 19:06 nfl: close pull, 27 games, 0 new flag(s), 358 credits left",
-  "10-15 19:06 mlb: close pull, 2 games, 0 new flag(s), 355 credits left"
+  "10-15 19:06 mlb: close pull, 2 games, 0 new flag(s), 355 credits left",
+  "10-16 13:29 nhl: routine pull, 16 games, 1 new flag(s), 352 credits left",
+  "10-16 13:29 nhl: props for 2 game(s), 2 credits (13/180 this month)",
+  "10-16 13:29 mlb: props for 1 game(s), 1 credits (14/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -80,10 +80,141 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-15T20:22:27Z",
-   "games": 2,
-   "flags": [],
-   "watch": []
+   "last_pull": "2026-10-16T17:29:34Z",
+   "games": 16,
+   "flags": [
+    {
+     "market": "spreads",
+     "side": "Winnipeg Jets",
+     "point": 1.5,
+     "book": "fanduel",
+     "price": -154,
+     "fair_p": 0.6253,
+     "fair_odds": -167,
+     "ev": 0.0313,
+     "n_books": 5,
+     "sharps": [
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "bovada",
+       -175
+      ],
+      [
+       "pinnacle",
+       -175
+      ],
+      [
+       "draftkings",
+       -180
+      ],
+      [
+       "hardrockbet",
+       -185
+      ],
+      [
+       "betrivers",
+       -205
+      ]
+     ],
+     "home": "Winnipeg Jets",
+     "away": "Carolina Hurricanes",
+     "commence": "2026-10-17T19:40:00Z",
+     "logged": {
+      "price": -154,
+      "book": "fanduel",
+      "point": 1.5,
+      "at": "2026-10-16T17:29:34Z"
+     }
+    }
+   ],
+   "watch": [
+    {
+     "market": "totals",
+     "side": "Under",
+     "point": 6.5,
+     "book": "fanduel",
+     "price": 104,
+     "fair_p": 0.498,
+     "fair_odds": 101,
+     "ev": 0.016,
+     "n_books": 7,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "betrivers",
+       -105
+      ],
+      [
+       "pinnacle",
+       -107
+      ],
+      [
+       "draftkings",
+       -108
+      ],
+      [
+       "lowvig",
+       -108
+      ],
+      [
+       "betonlineag",
+       -108
+      ],
+      [
+       "hardrockbet",
+       -110
+      ]
+     ],
+     "home": "Utah Mammoth",
+     "away": "Edmonton Oilers",
+     "commence": "2026-10-18T02:10:00Z"
+    },
+    {
+     "market": "spreads",
+     "side": "New Jersey Devils",
+     "point": 1.5,
+     "book": "fanduel",
+     "price": -230,
+     "fair_p": 0.7054,
+     "fair_odds": -239,
+     "ev": 0.012,
+     "n_books": 5,
+     "sharps": [
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "draftkings",
+       -250
+      ],
+      [
+       "betrivers",
+       -250
+      ],
+      [
+       "hardrockbet",
+       -250
+      ],
+      [
+       "pinnacle",
+       -270
+      ],
+      [
+       "bovada",
+       -275
+      ]
+     ],
+     "home": "Washington Capitals",
+     "away": "New Jersey Devils",
+     "commence": "2026-10-17T17:10:00Z"
+    }
+   ]
   }
  }
 }

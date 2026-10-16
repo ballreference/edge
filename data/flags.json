@@ -98,6 +98,53 @@
    "last_ev": -0.011,
    "peak_ev": 0.037,
    "status": "open"
+  },
+  {
+   "market": "spreads",
+   "side": "Winnipeg Jets",
+   "point": 1.5,
+   "book": "fanduel",
+   "price": -154,
+   "fair_p": 0.6253,
+   "fair_odds": -167,
+   "ev": 0.0313,
+   "n_books": 5,
+   "sharps": [
+    "pinnacle"
+   ],
+   "others": [
+    [
+     "bovada",
+     -175
+    ],
+    [
+     "pinnacle",
+     -175
+    ],
+    [
+     "draftkings",
+     -180
+    ],
+    [
+     "hardrockbet",
+     -185
+    ],
+    [
+     "betrivers",
+     -205
+    ]
+   ],
+   "id": "c9ba2e7837386a5948a9c2233c36314c|spreads|Winnipeg Jets",
+   "sport": "nhl",
+   "event_id": "c9ba2e7837386a5948a9c2233c36314c",
+   "home": "Winnipeg Jets",
+   "away": "Carolina Hurricanes",
+   "commence": "2026-10-17T19:40:00Z",
+   "flagged_at": "2026-10-16T17:29:34Z",
+   "last_seen": "2026-10-16T17:29:34Z",
+   "last_ev": 0.0313,
+   "peak_ev": 0.0313,
+   "status": "open"
   }
  ]
 }
