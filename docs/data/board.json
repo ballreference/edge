@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-16T21:17:27Z",
+ "generated": "2026-10-16T23:39:09Z",
  "credits": {
-  "remaining": 343,
-  "used": 157
+  "remaining": 340,
+  "used": 160
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-15 13:06 nfl: props for 1 game(s), 3 credits (6/180 this month)",
   "10-15 13:06 nhl: props for 4 game(s), 4 credits (10/180 this month)",
   "10-15 13:06 mlb: props for 1 game(s), 1 credits (11/180 this month)",
   "10-15 16:22 mlb: routine pull, 2 games, 0 new flag(s), 364 credits left",
@@ -38,7 +37,8 @@
   "10-16 13:29 nhl: props for 2 game(s), 2 credits (13/180 this month)",
   "10-16 13:29 mlb: props for 1 game(s), 1 credits (14/180 this month)",
   "10-16 17:17 nfl: routine pull, 24 games, 0 new flag(s), 346 credits left",
-  "10-16 17:17 mlb: close pull, 1 games, 0 new flag(s), 343 credits left"
+  "10-16 17:17 mlb: close pull, 1 games, 0 new flag(s), 343 credits left",
+  "10-16 19:39 nhl: close pull, 16 games, 1 new flag(s), 340 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -80,66 +80,19 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-16T17:29:34Z",
+   "last_pull": "2026-10-16T23:39:09Z",
    "games": 16,
    "flags": [
     {
      "market": "spreads",
-     "side": "Winnipeg Jets",
+     "side": "New Jersey Devils",
      "point": 1.5,
-     "book": "fanduel",
-     "price": -154,
-     "fair_p": 0.6253,
-     "fair_odds": -167,
-     "ev": 0.0313,
-     "n_books": 5,
-     "sharps": [
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "bovada",
-       -175
-      ],
-      [
-       "pinnacle",
-       -175
-      ],
-      [
-       "draftkings",
-       -180
-      ],
-      [
-       "hardrockbet",
-       -185
-      ],
-      [
-       "betrivers",
-       -205
-      ]
-     ],
-     "home": "Winnipeg Jets",
-     "away": "Carolina Hurricanes",
-     "commence": "2026-10-17T19:40:00Z",
-     "logged": {
-      "price": -154,
-      "book": "fanduel",
-      "point": 1.5,
-      "at": "2026-10-16T17:29:34Z"
-     }
-    }
-   ],
-   "watch": [
-    {
-     "market": "totals",
-     "side": "Under",
-     "point": 6.5,
-     "book": "fanduel",
-     "price": 104,
-     "fair_p": 0.498,
-     "fair_odds": 101,
-     "ev": 0.016,
-     "n_books": 7,
+     "book": "betmgm",
+     "price": -220,
+     "fair_p": 0.7064,
+     "fair_odds": -241,
+     "ev": 0.0276,
+     "n_books": 9,
      "sharps": [
       "lowvig",
       "betonlineag",
@@ -147,72 +100,86 @@
      ],
      "others": [
       [
-       "betrivers",
-       -105
+       "hardrockbet",
+       -250
       ],
       [
-       "pinnacle",
-       -107
+       "fanduel",
+       -250
       ],
       [
        "draftkings",
-       -108
+       -258
+      ],
+      [
+       "betrivers",
+       -265
       ],
       [
        "lowvig",
-       -108
+       -265
       ],
       [
        "betonlineag",
-       -108
+       -265
+      ]
+     ],
+     "home": "Washington Capitals",
+     "away": "New Jersey Devils",
+     "commence": "2026-10-17T17:10:00Z",
+     "logged": {
+      "price": -220,
+      "book": "betmgm",
+      "point": 1.5,
+      "at": "2026-10-16T23:39:09Z"
+     }
+    }
+   ],
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "Edmonton Oilers",
+     "point": 1.5,
+     "book": "betmgm",
+     "price": -190,
+     "fair_p": 0.6632,
+     "fair_odds": -197,
+     "ev": 0.0122,
+     "n_books": 9,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "fanduel",
+       -205
       ],
       [
        "hardrockbet",
-       -110
+       -210
+      ],
+      [
+       "pinnacle",
+       -210
+      ],
+      [
+       "lowvig",
+       -215
+      ],
+      [
+       "betonlineag",
+       -215
+      ],
+      [
+       "bovada",
+       -215
       ]
      ],
      "home": "Utah Mammoth",
      "away": "Edmonton Oilers",
      "commence": "2026-10-18T02:10:00Z"
-    },
-    {
-     "market": "spreads",
-     "side": "New Jersey Devils",
-     "point": 1.5,
-     "book": "fanduel",
-     "price": -230,
-     "fair_p": 0.7054,
-     "fair_odds": -239,
-     "ev": 0.012,
-     "n_books": 5,
-     "sharps": [
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "draftkings",
-       -250
-      ],
-      [
-       "betrivers",
-       -250
-      ],
-      [
-       "hardrockbet",
-       -250
-      ],
-      [
-       "pinnacle",
-       -270
-      ],
-      [
-       "bovada",
-       -275
-      ]
-     ],
-     "home": "Washington Capitals",
-     "away": "New Jersey Devils",
-     "commence": "2026-10-17T17:10:00Z"
     }
    ]
   }

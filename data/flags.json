@@ -141,9 +141,62 @@
    "away": "Carolina Hurricanes",
    "commence": "2026-10-17T19:40:00Z",
    "flagged_at": "2026-10-16T17:29:34Z",
-   "last_seen": "2026-10-16T17:29:34Z",
-   "last_ev": 0.0313,
+   "last_seen": "2026-10-16T23:39:09Z",
+   "last_ev": 0.0072,
    "peak_ev": 0.0313,
+   "status": "open"
+  },
+  {
+   "market": "spreads",
+   "side": "New Jersey Devils",
+   "point": 1.5,
+   "book": "betmgm",
+   "price": -220,
+   "fair_p": 0.7064,
+   "fair_odds": -241,
+   "ev": 0.0276,
+   "n_books": 9,
+   "sharps": [
+    "lowvig",
+    "betonlineag",
+    "pinnacle"
+   ],
+   "others": [
+    [
+     "hardrockbet",
+     -250
+    ],
+    [
+     "fanduel",
+     -250
+    ],
+    [
+     "draftkings",
+     -258
+    ],
+    [
+     "betrivers",
+     -265
+    ],
+    [
+     "lowvig",
+     -265
+    ],
+    [
+     "betonlineag",
+     -265
+    ]
+   ],
+   "id": "841c71c033cf05ad1313e3d5ecd2d9ab|spreads|New Jersey Devils",
+   "sport": "nhl",
+   "event_id": "841c71c033cf05ad1313e3d5ecd2d9ab",
+   "home": "Washington Capitals",
+   "away": "New Jersey Devils",
+   "commence": "2026-10-17T17:10:00Z",
+   "flagged_at": "2026-10-16T23:39:09Z",
+   "last_seen": "2026-10-16T23:39:09Z",
+   "last_ev": 0.0276,
+   "peak_ev": 0.0276,
    "status": "open"
   }
  ]

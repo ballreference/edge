@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T21:17:27Z",
+ "generated": "2026-10-16T23:39:09Z",
  "overall": {
   "n": 1,
   "w": 0,
@@ -64,6 +64,61 @@
  },
  "pending": [
   {
+   "id": "841c71c033cf05ad1313e3d5ecd2d9ab|spreads|New Jersey Devils",
+   "sport": "nhl",
+   "home": "Washington Capitals",
+   "away": "New Jersey Devils",
+   "commence": "2026-10-17T17:10:00Z",
+   "market": "spreads",
+   "side": "New Jersey Devils",
+   "point": 1.5,
+   "book": "betmgm",
+   "price": -220,
+   "fair_p": 0.7064,
+   "fair_odds": -241,
+   "ev": 0.0276,
+   "n_books": 9,
+   "sharps": [
+    "lowvig",
+    "betonlineag",
+    "pinnacle"
+   ],
+   "flagged_at": "2026-10-16T23:39:09Z",
+   "last_ev": 0.0276,
+   "status": "open",
+   "result": null,
+   "units": null,
+   "final": null,
+   "close": null,
+   "others": [
+    [
+     "hardrockbet",
+     -250
+    ],
+    [
+     "fanduel",
+     -250
+    ],
+    [
+     "draftkings",
+     -258
+    ],
+    [
+     "betrivers",
+     -265
+    ],
+    [
+     "lowvig",
+     -265
+    ],
+    [
+     "betonlineag",
+     -265
+    ]
+   ],
+   "book_name": "BetMGM"
+  },
+  {
    "id": "c9ba2e7837386a5948a9c2233c36314c|spreads|Winnipeg Jets",
    "sport": "nhl",
    "home": "Winnipeg Jets",
@@ -82,7 +137,7 @@
     "pinnacle"
    ],
    "flagged_at": "2026-10-16T17:29:34Z",
-   "last_ev": 0.0313,
+   "last_ev": 0.0072,
    "status": "open",
    "result": null,
    "units": null,
