@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T13:47:00Z",
+ "generated": "2026-10-17T17:16:27Z",
  "overall": {
   "n": 1,
   "w": 0,
@@ -85,11 +85,20 @@
    ],
    "flagged_at": "2026-10-16T23:39:09Z",
    "last_ev": 0.0276,
-   "status": "open",
+   "status": "closed",
    "result": null,
    "units": null,
    "final": null,
-   "close": null,
+   "close": {
+    "pulled_at": "2026-10-16T23:39:09Z",
+    "mins_before": 1050,
+    "later": false,
+    "point": 1.5,
+    "fair_p": 0.7036,
+    "fair_odds": -237,
+    "clv_ev": 0.0233,
+    "beat": true
+   },
    "others": [
     [
      "hardrockbet",
@@ -137,7 +146,7 @@
     "pinnacle"
    ],
    "flagged_at": "2026-10-16T17:29:34Z",
-   "last_ev": 0.0072,
+   "last_ev": 0.0022,
    "status": "open",
    "result": null,
    "units": null,

@@ -141,8 +141,8 @@
    "away": "Carolina Hurricanes",
    "commence": "2026-10-17T19:40:00Z",
    "flagged_at": "2026-10-16T17:29:34Z",
-   "last_seen": "2026-10-16T23:39:09Z",
-   "last_ev": 0.0072,
+   "last_seen": "2026-10-17T17:16:27Z",
+   "last_ev": 0.0022,
    "peak_ev": 0.0313,
    "status": "open"
   },
@@ -197,7 +197,17 @@
    "last_seen": "2026-10-16T23:39:09Z",
    "last_ev": 0.0276,
    "peak_ev": 0.0276,
-   "status": "open"
+   "status": "closed",
+   "close": {
+    "pulled_at": "2026-10-16T23:39:09Z",
+    "mins_before": 1050,
+    "later": false,
+    "point": 1.5,
+    "fair_p": 0.7036,
+    "fair_odds": -237,
+    "clv_ev": 0.0233,
+    "beat": true
+   }
   }
  ]
 }
