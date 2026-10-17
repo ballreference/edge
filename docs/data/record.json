@@ -1,15 +1,15 @@
 {
- "generated": "2026-10-17T19:27:31Z",
+ "generated": "2026-10-17T22:24:34Z",
  "overall": {
-  "n": 1,
+  "n": 2,
   "w": 0,
-  "l": 1,
+  "l": 2,
   "p": 0,
   "win_pct": 0.0,
-  "expected_pct": 0.5241,
-  "units": -1.0,
+  "expected_pct": 0.6153,
+  "units": -2.0,
   "roi": -1.0,
-  "avg_ev": 0.0379,
+  "avg_ev": 0.0328,
   "clv_n": 1,
   "beat_close_pct": 1.0,
   "avg_clv": null
@@ -28,19 +28,33 @@
    "clv_n": 1,
    "beat_close_pct": 1.0,
    "avg_clv": null
-  }
- },
- "by_market": {
-  "spreads": {
+  },
+  "NHL": {
    "n": 1,
    "w": 0,
    "l": 1,
    "p": 0,
    "win_pct": 0.0,
-   "expected_pct": 0.5241,
+   "expected_pct": 0.7064,
    "units": -1.0,
    "roi": -1.0,
-   "avg_ev": 0.0379,
+   "avg_ev": 0.0276,
+   "clv_n": 0,
+   "beat_close_pct": null,
+   "avg_clv": null
+  }
+ },
+ "by_market": {
+  "spreads": {
+   "n": 2,
+   "w": 0,
+   "l": 2,
+   "p": 0,
+   "win_pct": 0.0,
+   "expected_pct": 0.6153,
+   "units": -2.0,
+   "roi": -1.0,
+   "avg_ev": 0.0328,
    "clv_n": 1,
    "beat_close_pct": 1.0,
    "avg_clv": null
@@ -48,85 +62,21 @@
  },
  "by_ev": {
   "2.5\u20134%": {
-   "n": 1,
+   "n": 2,
    "w": 0,
-   "l": 1,
+   "l": 2,
    "p": 0,
    "win_pct": 0.0,
-   "expected_pct": 0.5241,
-   "units": -1.0,
+   "expected_pct": 0.6153,
+   "units": -2.0,
    "roi": -1.0,
-   "avg_ev": 0.0379,
+   "avg_ev": 0.0328,
    "clv_n": 1,
    "beat_close_pct": 1.0,
    "avg_clv": null
   }
  },
  "pending": [
-  {
-   "id": "841c71c033cf05ad1313e3d5ecd2d9ab|spreads|New Jersey Devils",
-   "sport": "nhl",
-   "home": "Washington Capitals",
-   "away": "New Jersey Devils",
-   "commence": "2026-10-17T17:10:00Z",
-   "market": "spreads",
-   "side": "New Jersey Devils",
-   "point": 1.5,
-   "book": "betmgm",
-   "price": -220,
-   "fair_p": 0.7064,
-   "fair_odds": -241,
-   "ev": 0.0276,
-   "n_books": 9,
-   "sharps": [
-    "lowvig",
-    "betonlineag",
-    "pinnacle"
-   ],
-   "flagged_at": "2026-10-16T23:39:09Z",
-   "last_ev": 0.0276,
-   "status": "closed",
-   "result": null,
-   "units": null,
-   "final": null,
-   "close": {
-    "pulled_at": "2026-10-16T23:39:09Z",
-    "mins_before": 1050,
-    "later": false,
-    "point": 1.5,
-    "fair_p": 0.7036,
-    "fair_odds": -237,
-    "clv_ev": 0.0233,
-    "beat": true
-   },
-   "others": [
-    [
-     "hardrockbet",
-     -250
-    ],
-    [
-     "fanduel",
-     -250
-    ],
-    [
-     "draftkings",
-     -258
-    ],
-    [
-     "betrivers",
-     -265
-    ],
-    [
-     "lowvig",
-     -265
-    ],
-    [
-     "betonlineag",
-     -265
-    ]
-   ],
-   "book_name": "BetMGM"
-  },
   {
    "id": "c9ba2e7837386a5948a9c2233c36314c|spreads|Winnipeg Jets",
    "sport": "nhl",
@@ -147,11 +97,20 @@
    ],
    "flagged_at": "2026-10-16T17:29:34Z",
    "last_ev": 0.0022,
-   "status": "open",
+   "status": "closed",
    "result": null,
    "units": null,
    "final": null,
-   "close": null,
+   "close": {
+    "pulled_at": "2026-10-17T17:16:27Z",
+    "mins_before": 143,
+    "later": true,
+    "point": 1.5,
+    "fair_p": 0.5828,
+    "fair_odds": -140,
+    "clv_ev": -0.0388,
+    "beat": false
+   },
    "others": [
     [
      "bovada",
@@ -233,6 +192,70 @@
   }
  ],
  "recent": [
+  {
+   "id": "841c71c033cf05ad1313e3d5ecd2d9ab|spreads|New Jersey Devils",
+   "sport": "nhl",
+   "home": "Washington Capitals",
+   "away": "New Jersey Devils",
+   "commence": "2026-10-17T17:10:00Z",
+   "market": "spreads",
+   "side": "New Jersey Devils",
+   "point": 1.5,
+   "book": "betmgm",
+   "price": -220,
+   "fair_p": 0.7064,
+   "fair_odds": -241,
+   "ev": 0.0276,
+   "n_books": 9,
+   "sharps": [
+    "lowvig",
+    "betonlineag",
+    "pinnacle"
+   ],
+   "flagged_at": "2026-10-16T23:39:09Z",
+   "last_ev": 0.0276,
+   "status": "graded",
+   "result": "L",
+   "units": -1.0,
+   "final": "New Jersey Devils 2 @ Washington Capitals 4",
+   "close": {
+    "pulled_at": "2026-10-16T23:39:09Z",
+    "mins_before": 1050,
+    "later": false,
+    "point": 1.5,
+    "fair_p": 0.7036,
+    "fair_odds": -237,
+    "clv_ev": 0.0233,
+    "beat": true
+   },
+   "others": [
+    [
+     "hardrockbet",
+     -250
+    ],
+    [
+     "fanduel",
+     -250
+    ],
+    [
+     "draftkings",
+     -258
+    ],
+    [
+     "betrivers",
+     -265
+    ],
+    [
+     "lowvig",
+     -265
+    ],
+    [
+     "betonlineag",
+     -265
+    ]
+   ],
+   "book_name": "BetMGM"
+  },
   {
    "id": "21b26266f3d78af02eb672e606275d95|spreads|Jacksonville Jaguars",
    "sport": "nfl",

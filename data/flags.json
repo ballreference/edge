@@ -144,7 +144,17 @@
    "last_seen": "2026-10-17T17:16:27Z",
    "last_ev": 0.0022,
    "peak_ev": 0.0313,
-   "status": "open"
+   "status": "closed",
+   "close": {
+    "pulled_at": "2026-10-17T17:16:27Z",
+    "mins_before": 143,
+    "later": true,
+    "point": 1.5,
+    "fair_p": 0.5828,
+    "fair_odds": -140,
+    "clv_ev": -0.0388,
+    "beat": false
+   }
   },
   {
    "market": "spreads",
@@ -197,7 +207,7 @@
    "last_seen": "2026-10-16T23:39:09Z",
    "last_ev": 0.0276,
    "peak_ev": 0.0276,
-   "status": "closed",
+   "status": "graded",
    "close": {
     "pulled_at": "2026-10-16T23:39:09Z",
     "mins_before": 1050,
@@ -207,7 +217,10 @@
     "fair_odds": -237,
     "clv_ev": 0.0233,
     "beat": true
-   }
+   },
+   "result": "L",
+   "units": -1.0,
+   "final": "New Jersey Devils 2 @ Washington Capitals 4"
   }
  ]
 }
