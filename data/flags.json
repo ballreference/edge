@@ -97,7 +97,7 @@
    "last_seen": "2026-10-18T14:38:52Z",
    "last_ev": -0.0147,
    "peak_ev": 0.037,
-   "status": "closed",
+   "status": "graded",
    "close": {
     "pulled_at": "2026-10-18T14:38:52Z",
     "mins_before": 141,
@@ -107,7 +107,10 @@
     "fair_odds": -155,
     "clv_ev": 0.1376,
     "beat": true
-   }
+   },
+   "result": "W",
+   "units": 0.8696,
+   "final": "Carolina Panthers 25 @ Philadelphia Eagles 14"
   },
   {
    "market": "spreads",

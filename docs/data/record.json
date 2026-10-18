@@ -1,33 +1,33 @@
 {
- "generated": "2026-10-18T20:51:14Z",
+ "generated": "2026-10-18T23:19:12Z",
  "overall": {
-  "n": 3,
-  "w": 1,
+  "n": 4,
+  "w": 2,
   "l": 2,
   "p": 0,
-  "win_pct": 0.3333,
-  "expected_pct": 0.6186,
-  "units": -1.35,
-  "roi": -0.45,
-  "avg_ev": 0.0323,
-  "clv_n": 2,
-  "beat_close_pct": 0.5,
-  "avg_clv": -0.0388
+  "win_pct": 0.5,
+  "expected_pct": 0.6026,
+  "units": -0.48,
+  "roi": -0.12,
+  "avg_ev": 0.0334,
+  "clv_n": 3,
+  "beat_close_pct": 0.6667,
+  "avg_clv": 0.0494
  },
  "by_sport": {
   "NFL": {
-   "n": 1,
-   "w": 0,
+   "n": 2,
+   "w": 1,
    "l": 1,
    "p": 0,
-   "win_pct": 0.0,
-   "expected_pct": 0.5241,
-   "units": -1.0,
-   "roi": -1.0,
-   "avg_ev": 0.0379,
-   "clv_n": 1,
+   "win_pct": 0.5,
+   "expected_pct": 0.5394,
+   "units": -0.13,
+   "roi": -0.065,
+   "avg_ev": 0.0374,
+   "clv_n": 2,
    "beat_close_pct": 1.0,
-   "avg_clv": null
+   "avg_clv": 0.1376
   },
   "NHL": {
    "n": 2,
@@ -58,25 +58,40 @@
    "clv_n": 2,
    "beat_close_pct": 0.5,
    "avg_clv": -0.0388
+  },
+  "h2h": {
+   "n": 1,
+   "w": 1,
+   "l": 0,
+   "p": 0,
+   "win_pct": 1.0,
+   "expected_pct": 0.5547,
+   "units": 0.87,
+   "roi": 0.87,
+   "avg_ev": 0.037,
+   "clv_n": 1,
+   "beat_close_pct": 1.0,
+   "avg_clv": 0.1376
   }
  },
  "by_ev": {
   "2.5\u20134%": {
-   "n": 3,
-   "w": 1,
+   "n": 4,
+   "w": 2,
    "l": 2,
    "p": 0,
-   "win_pct": 0.3333,
-   "expected_pct": 0.6186,
-   "units": -1.35,
-   "roi": -0.45,
-   "avg_ev": 0.0323,
-   "clv_n": 2,
-   "beat_close_pct": 0.5,
-   "avg_clv": -0.0388
+   "win_pct": 0.5,
+   "expected_pct": 0.6026,
+   "units": -0.48,
+   "roi": -0.12,
+   "avg_ev": 0.0334,
+   "clv_n": 3,
+   "beat_close_pct": 0.6667,
+   "avg_clv": 0.0494
   }
  },
- "pending": [
+ "pending": [],
+ "recent": [
   {
    "id": "caca2d752fe1a1779029082e95332fcc|h2h|Carolina Panthers",
    "sport": "nfl",
@@ -99,10 +114,10 @@
    ],
    "flagged_at": "2026-10-15T17:06:42Z",
    "last_ev": -0.0147,
-   "status": "closed",
-   "result": null,
-   "units": null,
-   "final": null,
+   "status": "graded",
+   "result": "W",
+   "units": 0.8696,
+   "final": "Carolina Panthers 25 @ Philadelphia Eagles 14",
    "close": {
     "pulled_at": "2026-10-18T14:38:52Z",
     "mins_before": 141,
@@ -140,9 +155,7 @@
     ]
    ],
    "book_name": "DraftKings"
-  }
- ],
- "recent": [
+  },
   {
    "id": "c9ba2e7837386a5948a9c2233c36314c|spreads|Winnipeg Jets",
    "sport": "nhl",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T20:51:14Z",
+ "generated": "2026-10-18T23:19:12Z",
  "date": "2026-10-18",
  "pulled": {
   "NFL": "2026-10-18T14:38:53Z",
@@ -29,78 +29,6 @@
  "legs": [
   {
    "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Blake Coleman",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 2.5,
-   "book": "espnbet",
-   "price": 180,
-   "fair_p": 0.3853,
-   "fair_odds": 160,
-   "ev": 0.0788,
-   "n_books": 3,
-   "id": 0,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Quinn Hughes",
-   "prop": "shots on goal",
-   "side": "Under",
-   "line": 2.5,
-   "book": "betmgm",
-   "price": -130,
-   "fair_p": 0.5778,
-   "fair_odds": -137,
-   "ev": 0.0223,
-   "n_books": 8,
-   "id": 1,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Matthew Knies",
-   "prop": "shots on goal",
-   "side": "Under",
-   "line": 1.5,
-   "book": "betmgm",
-   "price": -111,
-   "fair_p": 0.5334,
-   "fair_odds": -114,
-   "ev": 0.0139,
-   "n_books": 6,
-   "id": 2,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Conor Garland",
-   "prop": "shots on goal",
-   "side": "Under",
-   "line": 1.5,
-   "book": "betmgm",
-   "price": -145,
-   "fair_p": 0.5961,
-   "fair_odds": -148,
-   "ev": 0.0071,
-   "n_books": 6,
-   "id": 3,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
    "game": "Carolina Hurricanes @ Calgary Flames",
    "event_id": "0922c474e6588f94af491684dbae6cdb",
    "commence": "2026-10-19T00:10:00Z",
@@ -114,7 +42,7 @@
    "fair_odds": 110,
    "ev": -0.0021,
    "n_books": 6,
-   "id": 4,
+   "id": 0,
    "suspect": false
   },
   {
@@ -132,7 +60,7 @@
    "fair_odds": 101,
    "ev": -0.0034,
    "n_books": 5,
-   "id": 5,
+   "id": 1,
    "suspect": false
   },
   {
@@ -150,7 +78,7 @@
    "fair_odds": 101,
    "ev": -0.0035,
    "n_books": 3,
-   "id": 6,
+   "id": 2,
    "suspect": false
   },
   {
@@ -168,7 +96,7 @@
    "fair_odds": 107,
    "ev": -0.0117,
    "n_books": 6,
-   "id": 7,
+   "id": 3,
    "suspect": false
   },
   {
@@ -186,7 +114,7 @@
    "fair_odds": -119,
    "ev": -0.0125,
    "n_books": 7,
-   "id": 8,
+   "id": 4,
    "suspect": false
   },
   {
@@ -204,25 +132,7 @@
    "fair_odds": 103,
    "ev": -0.0132,
    "n_books": 8,
-   "id": 9,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Zach Werenski",
-   "prop": "shots on goal",
-   "side": "Under",
-   "line": 3.5,
-   "book": "espnbet",
-   "price": -140,
-   "fair_p": 0.5754,
-   "fair_odds": -136,
-   "ev": -0.0136,
-   "n_books": 8,
-   "id": 10,
+   "id": 5,
    "suspect": false
   },
   {
@@ -240,7 +150,7 @@
    "fair_odds": -135,
    "ev": -0.0152,
    "n_books": 6,
-   "id": 11,
+   "id": 6,
    "suspect": false
   },
   {
@@ -258,7 +168,7 @@
    "fair_odds": -161,
    "ev": -0.0193,
    "n_books": 7,
-   "id": 12,
+   "id": 7,
    "suspect": false
   },
   {
@@ -276,7 +186,7 @@
    "fair_odds": 109,
    "ev": -0.0195,
    "n_books": 7,
-   "id": 13,
+   "id": 8,
    "suspect": false
   },
   {
@@ -294,25 +204,7 @@
    "fair_odds": -108,
    "ev": -0.0197,
    "n_books": 5,
-   "id": 14,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Kirill Kaprizov",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 3.5,
-   "book": "espnbet",
-   "price": 120,
-   "fair_p": 0.4452,
-   "fair_odds": 125,
-   "ev": -0.0205,
-   "n_books": 8,
-   "id": 15,
+   "id": 9,
    "suspect": false
   },
   {
@@ -330,7 +222,7 @@
    "fair_odds": -138,
    "ev": -0.0205,
    "n_books": 8,
-   "id": 16,
+   "id": 10,
    "suspect": false
   },
   {
@@ -348,25 +240,7 @@
    "fair_odds": -137,
    "ev": -0.0242,
    "n_books": 7,
-   "id": 17,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Blake Coleman",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 1.5,
-   "book": "draftkings",
-   "price": -155,
-   "fair_p": 0.5918,
-   "fair_odds": -145,
-   "ev": -0.0264,
-   "n_books": 5,
-   "id": 18,
+   "id": 11,
    "suspect": false
   },
   {
@@ -384,25 +258,7 @@
    "fair_odds": -122,
    "ev": -0.0267,
    "n_books": 4,
-   "id": 19,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Valeri Nichushkin",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 1.5,
-   "book": "espnbet",
-   "price": -140,
-   "fair_p": 0.5667,
-   "fair_odds": -131,
-   "ev": -0.0285,
-   "n_books": 8,
-   "id": 20,
+   "id": 12,
    "suspect": false
   },
   {
@@ -420,25 +276,7 @@
    "fair_odds": -103,
    "ev": -0.0295,
    "n_books": 7,
-   "id": 21,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Kent Johnson",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 1.5,
-   "book": "fanduel",
-   "price": -146,
-   "fair_p": 0.5758,
-   "fair_odds": -136,
-   "ev": -0.0298,
-   "n_books": 8,
-   "id": 22,
+   "id": 13,
    "suspect": false
   },
   {
@@ -456,7 +294,7 @@
    "fair_odds": -139,
    "ev": -0.03,
    "n_books": 6,
-   "id": 23,
+   "id": 14,
    "suspect": false
   },
   {
@@ -474,7 +312,7 @@
    "fair_odds": 127,
    "ev": -0.031,
    "n_books": 6,
-   "id": 24,
+   "id": 15,
    "suspect": false
   },
   {
@@ -492,7 +330,7 @@
    "fair_odds": -107,
    "ev": -0.0334,
    "n_books": 6,
-   "id": 25,
+   "id": 16,
    "suspect": false
   },
   {
@@ -510,25 +348,7 @@
    "fair_odds": -116,
    "ev": -0.0336,
    "n_books": 5,
-   "id": 26,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Sean Monahan",
-   "prop": "shots on goal",
-   "side": "Under",
-   "line": 1.5,
-   "book": "draftkings",
-   "price": -145,
-   "fair_p": 0.5715,
-   "fair_odds": -133,
-   "ev": -0.0343,
-   "n_books": 6,
-   "id": 27,
+   "id": 17,
    "suspect": false
   },
   {
@@ -546,7 +366,7 @@
    "fair_odds": 107,
    "ev": -0.035,
    "n_books": 8,
-   "id": 28,
+   "id": 18,
    "suspect": false
   },
   {
@@ -564,25 +384,7 @@
    "fair_odds": -105,
    "ev": -0.0361,
    "n_books": 6,
-   "id": 29,
-   "suspect": false
-  },
-  {
-   "sport": "MLB",
-   "game": "Tampa Bay Rays @ Cleveland Guardians",
-   "event_id": "f4ca2d8a09898a94722dde0633e0a7e1",
-   "commence": "2026-10-18T21:10:00Z",
-   "player": "Drew Rasmussen",
-   "prop": "strikeouts",
-   "side": "Under",
-   "line": 5.5,
-   "book": "draftkings",
-   "price": -116,
-   "fair_p": 0.5176,
-   "fair_odds": -107,
-   "ev": -0.0362,
-   "n_books": 7,
-   "id": 30,
+   "id": 19,
    "suspect": false
   },
   {
@@ -600,7 +402,7 @@
    "fair_odds": 103,
    "ev": -0.0363,
    "n_books": 4,
-   "id": 31,
+   "id": 20,
    "suspect": false
   },
   {
@@ -618,7 +420,7 @@
    "fair_odds": -111,
    "ev": -0.0363,
    "n_books": 6,
-   "id": 32,
+   "id": 21,
    "suspect": false
   },
   {
@@ -636,25 +438,7 @@
    "fair_odds": 101,
    "ev": -0.037,
    "n_books": 4,
-   "id": 33,
-   "suspect": false
-  },
-  {
-   "sport": "MLB",
-   "game": "Tampa Bay Rays @ Cleveland Guardians",
-   "event_id": "f4ca2d8a09898a94722dde0633e0a7e1",
-   "commence": "2026-10-18T21:10:00Z",
-   "player": "Parker Messick",
-   "prop": "strikeouts",
-   "side": "Under",
-   "line": 4.5,
-   "book": "betmgm",
-   "price": -105,
-   "fair_p": 0.4931,
-   "fair_odds": 103,
-   "ev": -0.0372,
-   "n_books": 7,
-   "id": 34,
+   "id": 22,
    "suspect": false
   },
   {
@@ -672,43 +456,7 @@
    "fair_odds": -103,
    "ev": -0.0375,
    "n_books": 4,
-   "id": 35,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Charlie Coyle",
-   "prop": "shots on goal",
-   "side": "Under",
-   "line": 1.5,
-   "book": "draftkings",
-   "price": 100,
-   "fair_p": 0.48,
-   "fair_odds": 108,
-   "ev": -0.0399,
-   "n_books": 8,
-   "id": 36,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Matt Boldy",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 3.5,
-   "book": "betmgm",
-   "price": 100,
-   "fair_p": 0.4792,
-   "fair_odds": 109,
-   "ev": -0.0416,
-   "n_books": 8,
-   "id": 37,
+   "id": 23,
    "suspect": false
   },
   {
@@ -726,7 +474,7 @@
    "fair_odds": -101,
    "ev": -0.0424,
    "n_books": 4,
-   "id": 38,
+   "id": 24,
    "suspect": false
   },
   {
@@ -744,7 +492,7 @@
    "fair_odds": -160,
    "ev": -0.043,
    "n_books": 7,
-   "id": 39,
+   "id": 25,
    "suspect": false
   },
   {
@@ -762,25 +510,7 @@
    "fair_odds": -100,
    "ev": -0.0439,
    "n_books": 5,
-   "id": 40,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Joel Eriksson Ek",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 2.5,
-   "book": "draftkings",
-   "price": -130,
-   "fair_p": 0.5399,
-   "fair_odds": -117,
-   "ev": -0.0447,
-   "n_books": 8,
-   "id": 41,
+   "id": 26,
    "suspect": false
   },
   {
@@ -798,7 +528,7 @@
    "fair_odds": -100,
    "ev": -0.0455,
    "n_books": 4,
-   "id": 42,
+   "id": 27,
    "suspect": false
   },
   {
@@ -816,25 +546,7 @@
    "fair_odds": -100,
    "ev": -0.0455,
    "n_books": 7,
-   "id": 43,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Ryan Hartman",
-   "prop": "shots on goal",
-   "side": "Under",
-   "line": 1.5,
-   "book": "betmgm",
-   "price": 105,
-   "fair_p": 0.4655,
-   "fair_odds": 115,
-   "ev": -0.0456,
-   "n_books": 8,
-   "id": 44,
+   "id": 28,
    "suspect": false
   },
   {
@@ -852,25 +564,7 @@
    "fair_odds": -102,
    "ev": -0.0462,
    "n_books": 5,
-   "id": 45,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Adam Fantilli",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 2.5,
-   "book": "draftkings",
-   "price": -105,
-   "fair_p": 0.4884,
-   "fair_odds": 105,
-   "ev": -0.0465,
-   "n_books": 8,
-   "id": 46,
+   "id": 29,
    "suspect": false
   },
   {
@@ -888,7 +582,7 @@
    "fair_odds": 100,
    "ev": -0.0472,
    "n_books": 4,
-   "id": 47,
+   "id": 30,
    "suspect": false
   },
   {
@@ -906,7 +600,7 @@
    "fair_odds": 101,
    "ev": -0.0492,
    "n_books": 6,
-   "id": 48,
+   "id": 31,
    "suspect": false
   },
   {
@@ -924,7 +618,7 @@
    "fair_odds": -100,
    "ev": -0.0495,
    "n_books": 5,
-   "id": 49,
+   "id": 32,
    "suspect": false
   },
   {
@@ -942,7 +636,7 @@
    "fair_odds": -100,
    "ev": -0.0495,
    "n_books": 4,
-   "id": 50,
+   "id": 33,
    "suspect": false
   },
   {
@@ -960,7 +654,7 @@
    "fair_odds": -100,
    "ev": -0.0495,
    "n_books": 4,
-   "id": 51,
+   "id": 34,
    "suspect": false
   },
   {
@@ -978,7 +672,7 @@
    "fair_odds": -102,
    "ev": -0.0497,
    "n_books": 7,
-   "id": 52,
+   "id": 35,
    "suspect": false
   },
   {
@@ -996,7 +690,7 @@
    "fair_odds": 100,
    "ev": -0.0513,
    "n_books": 4,
-   "id": 53,
+   "id": 36,
    "suspect": false
   },
   {
@@ -1014,7 +708,7 @@
    "fair_odds": 103,
    "ev": -0.0519,
    "n_books": 5,
-   "id": 54,
+   "id": 37,
    "suspect": false
   },
   {
@@ -1032,7 +726,7 @@
    "fair_odds": -101,
    "ev": -0.0522,
    "n_books": 3,
-   "id": 55,
+   "id": 38,
    "suspect": false
   },
   {
@@ -1050,7 +744,7 @@
    "fair_odds": -101,
    "ev": -0.0537,
    "n_books": 4,
-   "id": 56,
+   "id": 39,
    "suspect": false
   },
   {
@@ -1068,7 +762,7 @@
    "fair_odds": -101,
    "ev": -0.054,
    "n_books": 3,
-   "id": 57,
+   "id": 40,
    "suspect": false
   },
   {
@@ -1086,7 +780,7 @@
    "fair_odds": 102,
    "ev": -0.0561,
    "n_books": 5,
-   "id": 58,
+   "id": 41,
    "suspect": false
   },
   {
@@ -1104,25 +798,7 @@
    "fair_odds": -100,
    "ev": -0.0575,
    "n_books": 3,
-   "id": 59,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Maxim Shabanov",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 1.5,
-   "book": "draftkings",
-   "price": 105,
-   "fair_p": 0.4578,
-   "fair_odds": 118,
-   "ev": -0.0615,
-   "n_books": 3,
-   "id": 60,
+   "id": 42,
    "suspect": false
   },
   {
@@ -1140,7 +816,7 @@
    "fair_odds": -101,
    "ev": -0.0617,
    "n_books": 4,
-   "id": 61,
+   "id": 43,
    "suspect": false
   },
   {
@@ -1158,30 +834,12 @@
    "fair_odds": 114,
    "ev": -0.0656,
    "n_books": 3,
-   "id": 62,
-   "suspect": false
-  },
-  {
-   "sport": "NHL",
-   "game": "Columbus Blue Jackets @ Minnesota Wild",
-   "event_id": "3af4496cf626dc3538fb93001aa2fba0",
-   "commence": "2026-10-18T22:10:00Z",
-   "player": "Bobby Brink",
-   "prop": "shots on goal",
-   "side": "Over",
-   "line": 1.5,
-   "book": "draftkings",
-   "price": 130,
-   "fair_p": 0.404,
-   "fair_odds": 148,
-   "ev": -0.0708,
-   "n_books": 3,
-   "id": 63,
+   "id": 44,
    "suspect": false
   }
  ],
- "n_legs": 64,
- "n_good": 3,
+ "n_legs": 45,
+ "n_good": 0,
  "parlays": {
   "2": [],
   "3": [],
