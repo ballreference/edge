@@ -97,7 +97,17 @@
    "last_seen": "2026-10-18T14:38:52Z",
    "last_ev": -0.0147,
    "peak_ev": 0.037,
-   "status": "open"
+   "status": "closed",
+   "close": {
+    "pulled_at": "2026-10-18T14:38:52Z",
+    "mins_before": 141,
+    "later": true,
+    "point": null,
+    "fair_p": 0.6085,
+    "fair_odds": -155,
+    "clv_ev": 0.1376,
+    "beat": true
+   }
   },
   {
    "market": "spreads",
@@ -144,7 +154,7 @@
    "last_seen": "2026-10-17T17:16:27Z",
    "last_ev": 0.0022,
    "peak_ev": 0.0313,
-   "status": "closed",
+   "status": "graded",
    "close": {
     "pulled_at": "2026-10-17T17:16:27Z",
     "mins_before": 143,
@@ -154,7 +164,10 @@
     "fair_odds": -140,
     "clv_ev": -0.0388,
     "beat": false
-   }
+   },
+   "result": "W",
+   "units": 0.6494,
+   "final": "Carolina Hurricanes 3 @ Winnipeg Jets 2"
   },
   {
    "market": "spreads",
