@@ -1,8 +1,8 @@
 {
- "credits_remaining": 318,
- "credits_used": 182,
+ "credits_remaining": 279,
+ "credits_used": 221,
  "last_pull": {
-  "nfl": "2026-10-18T11:16:53Z",
+  "nfl": "2026-10-18T14:38:52Z",
   "mlb": "2026-10-17T22:24:33Z",
   "nhl": "2026-10-17T17:16:27Z"
  },
@@ -11,7 +11,7 @@
    "2026-10-17": 1
   },
   "nfl": {
-   "2026-10-18": 1
+   "2026-10-18": 2
   },
   "nhl": {
    "2026-10-17": 1
@@ -22,10 +22,6 @@
   "nhl": "2026-10-17T22:24:34Z"
  },
  "log": [
-  "10-05 18:42 nhl: close pull, 17 games, 0 new flag(s), 479 credits left",
-  "10-06 17:41 mlb: close pull, 4 games, 0 new flag(s), 476 credits left",
-  "10-06 21:37 nhl: close pull, 15 games, 0 new flag(s), 473 credits left",
-  "10-07 18:02 mlb: close pull, 4 games, 0 new flag(s), 470 credits left",
   "10-08 05:05 nfl: routine pull, 29 games, 0 new flag(s), 467 credits left",
   "10-08 05:05 nhl: routine pull, 11 games, 0 new flag(s), 464 credits left",
   "10-08 18:08 nfl: close pull, 29 games, 0 new flag(s), 461 credits left",
@@ -81,7 +77,11 @@
   "10-17 15:27 mlb: routine pull, 1 games, 0 new flag(s), 326 credits left",
   "10-17 18:24 mlb: close pull, 1 games, 0 new flag(s), 323 credits left",
   "10-17 18:24 nhl: 1 closing line(s) recorded, 1 graded",
-  "10-18 07:16 nfl: close pull, 24 games, 0 new flag(s), 318 credits left"
+  "10-18 07:16 nfl: close pull, 24 games, 0 new flag(s), 318 credits left",
+  "10-18 10:38 nfl: close pull, 23 games, 0 new flag(s), 315 credits left",
+  "10-18 10:38 nfl: props for 11 game(s), 33 credits (52/180 this month)",
+  "10-18 10:38 nhl: props for 2 game(s), 2 credits (54/180 this month)",
+  "10-18 10:38 mlb: props for 1 game(s), 1 credits (55/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -99,16 +99,16 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-10-18T11:16:54Z",
+ "last_run": "2026-10-18T14:38:55Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-10",
-  "spent": 19
+  "spent": 55
  },
  "props_pulled": {
-  "nfl": "2026-10-17",
-  "nba": "2026-10-17",
-  "nhl": "2026-10-17",
-  "mlb": "2026-10-17"
+  "nfl": "2026-10-18",
+  "nba": "2026-10-18",
+  "nhl": "2026-10-18",
+  "mlb": "2026-10-18"
  }
 }
