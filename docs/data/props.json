@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T22:24:34Z",
+ "generated": "2026-10-18T01:08:43Z",
  "date": "2026-10-17",
  "pulled": {
   "NHL": "2026-10-17T13:46:59Z",
@@ -25,27 +25,8 @@
   "hardrockbet": "Hard Rock",
   "bovada": "Bovada"
  },
- "legs": [
-  {
-   "sport": "MLB",
-   "game": "Tampa Bay Rays @ Cleveland Guardians",
-   "event_id": "bf41baaebfa23a202d2f3a6811425ff9",
-   "commence": "2026-10-18T00:00:00Z",
-   "player": "Nick Martinez",
-   "prop": "strikeouts",
-   "side": "Under",
-   "line": 2.5,
-   "book": "draftkings",
-   "price": -160,
-   "fair_p": 0.5921,
-   "fair_odds": -145,
-   "ev": -0.0379,
-   "n_books": 7,
-   "id": 0,
-   "suspect": false
-  }
- ],
- "n_legs": 1,
+ "legs": [],
+ "n_legs": 0,
  "n_good": 0,
  "parlays": {
   "2": [],
