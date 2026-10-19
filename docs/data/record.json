@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T19:59:15Z",
+ "generated": "2026-10-19T23:45:47Z",
  "overall": {
   "n": 4,
   "w": 2,
@@ -111,7 +111,7 @@
     "lowvig"
    ],
    "flagged_at": "2026-10-19T19:59:15Z",
-   "last_ev": 0.0265,
+   "last_ev": 0.0158,
    "status": "open",
    "result": null,
    "units": null,
@@ -137,6 +137,61 @@
     [
      "fanduel",
      -118
+    ]
+   ],
+   "book_name": "DraftKings"
+  },
+  {
+   "id": "2823e986597c449ab94126cd5ed3fae9|h2h|Tampa Bay Buccaneers",
+   "sport": "nfl",
+   "home": "Carolina Panthers",
+   "away": "Tampa Bay Buccaneers",
+   "commence": "2026-10-25T17:00:00Z",
+   "market": "h2h",
+   "side": "Tampa Bay Buccaneers",
+   "point": null,
+   "book": "draftkings",
+   "price": 170,
+   "fair_p": 0.3909,
+   "fair_odds": 156,
+   "ev": 0.0553,
+   "n_books": 9,
+   "sharps": [
+    "betonlineag",
+    "lowvig",
+    "pinnacle"
+   ],
+   "flagged_at": "2026-10-19T23:45:46Z",
+   "last_ev": 0.0553,
+   "status": "open",
+   "result": null,
+   "units": null,
+   "final": null,
+   "close": null,
+   "others": [
+    [
+     "fanduel",
+     150
+    ],
+    [
+     "betrivers",
+     148
+    ],
+    [
+     "hardrockbet",
+     145
+    ],
+    [
+     "pinnacle",
+     143
+    ],
+    [
+     "betonlineag",
+     142
+    ],
+    [
+     "lowvig",
+     142
     ]
    ],
    "book_name": "DraftKings"

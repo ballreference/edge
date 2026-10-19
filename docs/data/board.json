@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-19T19:59:15Z",
+ "generated": "2026-10-19T23:45:47Z",
  "credits": {
-  "remaining": 243,
-  "used": 257
+  "remaining": 234,
+  "used": 266
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-18 14:11 mlb: close pull, 1 games, 0 new flag(s), 273 credits left",
-  "10-18 14:11 nhl: routine pull, 6 games, 0 new flag(s), 270 credits left",
-  "10-18 14:11 nhl: 0 closing line(s) recorded, 1 graded",
   "10-18 16:51 nhl: close pull, 6 games, 0 new flag(s), 265 credits left",
   "10-18 19:19 nfl: 0 closing line(s) recorded, 1 graded",
   "10-19 09:33 nba: routine pull, 46 games, 0 new flag(s), 260 credits left",
@@ -38,7 +35,10 @@
   "10-19 09:33 mlb: props for 1 game(s), 1 credits (63/180 this month)",
   "10-19 15:59 nfl: routine pull, 15 games, 0 new flag(s), 249 credits left",
   "10-19 15:59 mlb: routine pull, 1 games, 0 new flag(s), 246 credits left",
-  "10-19 15:59 nhl: routine pull, 15 games, 1 new flag(s), 243 credits left"
+  "10-19 15:59 nhl: routine pull, 15 games, 1 new flag(s), 243 credits left",
+  "10-19 19:45 nfl: close pull, 15 games, 1 new flag(s), 240 credits left",
+  "10-19 19:45 mlb: close pull, 1 games, 0 new flag(s), 237 credits left",
+  "10-19 19:45 nhl: close pull, 15 games, 0 new flag(s), 234 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,10 +59,145 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-19T19:59:13Z",
+   "last_pull": "2026-10-19T23:45:46Z",
    "games": 15,
-   "flags": [],
-   "watch": []
+   "flags": [
+    {
+     "market": "h2h",
+     "side": "Tampa Bay Buccaneers",
+     "point": null,
+     "book": "draftkings",
+     "price": 170,
+     "fair_p": 0.3909,
+     "fair_odds": 156,
+     "ev": 0.0553,
+     "n_books": 9,
+     "sharps": [
+      "betonlineag",
+      "lowvig",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "fanduel",
+       150
+      ],
+      [
+       "betrivers",
+       148
+      ],
+      [
+       "hardrockbet",
+       145
+      ],
+      [
+       "pinnacle",
+       143
+      ],
+      [
+       "betonlineag",
+       142
+      ],
+      [
+       "lowvig",
+       142
+      ]
+     ],
+     "home": "Carolina Panthers",
+     "away": "Tampa Bay Buccaneers",
+     "commence": "2026-10-25T17:00:00Z",
+     "logged": {
+      "price": 170,
+      "book": "draftkings",
+      "point": null,
+      "at": "2026-10-19T23:45:46Z"
+     }
+    }
+   ],
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "San Francisco 49ers",
+     "point": null,
+     "book": "espnbet",
+     "price": -195,
+     "fair_p": 0.6687,
+     "fair_odds": -202,
+     "ev": 0.0116,
+     "n_books": 5,
+     "sharps": [],
+     "others": [
+      [
+       "fanduel",
+       -210
+      ],
+      [
+       "draftkings",
+       -218
+      ],
+      [
+       "hardrockbet",
+       -220
+      ],
+      [
+       "betrivers",
+       -225
+      ],
+      [
+       "betmgm",
+       -225
+      ]
+     ],
+     "home": "Atlanta Falcons",
+     "away": "San Francisco 49ers",
+     "commence": "2026-10-25T17:00:00Z"
+    },
+    {
+     "market": "h2h",
+     "side": "Pittsburgh Steelers",
+     "point": null,
+     "book": "fanduel",
+     "price": -152,
+     "fair_p": 0.6098,
+     "fair_odds": -156,
+     "ev": 0.0109,
+     "n_books": 9,
+     "sharps": [
+      "betonlineag",
+      "lowvig",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "hardrockbet",
+       -160
+      ],
+      [
+       "betrivers",
+       -162
+      ],
+      [
+       "betmgm",
+       -165
+      ],
+      [
+       "espnbet",
+       -165
+      ],
+      [
+       "betonlineag",
+       -165
+      ],
+      [
+       "lowvig",
+       -165
+      ]
+     ],
+     "home": "New Orleans Saints",
+     "away": "Pittsburgh Steelers",
+     "commence": "2026-10-25T13:30:00Z"
+    }
+   ]
   },
   "nba": {
    "label": "NBA",
@@ -119,26 +254,27 @@
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-19T19:59:14Z",
+   "last_pull": "2026-10-19T23:45:47Z",
    "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-19T19:59:15Z",
-   "games": 15,
-   "flags": [
+   "last_pull": "2026-10-19T23:45:47Z",
+   "games": 12,
+   "flags": [],
+   "watch": [
     {
      "market": "totals",
      "side": "Over",
      "point": 6.5,
      "book": "draftkings",
      "price": 100,
-     "fair_p": 0.5133,
-     "fair_odds": -105,
-     "ev": 0.0265,
-     "n_books": 5,
+     "fair_p": 0.5079,
+     "fair_odds": -103,
+     "ev": 0.0158,
+     "n_books": 8,
      "sharps": [
       "betonlineag",
       "lowvig"
@@ -146,19 +282,23 @@
      "others": [
       [
        "betmgm",
-       -110
+       -105
       ],
       [
-       "betrivers",
-       -114
+       "bovada",
+       -105
       ],
       [
        "betonlineag",
-       -116
+       -112
       ],
       [
        "lowvig",
-       -116
+       -112
+      ],
+      [
+       "betrivers",
+       -113
       ],
       [
        "fanduel",
@@ -174,44 +314,6 @@
       "point": 6.5,
       "at": "2026-10-19T19:59:15Z"
      }
-    }
-   ],
-   "watch": [
-    {
-     "market": "totals",
-     "side": "Over",
-     "point": 6.5,
-     "book": "draftkings",
-     "price": 114,
-     "fair_p": 0.474,
-     "fair_odds": 111,
-     "ev": 0.0144,
-     "n_books": 4,
-     "sharps": [
-      "betonlineag",
-      "lowvig"
-     ],
-     "others": [
-      [
-       "betonlineag",
-       106
-      ],
-      [
-       "lowvig",
-       106
-      ],
-      [
-       "betrivers",
-       -103
-      ],
-      [
-       "fanduel",
-       -105
-      ]
-     ],
-     "home": "New Jersey Devils",
-     "away": "Colorado Avalanche",
-     "commence": "2026-10-20T23:10:00Z"
     }
    ]
   }
