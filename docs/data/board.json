@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-19T06:19:07Z",
+ "generated": "2026-10-19T13:33:36Z",
  "credits": {
-  "remaining": 263,
-  "used": 237
+  "remaining": 252,
+  "used": 248
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-18 07:16 nfl: close pull, 24 games, 0 new flag(s), 318 credits left",
-  "10-18 10:38 nfl: close pull, 23 games, 0 new flag(s), 315 credits left",
-  "10-18 10:38 nfl: props for 11 game(s), 33 credits (52/180 this month)",
-  "10-18 10:38 nhl: props for 2 game(s), 2 credits (54/180 this month)",
   "10-18 10:38 mlb: props for 1 game(s), 1 credits (55/180 this month)",
   "10-18 14:11 nfl: close pull, 12 games, 0 new flag(s), 276 credits left",
   "10-18 14:11 nfl: 1 closing line(s) recorded, 0 graded",
@@ -38,7 +34,11 @@
   "10-18 14:11 nhl: routine pull, 6 games, 0 new flag(s), 270 credits left",
   "10-18 14:11 nhl: 0 closing line(s) recorded, 1 graded",
   "10-18 16:51 nhl: close pull, 6 games, 0 new flag(s), 265 credits left",
-  "10-18 19:19 nfl: 0 closing line(s) recorded, 1 graded"
+  "10-18 19:19 nfl: 0 closing line(s) recorded, 1 graded",
+  "10-19 09:33 nba: routine pull, 46 games, 0 new flag(s), 260 credits left",
+  "10-19 09:33 nfl: props for 1 game(s), 3 credits (58/180 this month)",
+  "10-19 09:33 nhl: props for 4 game(s), 4 credits (62/180 this month)",
+  "10-19 09:33 mlb: props for 1 game(s), 1 credits (63/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -66,10 +66,56 @@
   },
   "nba": {
    "label": "NBA",
-   "last_pull": null,
-   "games": 0,
+   "last_pull": "2026-10-19T13:33:33Z",
+   "games": 46,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "Toronto Raptors",
+     "point": null,
+     "book": "fanduel",
+     "price": -350,
+     "fair_p": 0.7858,
+     "fair_odds": -367,
+     "ev": 0.0103,
+     "n_books": 9,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "betrivers",
+       -375
+      ],
+      [
+       "draftkings",
+       -395
+      ],
+      [
+       "lowvig",
+       -395
+      ],
+      [
+       "betmgm",
+       -400
+      ],
+      [
+       "espnbet",
+       -400
+      ],
+      [
+       "hardrockbet",
+       -400
+      ]
+     ],
+     "home": "Toronto Raptors",
+     "away": "Chicago Bulls",
+     "commence": "2026-10-21T23:40:00Z"
+    }
+   ]
   },
   "mlb": {
    "label": "MLB",
