@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-19T13:33:36Z",
+ "generated": "2026-10-19T19:59:15Z",
  "credits": {
-  "remaining": 252,
-  "used": 248
+  "remaining": 243,
+  "used": 257
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-18 10:38 mlb: props for 1 game(s), 1 credits (55/180 this month)",
-  "10-18 14:11 nfl: close pull, 12 games, 0 new flag(s), 276 credits left",
-  "10-18 14:11 nfl: 1 closing line(s) recorded, 0 graded",
   "10-18 14:11 mlb: close pull, 1 games, 0 new flag(s), 273 credits left",
   "10-18 14:11 nhl: routine pull, 6 games, 0 new flag(s), 270 credits left",
   "10-18 14:11 nhl: 0 closing line(s) recorded, 1 graded",
@@ -38,7 +35,10 @@
   "10-19 09:33 nba: routine pull, 46 games, 0 new flag(s), 260 credits left",
   "10-19 09:33 nfl: props for 1 game(s), 3 credits (58/180 this month)",
   "10-19 09:33 nhl: props for 4 game(s), 4 credits (62/180 this month)",
-  "10-19 09:33 mlb: props for 1 game(s), 1 credits (63/180 this month)"
+  "10-19 09:33 mlb: props for 1 game(s), 1 credits (63/180 this month)",
+  "10-19 15:59 nfl: routine pull, 15 games, 0 new flag(s), 249 credits left",
+  "10-19 15:59 mlb: routine pull, 1 games, 0 new flag(s), 246 credits left",
+  "10-19 15:59 nhl: routine pull, 15 games, 1 new flag(s), 243 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,8 +59,8 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-18T18:11:02Z",
-   "games": 1,
+   "last_pull": "2026-10-19T19:59:13Z",
+   "games": 15,
    "flags": [],
    "watch": []
   },
@@ -119,17 +119,101 @@
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-18T18:11:03Z",
-   "games": 0,
+   "last_pull": "2026-10-19T19:59:14Z",
+   "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-18T20:51:14Z",
-   "games": 4,
-   "flags": [],
-   "watch": []
+   "last_pull": "2026-10-19T19:59:15Z",
+   "games": 15,
+   "flags": [
+    {
+     "market": "totals",
+     "side": "Over",
+     "point": 6.5,
+     "book": "draftkings",
+     "price": 100,
+     "fair_p": 0.5133,
+     "fair_odds": -105,
+     "ev": 0.0265,
+     "n_books": 5,
+     "sharps": [
+      "betonlineag",
+      "lowvig"
+     ],
+     "others": [
+      [
+       "betmgm",
+       -110
+      ],
+      [
+       "betrivers",
+       -114
+      ],
+      [
+       "betonlineag",
+       -116
+      ],
+      [
+       "lowvig",
+       -116
+      ],
+      [
+       "fanduel",
+       -118
+      ]
+     ],
+     "home": "Columbus Blue Jackets",
+     "away": "Toronto Maple Leafs",
+     "commence": "2026-10-20T23:10:00Z",
+     "logged": {
+      "price": 100,
+      "book": "draftkings",
+      "point": 6.5,
+      "at": "2026-10-19T19:59:15Z"
+     }
+    }
+   ],
+   "watch": [
+    {
+     "market": "totals",
+     "side": "Over",
+     "point": 6.5,
+     "book": "draftkings",
+     "price": 114,
+     "fair_p": 0.474,
+     "fair_odds": 111,
+     "ev": 0.0144,
+     "n_books": 4,
+     "sharps": [
+      "betonlineag",
+      "lowvig"
+     ],
+     "others": [
+      [
+       "betonlineag",
+       106
+      ],
+      [
+       "lowvig",
+       106
+      ],
+      [
+       "betrivers",
+       -103
+      ],
+      [
+       "fanduel",
+       -105
+      ]
+     ],
+     "home": "New Jersey Devils",
+     "away": "Colorado Avalanche",
+     "commence": "2026-10-20T23:10:00Z"
+    }
+   ]
   }
  }
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T13:33:36Z",
+ "generated": "2026-10-19T19:59:15Z",
  "overall": {
   "n": 4,
   "w": 2,
@@ -90,7 +90,58 @@
    "avg_clv": 0.0494
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "id": "fd470e8ca75f778cf8dfdfcb340e2fa7|totals|Over",
+   "sport": "nhl",
+   "home": "Columbus Blue Jackets",
+   "away": "Toronto Maple Leafs",
+   "commence": "2026-10-20T23:10:00Z",
+   "market": "totals",
+   "side": "Over",
+   "point": 6.5,
+   "book": "draftkings",
+   "price": 100,
+   "fair_p": 0.5133,
+   "fair_odds": -105,
+   "ev": 0.0265,
+   "n_books": 5,
+   "sharps": [
+    "betonlineag",
+    "lowvig"
+   ],
+   "flagged_at": "2026-10-19T19:59:15Z",
+   "last_ev": 0.0265,
+   "status": "open",
+   "result": null,
+   "units": null,
+   "final": null,
+   "close": null,
+   "others": [
+    [
+     "betmgm",
+     -110
+    ],
+    [
+     "betrivers",
+     -114
+    ],
+    [
+     "betonlineag",
+     -116
+    ],
+    [
+     "lowvig",
+     -116
+    ],
+    [
+     "fanduel",
+     -118
+    ]
+   ],
+   "book_name": "DraftKings"
+  }
+ ],
  "recent": [
   {
    "id": "caca2d752fe1a1779029082e95332fcc|h2h|Carolina Panthers",
