@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T15:09:15Z",
+ "generated": "2026-10-20T19:20:08Z",
  "date": "2026-10-20",
  "pulled": {
   "NBA": "2026-10-20T15:09:14Z",
@@ -207,24 +207,6 @@
    "suspect": false
   },
   {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Cade Cunningham",
-   "prop": "points",
-   "side": "Over",
-   "line": 23.5,
-   "book": "betmgm",
-   "price": -115,
-   "fair_p": 0.5404,
-   "fair_odds": -118,
-   "ev": 0.0103,
-   "n_books": 3,
-   "id": 10,
-   "suspect": false
-  },
-  {
    "sport": "NHL",
    "game": "Toronto Maple Leafs @ Columbus Blue Jackets",
    "event_id": "fd470e8ca75f778cf8dfdfcb340e2fa7",
@@ -239,7 +221,7 @@
    "fair_odds": 123,
    "ev": 0.0101,
    "n_books": 8,
-   "id": 11,
+   "id": 10,
    "suspect": false
   },
   {
@@ -257,7 +239,7 @@
    "fair_odds": -104,
    "ev": 0.01,
    "n_books": 9,
-   "id": 12,
+   "id": 11,
    "suspect": false
   },
   {
@@ -275,7 +257,7 @@
    "fair_odds": -107,
    "ev": 0.0092,
    "n_books": 9,
-   "id": 13,
+   "id": 12,
    "suspect": false
   },
   {
@@ -293,25 +275,7 @@
    "fair_odds": -128,
    "ev": 0.0089,
    "n_books": 7,
-   "id": 14,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Neemias Queta",
-   "prop": "points",
-   "side": "Under",
-   "line": 9.5,
-   "book": "betmgm",
-   "price": -115,
-   "fair_p": 0.5394,
-   "fair_odds": -117,
-   "ev": 0.0084,
-   "n_books": 5,
-   "id": 15,
+   "id": 13,
    "suspect": false
   },
   {
@@ -329,7 +293,7 @@
    "fair_odds": 113,
    "ev": 0.0077,
    "n_books": 4,
-   "id": 16,
+   "id": 14,
    "suspect": false
   },
   {
@@ -347,7 +311,7 @@
    "fair_odds": -107,
    "ev": 0.0077,
    "n_books": 8,
-   "id": 17,
+   "id": 15,
    "suspect": false
   },
   {
@@ -365,7 +329,7 @@
    "fair_odds": 104,
    "ev": 0.0073,
    "n_books": 7,
-   "id": 18,
+   "id": 16,
    "suspect": false
   },
   {
@@ -383,7 +347,7 @@
    "fair_odds": -113,
    "ev": 0.0067,
    "n_books": 7,
-   "id": 19,
+   "id": 17,
    "suspect": false
   },
   {
@@ -401,7 +365,7 @@
    "fair_odds": -151,
    "ev": 0.0022,
    "n_books": 6,
-   "id": 20,
+   "id": 18,
    "suspect": false
   },
   {
@@ -419,7 +383,7 @@
    "fair_odds": 135,
    "ev": -0.0008,
    "n_books": 7,
-   "id": 21,
+   "id": 19,
    "suspect": false
   },
   {
@@ -437,7 +401,7 @@
    "fair_odds": 138,
    "ev": -0.001,
    "n_books": 7,
-   "id": 22,
+   "id": 20,
    "suspect": false
   },
   {
@@ -455,7 +419,7 @@
    "fair_odds": -165,
    "ev": -0.001,
    "n_books": 6,
-   "id": 23,
+   "id": 21,
    "suspect": false
   },
   {
@@ -473,7 +437,7 @@
    "fair_odds": 100,
    "ev": -0.0014,
    "n_books": 5,
-   "id": 24,
+   "id": 22,
    "suspect": false
   },
   {
@@ -491,7 +455,7 @@
    "fair_odds": -134,
    "ev": -0.0024,
    "n_books": 7,
-   "id": 25,
+   "id": 23,
    "suspect": false
   },
   {
@@ -509,7 +473,7 @@
    "fair_odds": -114,
    "ev": -0.0033,
    "n_books": 6,
-   "id": 26,
+   "id": 24,
    "suspect": false
   },
   {
@@ -527,7 +491,7 @@
    "fair_odds": -155,
    "ev": -0.0037,
    "n_books": 7,
-   "id": 27,
+   "id": 25,
    "suspect": false
   },
   {
@@ -545,7 +509,7 @@
    "fair_odds": -134,
    "ev": -0.0046,
    "n_books": 3,
-   "id": 28,
+   "id": 26,
    "suspect": false
   },
   {
@@ -563,7 +527,7 @@
    "fair_odds": -173,
    "ev": -0.0048,
    "n_books": 5,
-   "id": 29,
+   "id": 27,
    "suspect": false
   },
   {
@@ -581,7 +545,7 @@
    "fair_odds": -114,
    "ev": -0.0052,
    "n_books": 8,
-   "id": 30,
+   "id": 28,
    "suspect": false
   },
   {
@@ -599,7 +563,7 @@
    "fair_odds": 105,
    "ev": -0.0057,
    "n_books": 8,
-   "id": 31,
+   "id": 29,
    "suspect": false
   },
   {
@@ -617,7 +581,7 @@
    "fair_odds": -114,
    "ev": -0.006,
    "n_books": 8,
-   "id": 32,
+   "id": 30,
    "suspect": false
   },
   {
@@ -635,25 +599,7 @@
    "fair_odds": 152,
    "ev": -0.0061,
    "n_books": 7,
-   "id": 33,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Ausar Thompson",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 6.5,
-   "book": "betmgm",
-   "price": -115,
-   "fair_p": 0.5313,
-   "fair_odds": -113,
-   "ev": -0.0067,
-   "n_books": 9,
-   "id": 34,
+   "id": 31,
    "suspect": false
   },
   {
@@ -671,7 +617,7 @@
    "fair_odds": -138,
    "ev": -0.0068,
    "n_books": 8,
-   "id": 35,
+   "id": 32,
    "suspect": false
   },
   {
@@ -689,7 +635,7 @@
    "fair_odds": -101,
    "ev": -0.0069,
    "n_books": 9,
-   "id": 36,
+   "id": 33,
    "suspect": false
   },
   {
@@ -707,7 +653,7 @@
    "fair_odds": -103,
    "ev": -0.0075,
    "n_books": 7,
-   "id": 37,
+   "id": 34,
    "suspect": false
   },
   {
@@ -725,7 +671,7 @@
    "fair_odds": -142,
    "ev": -0.0077,
    "n_books": 8,
-   "id": 38,
+   "id": 35,
    "suspect": false
   },
   {
@@ -743,7 +689,7 @@
    "fair_odds": 142,
    "ev": -0.008,
    "n_books": 8,
-   "id": 39,
+   "id": 36,
    "suspect": false
   },
   {
@@ -761,7 +707,7 @@
    "fair_odds": -103,
    "ev": -0.0083,
    "n_books": 8,
-   "id": 40,
+   "id": 37,
    "suspect": false
   },
   {
@@ -779,7 +725,7 @@
    "fair_odds": -104,
    "ev": -0.0096,
    "n_books": 6,
-   "id": 41,
+   "id": 38,
    "suspect": false
   },
   {
@@ -797,43 +743,7 @@
    "fair_odds": 122,
    "ev": -0.0098,
    "n_books": 4,
-   "id": 42,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Payton Pritchard",
-   "prop": "rebounds",
-   "side": "Over",
-   "line": 2.5,
-   "book": "betmgm",
-   "price": -160,
-   "fair_p": 0.6093,
-   "fair_odds": -156,
-   "ev": -0.0099,
-   "n_books": 5,
-   "id": 43,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Neemias Queta",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 7.5,
-   "book": "betmgm",
-   "price": -120,
-   "fair_p": 0.5394,
-   "fair_odds": -117,
-   "ev": -0.0111,
-   "n_books": 8,
-   "id": 44,
+   "id": 39,
    "suspect": false
   },
   {
@@ -851,7 +761,7 @@
    "fair_odds": -117,
    "ev": -0.0113,
    "n_books": 3,
-   "id": 45,
+   "id": 40,
    "suspect": false
   },
   {
@@ -869,7 +779,7 @@
    "fair_odds": -112,
    "ev": -0.0119,
    "n_books": 9,
-   "id": 46,
+   "id": 41,
    "suspect": false
   },
   {
@@ -887,43 +797,7 @@
    "fair_odds": -155,
    "ev": -0.0119,
    "n_books": 4,
-   "id": 47,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Derrick White",
-   "prop": "rebounds",
-   "side": "Over",
-   "line": 3.5,
-   "book": "betmgm",
-   "price": 100,
-   "fair_p": 0.494,
-   "fair_odds": 102,
-   "ev": -0.012,
-   "n_books": 9,
-   "id": 48,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Jalen Duren",
-   "prop": "points",
-   "side": "Over",
-   "line": 16.5,
-   "book": "espnbet",
-   "price": -120,
-   "fair_p": 0.5387,
-   "fair_odds": -117,
-   "ev": -0.0124,
-   "n_books": 6,
-   "id": 49,
+   "id": 42,
    "suspect": false
   },
   {
@@ -941,25 +815,7 @@
    "fair_odds": -131,
    "ev": -0.0128,
    "n_books": 5,
-   "id": 50,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Jordan Walsh",
-   "prop": "rebounds",
-   "side": "Over",
-   "line": 3.5,
-   "book": "fanduel",
-   "price": 132,
-   "fair_p": 0.4253,
-   "fair_odds": 135,
-   "ev": -0.0134,
-   "n_books": 4,
-   "id": 51,
+   "id": 43,
    "suspect": false
   },
   {
@@ -977,7 +833,7 @@
    "fair_odds": -102,
    "ev": -0.0135,
    "n_books": 9,
-   "id": 52,
+   "id": 44,
    "suspect": false
   },
   {
@@ -995,7 +851,7 @@
    "fair_odds": 128,
    "ev": -0.0142,
    "n_books": 7,
-   "id": 53,
+   "id": 45,
    "suspect": false
   },
   {
@@ -1013,7 +869,7 @@
    "fair_odds": -135,
    "ev": -0.0143,
    "n_books": 7,
-   "id": 54,
+   "id": 46,
    "suspect": false
   },
   {
@@ -1031,7 +887,7 @@
    "fair_odds": -108,
    "ev": -0.0144,
    "n_books": 8,
-   "id": 55,
+   "id": 47,
    "suspect": false
   },
   {
@@ -1049,7 +905,7 @@
    "fair_odds": -102,
    "ev": -0.0151,
    "n_books": 9,
-   "id": 56,
+   "id": 48,
    "suspect": false
   },
   {
@@ -1067,25 +923,7 @@
    "fair_odds": -107,
    "ev": -0.0152,
    "n_books": 7,
-   "id": 57,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Derrick White",
-   "prop": "points",
-   "side": "Under",
-   "line": 15.5,
-   "book": "betmgm",
-   "price": -110,
-   "fair_p": 0.5155,
-   "fair_odds": -106,
-   "ev": -0.0159,
-   "n_books": 8,
-   "id": 58,
+   "id": 49,
    "suspect": false
   },
   {
@@ -1103,25 +941,7 @@
    "fair_odds": -106,
    "ev": -0.0161,
    "n_books": 9,
-   "id": 59,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Daniss Jenkins",
-   "prop": "points",
-   "side": "Under",
-   "line": 8.5,
-   "book": "betmgm",
-   "price": -120,
-   "fair_p": 0.5365,
-   "fair_odds": -116,
-   "ev": -0.0163,
-   "n_books": 4,
-   "id": 60,
+   "id": 50,
    "suspect": false
   },
   {
@@ -1139,7 +959,7 @@
    "fair_odds": -106,
    "ev": -0.0163,
    "n_books": 8,
-   "id": 61,
+   "id": 51,
    "suspect": false
   },
   {
@@ -1157,7 +977,7 @@
    "fair_odds": -116,
    "ev": -0.0172,
    "n_books": 3,
-   "id": 62,
+   "id": 52,
    "suspect": false
   },
   {
@@ -1175,7 +995,7 @@
    "fair_odds": -143,
    "ev": -0.0193,
    "n_books": 8,
-   "id": 63,
+   "id": 53,
    "suspect": false
   },
   {
@@ -1193,25 +1013,7 @@
    "fair_odds": -180,
    "ev": -0.0194,
    "n_books": 7,
-   "id": 64,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Paul George",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 4.5,
-   "book": "draftkings",
-   "price": -139,
-   "fair_p": 0.57,
-   "fair_odds": -133,
-   "ev": -0.02,
-   "n_books": 9,
-   "id": 65,
+   "id": 54,
    "suspect": false
   },
   {
@@ -1229,7 +1031,7 @@
    "fair_odds": -114,
    "ev": -0.0201,
    "n_books": 8,
-   "id": 66,
+   "id": 55,
    "suspect": false
   },
   {
@@ -1247,7 +1049,7 @@
    "fair_odds": -105,
    "ev": -0.0201,
    "n_books": 8,
-   "id": 67,
+   "id": 56,
    "suspect": false
   },
   {
@@ -1265,7 +1067,7 @@
    "fair_odds": 105,
    "ev": -0.0211,
    "n_books": 7,
-   "id": 68,
+   "id": 57,
    "suspect": false
   },
   {
@@ -1283,7 +1085,7 @@
    "fair_odds": -142,
    "ev": -0.0214,
    "n_books": 7,
-   "id": 69,
+   "id": 58,
    "suspect": false
   },
   {
@@ -1301,7 +1103,7 @@
    "fair_odds": -165,
    "ev": -0.0215,
    "n_books": 8,
-   "id": 70,
+   "id": 59,
    "suspect": false
   },
   {
@@ -1319,7 +1121,7 @@
    "fair_odds": 104,
    "ev": -0.0219,
    "n_books": 9,
-   "id": 71,
+   "id": 60,
    "suspect": false
   },
   {
@@ -1337,7 +1139,7 @@
    "fair_odds": 121,
    "ev": -0.022,
    "n_books": 8,
-   "id": 72,
+   "id": 61,
    "suspect": false
   },
   {
@@ -1355,25 +1157,7 @@
    "fair_odds": -112,
    "ev": -0.0224,
    "n_books": 4,
-   "id": 73,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Daniss Jenkins",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 2.5,
-   "book": "betmgm",
-   "price": -160,
-   "fair_p": 0.6015,
-   "fair_odds": -151,
-   "ev": -0.0225,
-   "n_books": 7,
-   "id": 74,
+   "id": 62,
    "suspect": false
   },
   {
@@ -1391,7 +1175,7 @@
    "fair_odds": 125,
    "ev": -0.0227,
    "n_books": 6,
-   "id": 75,
+   "id": 63,
    "suspect": false
   },
   {
@@ -1409,7 +1193,7 @@
    "fair_odds": -122,
    "ev": -0.0228,
    "n_books": 8,
-   "id": 76,
+   "id": 64,
    "suspect": false
   },
   {
@@ -1427,7 +1211,7 @@
    "fair_odds": -133,
    "ev": -0.0229,
    "n_books": 8,
-   "id": 77,
+   "id": 65,
    "suspect": false
   },
   {
@@ -1445,7 +1229,7 @@
    "fair_odds": -105,
    "ev": -0.023,
    "n_books": 8,
-   "id": 78,
+   "id": 66,
    "suspect": false
   },
   {
@@ -1463,7 +1247,7 @@
    "fair_odds": -107,
    "ev": -0.0238,
    "n_books": 8,
-   "id": 79,
+   "id": 67,
    "suspect": false
   },
   {
@@ -1481,7 +1265,7 @@
    "fair_odds": -132,
    "ev": -0.0238,
    "n_books": 8,
-   "id": 80,
+   "id": 68,
    "suspect": false
   },
   {
@@ -1499,7 +1283,7 @@
    "fair_odds": 115,
    "ev": -0.0242,
    "n_books": 7,
-   "id": 81,
+   "id": 69,
    "suspect": false
   },
   {
@@ -1517,7 +1301,7 @@
    "fair_odds": 120,
    "ev": -0.0244,
    "n_books": 8,
-   "id": 82,
+   "id": 70,
    "suspect": false
   },
   {
@@ -1535,7 +1319,7 @@
    "fair_odds": 115,
    "ev": -0.0244,
    "n_books": 8,
-   "id": 83,
+   "id": 71,
    "suspect": false
   },
   {
@@ -1553,7 +1337,7 @@
    "fair_odds": -115,
    "ev": -0.0249,
    "n_books": 3,
-   "id": 84,
+   "id": 72,
    "suspect": false
   },
   {
@@ -1571,7 +1355,7 @@
    "fair_odds": 126,
    "ev": -0.0253,
    "n_books": 8,
-   "id": 85,
+   "id": 73,
    "suspect": false
   },
   {
@@ -1589,7 +1373,7 @@
    "fair_odds": -110,
    "ev": -0.0257,
    "n_books": 7,
-   "id": 86,
+   "id": 74,
    "suspect": false
   },
   {
@@ -1607,25 +1391,7 @@
    "fair_odds": -112,
    "ev": -0.0257,
    "n_books": 8,
-   "id": 87,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "John Collins",
-   "prop": "rebounds",
-   "side": "Over",
-   "line": 5.5,
-   "book": "fanduel",
-   "price": 132,
-   "fair_p": 0.4195,
-   "fair_odds": 138,
-   "ev": -0.0267,
-   "n_books": 3,
-   "id": 88,
+   "id": 75,
    "suspect": false
   },
   {
@@ -1643,7 +1409,7 @@
    "fair_odds": -131,
    "ev": -0.0272,
    "n_books": 6,
-   "id": 89,
+   "id": 76,
    "suspect": false
   },
   {
@@ -1661,7 +1427,7 @@
    "fair_odds": -122,
    "ev": -0.0274,
    "n_books": 7,
-   "id": 90,
+   "id": 77,
    "suspect": false
   },
   {
@@ -1679,7 +1445,7 @@
    "fair_odds": -109,
    "ev": -0.0282,
    "n_books": 4,
-   "id": 91,
+   "id": 78,
    "suspect": false
   },
   {
@@ -1697,25 +1463,7 @@
    "fair_odds": -103,
    "ev": -0.0292,
    "n_books": 9,
-   "id": 92,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Daniss Jenkins",
-   "prop": "points",
-   "side": "Over",
-   "line": 7.5,
-   "book": "espnbet",
-   "price": -120,
-   "fair_p": 0.5295,
-   "fair_odds": -113,
-   "ev": -0.0293,
-   "n_books": 6,
-   "id": 93,
+   "id": 79,
    "suspect": false
   },
   {
@@ -1733,7 +1481,7 @@
    "fair_odds": -162,
    "ev": -0.0294,
    "n_books": 5,
-   "id": 94,
+   "id": 80,
    "suspect": false
   },
   {
@@ -1751,43 +1499,7 @@
    "fair_odds": -103,
    "ev": -0.0294,
    "n_books": 8,
-   "id": 95,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Payton Pritchard",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 3.5,
-   "book": "draftkings",
-   "price": -153,
-   "fair_p": 0.5868,
-   "fair_odds": -142,
-   "ev": -0.0296,
-   "n_books": 5,
-   "id": 96,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "John Collins",
-   "prop": "rebounds",
-   "side": "Over",
-   "line": 4.5,
-   "book": "espnbet",
-   "price": -140,
-   "fair_p": 0.5661,
-   "fair_odds": -130,
-   "ev": -0.0296,
-   "n_books": 7,
-   "id": 97,
+   "id": 81,
    "suspect": false
   },
   {
@@ -1805,43 +1517,7 @@
    "fair_odds": -101,
    "ev": -0.0297,
    "n_books": 9,
-   "id": 98,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Jalen Duren",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 10.5,
-   "book": "espnbet",
-   "price": -125,
-   "fair_p": 0.5388,
-   "fair_odds": -117,
-   "ev": -0.0302,
-   "n_books": 7,
-   "id": 99,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Mitchell Robinson",
-   "prop": "rebounds",
-   "side": "Over",
-   "line": 7.5,
-   "book": "betmgm",
-   "price": -120,
-   "fair_p": 0.5286,
-   "fair_odds": -112,
-   "ev": -0.0308,
-   "n_books": 6,
-   "id": 100,
+   "id": 82,
    "suspect": false
   },
   {
@@ -1859,7 +1535,7 @@
    "fair_odds": 103,
    "ev": -0.0308,
    "n_books": 8,
-   "id": 101,
+   "id": 83,
    "suspect": false
   },
   {
@@ -1877,25 +1553,7 @@
    "fair_odds": -142,
    "ev": -0.0311,
    "n_books": 8,
-   "id": 102,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Mitchell Robinson",
-   "prop": "points",
-   "side": "Under",
-   "line": 6.5,
-   "book": "draftkings",
-   "price": -117,
-   "fair_p": 0.5219,
-   "fair_odds": -109,
-   "ev": -0.0321,
-   "n_books": 6,
-   "id": 103,
+   "id": 84,
    "suspect": false
   },
   {
@@ -1913,7 +1571,7 @@
    "fair_odds": 133,
    "ev": -0.0321,
    "n_books": 8,
-   "id": 104,
+   "id": 85,
    "suspect": false
   },
   {
@@ -1931,25 +1589,7 @@
    "fair_odds": 102,
    "ev": -0.0324,
    "n_books": 6,
-   "id": 105,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Duncan Robinson",
-   "prop": "points",
-   "side": "Under",
-   "line": 10.5,
-   "book": "fanduel",
-   "price": -118,
-   "fair_p": 0.5233,
-   "fair_odds": -110,
-   "ev": -0.0332,
-   "n_books": 7,
-   "id": 106,
+   "id": 86,
    "suspect": false
   },
   {
@@ -1967,7 +1607,7 @@
    "fair_odds": -116,
    "ev": -0.0335,
    "n_books": 7,
-   "id": 107,
+   "id": 87,
    "suspect": false
   },
   {
@@ -1985,7 +1625,7 @@
    "fair_odds": -114,
    "ev": -0.0336,
    "n_books": 6,
-   "id": 108,
+   "id": 88,
    "suspect": false
   },
   {
@@ -2003,43 +1643,7 @@
    "fair_odds": -107,
    "ev": -0.0337,
    "n_books": 6,
-   "id": 109,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Jayson Tatum",
-   "prop": "points",
-   "side": "Under",
-   "line": 26.5,
-   "book": "draftkings",
-   "price": -103,
-   "fair_p": 0.4902,
-   "fair_odds": 104,
-   "ev": -0.034,
-   "n_books": 7,
-   "id": 110,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Paul Reed Jr",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 5.5,
-   "book": "betmgm",
-   "price": -140,
-   "fair_p": 0.563,
-   "fair_odds": -129,
-   "ev": -0.0349,
-   "n_books": 5,
-   "id": 111,
+   "id": 89,
    "suspect": false
   },
   {
@@ -2057,7 +1661,7 @@
    "fair_odds": -136,
    "ev": -0.035,
    "n_books": 8,
-   "id": 112,
+   "id": 90,
    "suspect": false
   },
   {
@@ -2075,7 +1679,7 @@
    "fair_odds": 102,
    "ev": -0.0358,
    "n_books": 7,
-   "id": 113,
+   "id": 91,
    "suspect": false
   },
   {
@@ -2093,25 +1697,7 @@
    "fair_odds": -119,
    "ev": -0.0373,
    "n_books": 7,
-   "id": 114,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Paul George",
-   "prop": "points",
-   "side": "Under",
-   "line": 15.5,
-   "book": "fanduel",
-   "price": 106,
-   "fair_p": 0.4672,
-   "fair_odds": 114,
-   "ev": -0.0375,
-   "n_books": 3,
-   "id": 115,
+   "id": 92,
    "suspect": false
   },
   {
@@ -2129,7 +1715,7 @@
    "fair_odds": 104,
    "ev": -0.0377,
    "n_books": 9,
-   "id": 116,
+   "id": 93,
    "suspect": false
   },
   {
@@ -2147,25 +1733,7 @@
    "fair_odds": 123,
    "ev": -0.0379,
    "n_books": 9,
-   "id": 117,
-   "suspect": false
-  },
-  {
-   "sport": "NBA",
-   "game": "Boston Celtics @ Detroit Pistons",
-   "event_id": "26b036ff107f3c658258eaf4a6f26228",
-   "commence": "2026-10-20T19:00:00Z",
-   "player": "Duncan Robinson",
-   "prop": "rebounds",
-   "side": "Under",
-   "line": 2.5,
-   "book": "draftkings",
-   "price": -132,
-   "fair_p": 0.5472,
-   "fair_odds": -121,
-   "ev": -0.0383,
-   "n_books": 7,
-   "id": 118,
+   "id": 94,
    "suspect": false
   },
   {
@@ -2183,12 +1751,444 @@
    "fair_odds": -115,
    "ev": -0.0385,
    "n_books": 8,
+   "id": 95,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "Jaylen Brown",
+   "prop": "rebounds",
+   "side": "Under",
+   "line": 5.5,
+   "book": "draftkings",
+   "price": 105,
+   "fair_p": 0.4688,
+   "fair_odds": 113,
+   "ev": -0.039,
+   "n_books": 8,
+   "id": 96,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "Josh Hart",
+   "prop": "rebounds",
+   "side": "Over",
+   "line": 7.5,
+   "book": "fanduel",
+   "price": -122,
+   "fair_p": 0.5278,
+   "fair_odds": -112,
+   "ev": -0.0395,
+   "n_books": 9,
+   "id": 97,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "De'Aaron Fox",
+   "prop": "points",
+   "side": "Over",
+   "line": 14.5,
+   "book": "betmgm",
+   "price": -120,
+   "fair_p": 0.5236,
+   "fair_odds": -110,
+   "ev": -0.04,
+   "n_books": 7,
+   "id": 98,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "LeBron James",
+   "prop": "points",
+   "side": "Over",
+   "line": 15.5,
+   "book": "espnbet",
+   "price": -110,
+   "fair_p": 0.5028,
+   "fair_odds": -101,
+   "ev": -0.0401,
+   "n_books": 9,
+   "id": 99,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Stephon Castle",
+   "prop": "rebounds",
+   "side": "Under",
+   "line": 5.5,
+   "book": "betmgm",
+   "price": -140,
+   "fair_p": 0.5595,
+   "fair_odds": -127,
+   "ev": -0.0408,
+   "n_books": 9,
+   "id": 100,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "OG Anunoby",
+   "prop": "points",
+   "side": "Over",
+   "line": 16.5,
+   "book": "fanduel",
+   "price": -132,
+   "fair_p": 0.5457,
+   "fair_odds": -120,
+   "ev": -0.0409,
+   "n_books": 3,
+   "id": 101,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Devin Vassell",
+   "prop": "rebounds",
+   "side": "Under",
+   "line": 3.5,
+   "book": "fanduel",
+   "price": 120,
+   "fair_p": 0.4358,
+   "fair_odds": 129,
+   "ev": -0.0412,
+   "n_books": 8,
+   "id": 102,
+   "suspect": false
+  },
+  {
+   "sport": "NHL",
+   "game": "Los Angeles Kings @ Washington Capitals",
+   "event_id": "99c9d6d714b90f72a5fd2a1c5011170d",
+   "commence": "2026-10-20T23:10:00Z",
+   "player": "Alex Ovechkin",
+   "prop": "shots on goal",
+   "side": "Over",
+   "line": 2.5,
+   "book": "betmgm",
+   "price": -110,
+   "fair_p": 0.5022,
+   "fair_odds": -101,
+   "ev": -0.0412,
+   "n_books": 7,
+   "id": 103,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Shai Gilgeous-Alexander",
+   "prop": "rebounds",
+   "side": "Over",
+   "line": 3.5,
+   "book": "betmgm",
+   "price": -155,
+   "fair_p": 0.5825,
+   "fair_odds": -140,
+   "ev": -0.0416,
+   "n_books": 9,
+   "id": 104,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Cason Wallace",
+   "prop": "points",
+   "side": "Under",
+   "line": 9.5,
+   "book": "draftkings",
+   "price": 100,
+   "fair_p": 0.4779,
+   "fair_odds": 109,
+   "ev": -0.0442,
+   "n_books": 8,
+   "id": 105,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "VJ Edgecombe",
+   "prop": "points",
+   "side": "Over",
+   "line": 11.5,
+   "book": "fanduel",
+   "price": -122,
+   "fair_p": 0.525,
+   "fair_odds": -111,
+   "ev": -0.0446,
+   "n_books": 7,
+   "id": 106,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Chet Holmgren",
+   "prop": "rebounds",
+   "side": "Over",
+   "line": 7.5,
+   "book": "espnbet",
+   "price": -140,
+   "fair_p": 0.5569,
+   "fair_odds": -126,
+   "ev": -0.0453,
+   "n_books": 7,
+   "id": 107,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Jared McCain",
+   "prop": "points",
+   "side": "Under",
+   "line": 9.5,
+   "book": "draftkings",
+   "price": 100,
+   "fair_p": 0.477,
+   "fair_odds": 110,
+   "ev": -0.0461,
+   "n_books": 8,
+   "id": 108,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "Jaylen Brown",
+   "prop": "points",
+   "side": "Over",
+   "line": 20.5,
+   "book": "fanduel",
+   "price": -120,
+   "fair_p": 0.5196,
+   "fair_odds": -108,
+   "ev": -0.0474,
+   "n_books": 8,
+   "id": 109,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "OG Anunoby",
+   "prop": "points",
+   "side": "Over",
+   "line": 17.5,
+   "book": "espnbet",
+   "price": -105,
+   "fair_p": 0.4879,
+   "fair_odds": 105,
+   "ev": -0.0474,
+   "n_books": 7,
+   "id": 110,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Victor Wembanyama",
+   "prop": "rebounds",
+   "side": "Under",
+   "line": 11.5,
+   "book": "betmgm",
+   "price": -105,
+   "fair_p": 0.4877,
+   "fair_odds": 105,
+   "ev": -0.0478,
+   "n_books": 9,
+   "id": 111,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Keldon Johnson",
+   "prop": "points",
+   "side": "Over",
+   "line": 7.5,
+   "book": "fanduel",
+   "price": -138,
+   "fair_p": 0.5519,
+   "fair_odds": -123,
+   "ev": -0.0481,
+   "n_books": 3,
+   "id": 112,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Ajay Mitchell",
+   "prop": "rebounds",
+   "side": "Over",
+   "line": 2.5,
+   "book": "espnbet",
+   "price": -170,
+   "fair_p": 0.5983,
+   "fair_odds": -149,
+   "ev": -0.0498,
+   "n_books": 4,
+   "id": 113,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Oklahoma City Thunder @ San Antonio Spurs",
+   "event_id": "bccd283de56915e29af1788beb0abfc9",
+   "commence": "2026-10-21T01:30:00Z",
+   "player": "Jalen Williams",
+   "prop": "points",
+   "side": "Under",
+   "line": 18.5,
+   "book": "fanduel",
+   "price": -114,
+   "fair_p": 0.5055,
+   "fair_odds": -102,
+   "ev": -0.0511,
+   "n_books": 8,
+   "id": 114,
+   "suspect": false
+  },
+  {
+   "sport": "NHL",
+   "game": "Los Angeles Kings @ Washington Capitals",
+   "event_id": "99c9d6d714b90f72a5fd2a1c5011170d",
+   "commence": "2026-10-20T23:10:00Z",
+   "player": "Jordan Kyrou",
+   "prop": "shots on goal",
+   "side": "Over",
+   "line": 1.5,
+   "book": "betmgm",
+   "price": -175,
+   "fair_p": 0.6033,
+   "fair_odds": -152,
+   "ev": -0.052,
+   "n_books": 6,
+   "id": 115,
+   "suspect": false
+  },
+  {
+   "sport": "NHL",
+   "game": "Anaheim Ducks @ New York Islanders",
+   "event_id": "84e20520cdbf52c71dfe697e7f789b86",
+   "commence": "2026-10-20T23:10:00Z",
+   "player": "Mikael Granlund",
+   "prop": "shots on goal",
+   "side": "Over",
+   "line": 1.5,
+   "book": "draftkings",
+   "price": -115,
+   "fair_p": 0.5068,
+   "fair_odds": -103,
+   "ev": -0.0526,
+   "n_books": 7,
+   "id": 116,
+   "suspect": false
+  },
+  {
+   "sport": "NHL",
+   "game": "Los Angeles Kings @ Washington Capitals",
+   "event_id": "99c9d6d714b90f72a5fd2a1c5011170d",
+   "commence": "2026-10-20T23:10:00Z",
+   "player": "Jakob Chychrun",
+   "prop": "shots on goal",
+   "side": "Over",
+   "line": 2.5,
+   "book": "fanduel",
+   "price": -108,
+   "fair_p": 0.4919,
+   "fair_odds": 103,
+   "ev": -0.0526,
+   "n_books": 8,
+   "id": 117,
+   "suspect": false
+  },
+  {
+   "sport": "NHL",
+   "game": "Toronto Maple Leafs @ Columbus Blue Jackets",
+   "event_id": "fd470e8ca75f778cf8dfdfcb340e2fa7",
+   "commence": "2026-10-20T23:10:00Z",
+   "player": "William Nylander",
+   "prop": "shots on goal",
+   "side": "Over",
+   "line": 2.5,
+   "book": "fanduel",
+   "price": -106,
+   "fair_p": 0.4869,
+   "fair_odds": 105,
+   "ev": -0.0537,
+   "n_books": 5,
+   "id": 118,
+   "suspect": false
+  },
+  {
+   "sport": "NBA",
+   "game": "Philadelphia 76ers @ New York Knicks",
+   "event_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+   "commence": "2026-10-20T23:00:00Z",
+   "player": "VJ Edgecombe",
+   "prop": "points",
+   "side": "Over",
+   "line": 12.5,
+   "book": "draftkings",
+   "price": -104,
+   "fair_p": 0.4824,
+   "fair_odds": 107,
+   "ev": -0.0538,
+   "n_books": 3,
    "id": 119,
    "suspect": false
   }
  ],
- "n_legs": 161,
- "n_good": 13,
+ "n_legs": 123,
+ "n_good": 12,
  "parlays": {
   "2": [
    {
@@ -2288,48 +2288,7 @@
     "safest": true
    }
   ],
-  "4": [
-   {
-    "book": "betmgm",
-    "legs": [
-     3,
-     4,
-     7,
-     10
-    ],
-    "p": 0.0998,
-    "odds": 995,
-    "decimal": 10.952,
-    "ev": 0.0925
-   },
-   {
-    "book": "betmgm",
-    "legs": [
-     4,
-     6,
-     7,
-     10
-    ],
-    "p": 0.0917,
-    "odds": 1076,
-    "decimal": 11.762,
-    "ev": 0.0789
-   },
-   {
-    "book": "betmgm",
-    "legs": [
-     4,
-     7,
-     8,
-     10
-    ],
-    "p": 0.1036,
-    "odds": 935,
-    "decimal": 10.351,
-    "ev": 0.0725,
-    "safest": true
-   }
-  ],
+  "4": [],
   "5": []
  }
 }
