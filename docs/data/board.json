@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-20T10:08:17Z",
+ "generated": "2026-10-20T15:09:15Z",
  "credits": {
-  "remaining": 234,
-  "used": 266
+  "remaining": 221,
+  "used": 279
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-18 16:51 nhl: close pull, 6 games, 0 new flag(s), 265 credits left",
-  "10-18 19:19 nfl: 0 closing line(s) recorded, 1 graded",
-  "10-19 09:33 nba: routine pull, 46 games, 0 new flag(s), 260 credits left",
   "10-19 09:33 nfl: props for 1 game(s), 3 credits (58/180 this month)",
   "10-19 09:33 nhl: props for 4 game(s), 4 credits (62/180 this month)",
   "10-19 09:33 mlb: props for 1 game(s), 1 credits (63/180 this month)",
@@ -38,7 +35,10 @@
   "10-19 15:59 nhl: routine pull, 15 games, 1 new flag(s), 243 credits left",
   "10-19 19:45 nfl: close pull, 15 games, 1 new flag(s), 240 credits left",
   "10-19 19:45 mlb: close pull, 1 games, 0 new flag(s), 237 credits left",
-  "10-19 19:45 nhl: close pull, 15 games, 0 new flag(s), 234 credits left"
+  "10-19 19:45 nhl: close pull, 15 games, 0 new flag(s), 234 credits left",
+  "10-20 11:09 nba: routine pull, 46 games, 0 new flag(s), 231 credits left",
+  "10-20 11:09 nba: props for 3 game(s), 6 credits (69/180 this month)",
+  "10-20 11:09 nhl: props for 4 game(s), 4 credits (73/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -201,7 +201,7 @@
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-19T13:33:33Z",
+   "last_pull": "2026-10-20T15:09:13Z",
    "games": 46,
    "flags": [],
    "watch": [
@@ -209,11 +209,11 @@
      "market": "h2h",
      "side": "Toronto Raptors",
      "point": null,
-     "book": "fanduel",
-     "price": -350,
-     "fair_p": 0.7858,
-     "fair_odds": -367,
-     "ev": 0.0103,
+     "book": "espnbet",
+     "price": -340,
+     "fair_p": 0.7855,
+     "fair_odds": -366,
+     "ev": 0.0165,
      "n_books": 9,
      "sharps": [
       "lowvig",
@@ -222,15 +222,15 @@
      ],
      "others": [
       [
+       "fanduel",
+       -360
+      ],
+      [
        "betrivers",
-       -375
+       -385
       ],
       [
-       "draftkings",
-       -395
-      ],
-      [
-       "lowvig",
+       "pinnacle",
        -395
       ],
       [
@@ -238,12 +238,12 @@
        -400
       ],
       [
-       "espnbet",
+       "hardrockbet",
        -400
       ],
       [
-       "hardrockbet",
-       -400
+       "draftkings",
+       -410
       ]
      ],
      "home": "Toronto Raptors",
