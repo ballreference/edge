@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-20T19:20:08Z",
+ "generated": "2026-10-20T22:23:56Z",
  "credits": {
-  "remaining": 221,
-  "used": 279
+  "remaining": 212,
+  "used": 288
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-19 09:33 nfl: props for 1 game(s), 3 credits (58/180 this month)",
-  "10-19 09:33 nhl: props for 4 game(s), 4 credits (62/180 this month)",
-  "10-19 09:33 mlb: props for 1 game(s), 1 credits (63/180 this month)",
   "10-19 15:59 nfl: routine pull, 15 games, 0 new flag(s), 249 credits left",
   "10-19 15:59 mlb: routine pull, 1 games, 0 new flag(s), 246 credits left",
   "10-19 15:59 nhl: routine pull, 15 games, 1 new flag(s), 243 credits left",
@@ -38,7 +35,10 @@
   "10-19 19:45 nhl: close pull, 15 games, 0 new flag(s), 234 credits left",
   "10-20 11:09 nba: routine pull, 46 games, 0 new flag(s), 231 credits left",
   "10-20 11:09 nba: props for 3 game(s), 6 credits (69/180 this month)",
-  "10-20 11:09 nhl: props for 4 game(s), 4 credits (73/180 this month)"
+  "10-20 11:09 nhl: props for 4 game(s), 4 credits (73/180 this month)",
+  "10-20 18:23 nfl: routine pull, 28 games, 0 new flag(s), 218 credits left",
+  "10-20 18:23 nba: close pull, 45 games, 0 new flag(s), 215 credits left",
+  "10-20 18:23 nhl: close pull, 13 games, 0 new flag(s), 212 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,149 +59,14 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-19T23:45:46Z",
-   "games": 14,
-   "flags": [
-    {
-     "market": "h2h",
-     "side": "Tampa Bay Buccaneers",
-     "point": null,
-     "book": "draftkings",
-     "price": 170,
-     "fair_p": 0.3909,
-     "fair_odds": 156,
-     "ev": 0.0553,
-     "n_books": 9,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "fanduel",
-       150
-      ],
-      [
-       "betrivers",
-       148
-      ],
-      [
-       "hardrockbet",
-       145
-      ],
-      [
-       "pinnacle",
-       143
-      ],
-      [
-       "betonlineag",
-       142
-      ],
-      [
-       "lowvig",
-       142
-      ]
-     ],
-     "home": "Carolina Panthers",
-     "away": "Tampa Bay Buccaneers",
-     "commence": "2026-10-25T17:00:00Z",
-     "logged": {
-      "price": 170,
-      "book": "draftkings",
-      "point": null,
-      "at": "2026-10-19T23:45:46Z"
-     }
-    }
-   ],
-   "watch": [
-    {
-     "market": "h2h",
-     "side": "San Francisco 49ers",
-     "point": null,
-     "book": "espnbet",
-     "price": -195,
-     "fair_p": 0.6687,
-     "fair_odds": -202,
-     "ev": 0.0116,
-     "n_books": 5,
-     "sharps": [],
-     "others": [
-      [
-       "fanduel",
-       -210
-      ],
-      [
-       "draftkings",
-       -218
-      ],
-      [
-       "hardrockbet",
-       -220
-      ],
-      [
-       "betrivers",
-       -225
-      ],
-      [
-       "betmgm",
-       -225
-      ]
-     ],
-     "home": "Atlanta Falcons",
-     "away": "San Francisco 49ers",
-     "commence": "2026-10-25T17:00:00Z"
-    },
-    {
-     "market": "h2h",
-     "side": "Pittsburgh Steelers",
-     "point": null,
-     "book": "fanduel",
-     "price": -152,
-     "fair_p": 0.6098,
-     "fair_odds": -156,
-     "ev": 0.0109,
-     "n_books": 9,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "hardrockbet",
-       -160
-      ],
-      [
-       "betrivers",
-       -162
-      ],
-      [
-       "betmgm",
-       -165
-      ],
-      [
-       "espnbet",
-       -165
-      ],
-      [
-       "betonlineag",
-       -165
-      ],
-      [
-       "lowvig",
-       -165
-      ]
-     ],
-     "home": "New Orleans Saints",
-     "away": "Pittsburgh Steelers",
-     "commence": "2026-10-25T13:30:00Z"
-    }
-   ]
+   "last_pull": "2026-10-20T22:23:55Z",
+   "games": 28,
+   "flags": [],
+   "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-20T15:09:13Z",
+   "last_pull": "2026-10-20T22:23:55Z",
    "games": 45,
    "flags": [],
    "watch": [
@@ -209,11 +74,11 @@
      "market": "h2h",
      "side": "Toronto Raptors",
      "point": null,
-     "book": "espnbet",
-     "price": -340,
-     "fair_p": 0.7855,
-     "fair_odds": -366,
-     "ev": 0.0165,
+     "book": "fanduel",
+     "price": -360,
+     "fair_p": 0.7915,
+     "fair_odds": -380,
+     "ev": 0.0113,
      "n_books": 9,
      "sharps": [
       "lowvig",
@@ -221,18 +86,6 @@
       "pinnacle"
      ],
      "others": [
-      [
-       "fanduel",
-       -360
-      ],
-      [
-       "betrivers",
-       -385
-      ],
-      [
-       "pinnacle",
-       -395
-      ],
       [
        "betmgm",
        -400
@@ -242,8 +95,20 @@
        -400
       ],
       [
-       "draftkings",
+       "pinnacle",
        -410
+      ],
+      [
+       "lowvig",
+       -415
+      ],
+      [
+       "betonlineag",
+       -420
+      ],
+      [
+       "draftkings",
+       -425
       ]
      ],
      "home": "Toronto Raptors",
@@ -261,61 +126,10 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-19T23:45:47Z",
-   "games": 11,
+   "last_pull": "2026-10-20T22:23:56Z",
+   "games": 13,
    "flags": [],
-   "watch": [
-    {
-     "market": "totals",
-     "side": "Over",
-     "point": 6.5,
-     "book": "draftkings",
-     "price": 100,
-     "fair_p": 0.5079,
-     "fair_odds": -103,
-     "ev": 0.0158,
-     "n_books": 8,
-     "sharps": [
-      "betonlineag",
-      "lowvig"
-     ],
-     "others": [
-      [
-       "betmgm",
-       -105
-      ],
-      [
-       "bovada",
-       -105
-      ],
-      [
-       "betonlineag",
-       -112
-      ],
-      [
-       "lowvig",
-       -112
-      ],
-      [
-       "betrivers",
-       -113
-      ],
-      [
-       "fanduel",
-       -118
-      ]
-     ],
-     "home": "Columbus Blue Jackets",
-     "away": "Toronto Maple Leafs",
-     "commence": "2026-10-20T23:10:00Z",
-     "logged": {
-      "price": 100,
-      "book": "draftkings",
-      "point": 6.5,
-      "at": "2026-10-19T19:59:15Z"
-     }
-    }
-   ]
+   "watch": []
   }
  }
 }
