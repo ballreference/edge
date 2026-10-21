@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T22:23:56Z",
+ "generated": "2026-10-21T01:39:32Z",
  "overall": {
   "n": 4,
   "w": 2,
@@ -112,11 +112,20 @@
    ],
    "flagged_at": "2026-10-19T19:59:15Z",
    "last_ev": -0.026,
-   "status": "open",
+   "status": "closed",
    "result": null,
    "units": null,
    "final": null,
-   "close": null,
+   "close": {
+    "pulled_at": "2026-10-20T22:23:56Z",
+    "mins_before": 46,
+    "later": true,
+    "point": 6.5,
+    "fair_p": 0.4981,
+    "fair_odds": 101,
+    "clv_ev": -0.0039,
+    "beat": false
+   },
    "others": [
     [
      "betmgm",
