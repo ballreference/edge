@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-21T18:42:38Z",
+ "generated": "2026-10-21T22:25:02Z",
  "credits": {
-  "remaining": 193,
-  "used": 307
+  "remaining": 187,
+  "used": 313
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,8 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-20 11:09 nba: props for 3 game(s), 6 credits (69/180 this month)",
-  "10-20 11:09 nhl: props for 4 game(s), 4 credits (73/180 this month)",
   "10-20 18:23 nfl: routine pull, 28 games, 0 new flag(s), 218 credits left",
   "10-20 18:23 nba: close pull, 45 games, 0 new flag(s), 215 credits left",
   "10-20 18:23 nhl: close pull, 13 games, 0 new flag(s), 212 credits left",
@@ -38,7 +36,9 @@
   "10-21 09:53 nhl: props for 2 game(s), 2 credits (81/180 this month)",
   "10-21 14:42 nfl: routine pull, 28 games, 0 new flag(s), 199 credits left",
   "10-21 14:42 nba: routine pull, 43 games, 0 new flag(s), 196 credits left",
-  "10-21 14:42 nhl: routine pull, 14 games, 0 new flag(s), 193 credits left"
+  "10-21 14:42 nhl: routine pull, 14 games, 0 new flag(s), 193 credits left",
+  "10-21 18:25 nba: close pull, 43 games, 0 new flag(s), 190 credits left",
+  "10-21 18:25 nhl: close pull, 14 games, 0 new flag(s), 187 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -66,7 +66,7 @@
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-21T18:42:37Z",
+   "last_pull": "2026-10-21T22:25:01Z",
    "games": 43,
    "flags": [],
    "watch": []
@@ -80,10 +80,56 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-21T18:42:38Z",
+   "last_pull": "2026-10-21T22:25:02Z",
    "games": 14,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "Los Angeles Kings",
+     "point": 1.5,
+     "book": "fanduel",
+     "price": -250,
+     "fair_p": 0.7215,
+     "fair_odds": -259,
+     "ev": 0.0101,
+     "n_books": 7,
+     "sharps": [
+      "betonlineag",
+      "lowvig",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "pinnacle",
+       -277
+      ],
+      [
+       "betonlineag",
+       -280
+      ],
+      [
+       "lowvig",
+       -280
+      ],
+      [
+       "draftkings",
+       -285
+      ],
+      [
+       "betrivers",
+       -295
+      ],
+      [
+       "hardrockbet",
+       -300
+      ]
+     ],
+     "home": "New York Islanders",
+     "away": "Los Angeles Kings",
+     "commence": "2026-10-22T23:40:00Z"
+    }
+   ]
   }
  }
 }
