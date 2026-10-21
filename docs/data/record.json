@@ -1,18 +1,18 @@
 {
- "generated": "2026-10-21T01:39:32Z",
+ "generated": "2026-10-21T07:45:03Z",
  "overall": {
-  "n": 4,
-  "w": 2,
+  "n": 5,
+  "w": 3,
   "l": 2,
   "p": 0,
-  "win_pct": 0.5,
-  "expected_pct": 0.6026,
-  "units": -0.48,
-  "roi": -0.12,
-  "avg_ev": 0.0334,
-  "clv_n": 3,
-  "beat_close_pct": 0.6667,
-  "avg_clv": 0.0494
+  "win_pct": 0.6,
+  "expected_pct": 0.5848,
+  "units": 0.52,
+  "roi": 0.104,
+  "avg_ev": 0.0321,
+  "clv_n": 4,
+  "beat_close_pct": 0.5,
+  "avg_clv": 0.0316
  },
  "by_sport": {
   "NFL": {
@@ -30,18 +30,18 @@
    "avg_clv": 0.1376
   },
   "NHL": {
-   "n": 2,
-   "w": 1,
+   "n": 3,
+   "w": 2,
    "l": 1,
    "p": 0,
-   "win_pct": 0.5,
-   "expected_pct": 0.6659,
-   "units": -0.35,
-   "roi": -0.175,
-   "avg_ev": 0.0295,
-   "clv_n": 1,
+   "win_pct": 0.6667,
+   "expected_pct": 0.615,
+   "units": 0.65,
+   "roi": 0.2167,
+   "avg_ev": 0.0285,
+   "clv_n": 2,
    "beat_close_pct": 0.0,
-   "avg_clv": -0.0388
+   "avg_clv": -0.0214
   }
  },
  "by_market": {
@@ -58,6 +58,20 @@
    "clv_n": 2,
    "beat_close_pct": 0.5,
    "avg_clv": -0.0388
+  },
+  "totals": {
+   "n": 1,
+   "w": 1,
+   "l": 0,
+   "p": 0,
+   "win_pct": 1.0,
+   "expected_pct": 0.5133,
+   "units": 1.0,
+   "roi": 1.0,
+   "avg_ev": 0.0265,
+   "clv_n": 1,
+   "beat_close_pct": 0.0,
+   "avg_clv": -0.0039
   },
   "h2h": {
    "n": 1,
@@ -76,80 +90,21 @@
  },
  "by_ev": {
   "2.5\u20134%": {
-   "n": 4,
-   "w": 2,
+   "n": 5,
+   "w": 3,
    "l": 2,
    "p": 0,
-   "win_pct": 0.5,
-   "expected_pct": 0.6026,
-   "units": -0.48,
-   "roi": -0.12,
-   "avg_ev": 0.0334,
-   "clv_n": 3,
-   "beat_close_pct": 0.6667,
-   "avg_clv": 0.0494
+   "win_pct": 0.6,
+   "expected_pct": 0.5848,
+   "units": 0.52,
+   "roi": 0.104,
+   "avg_ev": 0.0321,
+   "clv_n": 4,
+   "beat_close_pct": 0.5,
+   "avg_clv": 0.0316
   }
  },
  "pending": [
-  {
-   "id": "fd470e8ca75f778cf8dfdfcb340e2fa7|totals|Over",
-   "sport": "nhl",
-   "home": "Columbus Blue Jackets",
-   "away": "Toronto Maple Leafs",
-   "commence": "2026-10-20T23:10:00Z",
-   "market": "totals",
-   "side": "Over",
-   "point": 6.5,
-   "book": "draftkings",
-   "price": 100,
-   "fair_p": 0.5133,
-   "fair_odds": -105,
-   "ev": 0.0265,
-   "n_books": 5,
-   "sharps": [
-    "betonlineag",
-    "lowvig"
-   ],
-   "flagged_at": "2026-10-19T19:59:15Z",
-   "last_ev": -0.026,
-   "status": "closed",
-   "result": null,
-   "units": null,
-   "final": null,
-   "close": {
-    "pulled_at": "2026-10-20T22:23:56Z",
-    "mins_before": 46,
-    "later": true,
-    "point": 6.5,
-    "fair_p": 0.4981,
-    "fair_odds": 101,
-    "clv_ev": -0.0039,
-    "beat": false
-   },
-   "others": [
-    [
-     "betmgm",
-     -110
-    ],
-    [
-     "betrivers",
-     -114
-    ],
-    [
-     "betonlineag",
-     -116
-    ],
-    [
-     "lowvig",
-     -116
-    ],
-    [
-     "fanduel",
-     -118
-    ]
-   ],
-   "book_name": "DraftKings"
-  },
   {
    "id": "2823e986597c449ab94126cd5ed3fae9|h2h|Tampa Bay Buccaneers",
    "sport": "nfl",
@@ -207,6 +162,65 @@
   }
  ],
  "recent": [
+  {
+   "id": "fd470e8ca75f778cf8dfdfcb340e2fa7|totals|Over",
+   "sport": "nhl",
+   "home": "Columbus Blue Jackets",
+   "away": "Toronto Maple Leafs",
+   "commence": "2026-10-20T23:10:00Z",
+   "market": "totals",
+   "side": "Over",
+   "point": 6.5,
+   "book": "draftkings",
+   "price": 100,
+   "fair_p": 0.5133,
+   "fair_odds": -105,
+   "ev": 0.0265,
+   "n_books": 5,
+   "sharps": [
+    "betonlineag",
+    "lowvig"
+   ],
+   "flagged_at": "2026-10-19T19:59:15Z",
+   "last_ev": -0.026,
+   "status": "graded",
+   "result": "W",
+   "units": 1.0,
+   "final": "Toronto Maple Leafs 6 @ Columbus Blue Jackets 2",
+   "close": {
+    "pulled_at": "2026-10-20T22:23:56Z",
+    "mins_before": 46,
+    "later": true,
+    "point": 6.5,
+    "fair_p": 0.4981,
+    "fair_odds": 101,
+    "clv_ev": -0.0039,
+    "beat": false
+   },
+   "others": [
+    [
+     "betmgm",
+     -110
+    ],
+    [
+     "betrivers",
+     -114
+    ],
+    [
+     "betonlineag",
+     -116
+    ],
+    [
+     "lowvig",
+     -116
+    ],
+    [
+     "fanduel",
+     -118
+    ]
+   ],
+   "book_name": "DraftKings"
+  },
   {
    "id": "caca2d752fe1a1779029082e95332fcc|h2h|Carolina Panthers",
    "sport": "nfl",

@@ -284,7 +284,7 @@
    "last_seen": "2026-10-20T22:23:56Z",
    "last_ev": -0.026,
    "peak_ev": 0.0265,
-   "status": "closed",
+   "status": "graded",
    "close": {
     "pulled_at": "2026-10-20T22:23:56Z",
     "mins_before": 46,
@@ -294,7 +294,10 @@
     "fair_odds": 101,
     "clv_ev": -0.0039,
     "beat": false
-   }
+   },
+   "result": "W",
+   "units": 1.0,
+   "final": "Toronto Maple Leafs 6 @ Columbus Blue Jackets 2"
   },
   {
    "market": "h2h",
