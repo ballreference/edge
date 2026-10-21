@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T13:53:05Z",
+ "generated": "2026-10-21T18:42:38Z",
  "overall": {
   "n": 5,
   "w": 3,
@@ -126,7 +126,7 @@
     "pinnacle"
    ],
    "flagged_at": "2026-10-19T23:45:46Z",
-   "last_ev": -0.0212,
+   "last_ev": -0.0331,
    "status": "open",
    "result": null,
    "units": null,
