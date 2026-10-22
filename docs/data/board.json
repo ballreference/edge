@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-22T13:51:26Z",
+ "generated": "2026-10-22T18:35:45Z",
  "credits": {
-  "remaining": 176,
-  "used": 324
+  "remaining": 164,
+  "used": 336
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-20 21:39 nhl: 1 closing line(s) recorded, 0 graded",
-  "10-21 03:45 nhl: 0 closing line(s) recorded, 1 graded",
-  "10-21 09:53 nba: props for 3 game(s), 6 credits (79/180 this month)",
-  "10-21 09:53 nhl: props for 2 game(s), 2 credits (81/180 this month)",
   "10-21 14:42 nfl: routine pull, 28 games, 0 new flag(s), 199 credits left",
   "10-21 14:42 nba: routine pull, 43 games, 0 new flag(s), 196 credits left",
   "10-21 14:42 nhl: routine pull, 14 games, 0 new flag(s), 193 credits left",
@@ -38,7 +34,11 @@
   "10-21 18:25 nhl: close pull, 14 games, 0 new flag(s), 187 credits left",
   "10-22 09:51 nfl: props for 1 game(s), 3 credits (84/180 this month)",
   "10-22 09:51 nba: props for 2 game(s), 4 credits (88/180 this month)",
-  "10-22 09:51 nhl: props for 4 game(s), 4 credits (92/180 this month)"
+  "10-22 09:51 nhl: props for 4 game(s), 4 credits (92/180 this month)",
+  "10-22 14:35 nfl: routine pull, 28 games, 0 new flag(s), 173 credits left",
+  "10-22 14:35 nba: routine pull, 41 games, 0 new flag(s), 170 credits left",
+  "10-22 14:35 mlb: routine pull, 1 games, 0 new flag(s), 167 credits left",
+  "10-22 14:35 nhl: routine pull, 14 games, 0 new flag(s), 164 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,77 +59,31 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-21T18:42:37Z",
+   "last_pull": "2026-10-22T18:35:44Z",
    "games": 28,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-21T22:25:01Z",
-   "games": 32,
+   "last_pull": "2026-10-22T18:35:45Z",
+   "games": 41,
    "flags": [],
    "watch": []
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-19T23:45:47Z",
-   "games": 0,
+   "last_pull": "2026-10-22T18:35:45Z",
+   "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-21T22:25:02Z",
-   "games": 12,
+   "last_pull": "2026-10-22T18:35:45Z",
+   "games": 14,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Los Angeles Kings",
-     "point": 1.5,
-     "book": "fanduel",
-     "price": -250,
-     "fair_p": 0.7215,
-     "fair_odds": -259,
-     "ev": 0.0101,
-     "n_books": 7,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "pinnacle",
-       -277
-      ],
-      [
-       "betonlineag",
-       -280
-      ],
-      [
-       "lowvig",
-       -280
-      ],
-      [
-       "draftkings",
-       -285
-      ],
-      [
-       "betrivers",
-       -295
-      ],
-      [
-       "hardrockbet",
-       -300
-      ]
-     ],
-     "home": "New York Islanders",
-     "away": "Los Angeles Kings",
-     "commence": "2026-10-22T23:40:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
