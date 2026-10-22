@@ -347,9 +347,62 @@
    "away": "Tampa Bay Buccaneers",
    "commence": "2026-10-25T17:00:00Z",
    "flagged_at": "2026-10-19T23:45:46Z",
-   "last_seen": "2026-10-22T18:35:44Z",
-   "last_ev": -0.0591,
+   "last_seen": "2026-10-22T22:24:24Z",
+   "last_ev": -0.0199,
    "peak_ev": 0.0553,
+   "status": "open"
+  },
+  {
+   "market": "spreads",
+   "side": "Tampa Bay Buccaneers",
+   "point": 3.0,
+   "book": "draftkings",
+   "price": 100,
+   "fair_p": 0.5203,
+   "fair_odds": -108,
+   "ev": 0.0407,
+   "n_books": 7,
+   "sharps": [
+    "betonlineag",
+    "lowvig",
+    "pinnacle"
+   ],
+   "others": [
+    [
+     "betrivers",
+     -114
+    ],
+    [
+     "espnbet",
+     -115
+    ],
+    [
+     "hardrockbet",
+     -115
+    ],
+    [
+     "lowvig",
+     -116
+    ],
+    [
+     "betmgm",
+     -118
+    ],
+    [
+     "pinnacle",
+     -118
+    ]
+   ],
+   "id": "2823e986597c449ab94126cd5ed3fae9|spreads|Tampa Bay Buccaneers",
+   "sport": "nfl",
+   "event_id": "2823e986597c449ab94126cd5ed3fae9",
+   "home": "Carolina Panthers",
+   "away": "Tampa Bay Buccaneers",
+   "commence": "2026-10-25T17:00:00Z",
+   "flagged_at": "2026-10-22T22:24:24Z",
+   "last_seen": "2026-10-22T22:24:24Z",
+   "last_ev": 0.0407,
+   "peak_ev": 0.0407,
    "status": "open"
   }
  ]
