@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-23T18:25:52Z",
+ "generated": "2026-10-23T22:16:54Z",
  "credits": {
-  "remaining": 134,
-  "used": 366
+  "remaining": 128,
+  "used": 372
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,8 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-22 14:35 mlb: routine pull, 1 games, 0 new flag(s), 167 credits left",
-  "10-22 14:35 nhl: routine pull, 14 games, 0 new flag(s), 164 credits left",
   "10-22 18:24 nfl: close pull, 28 games, 1 new flag(s), 161 credits left",
   "10-22 18:24 nba: close pull, 41 games, 0 new flag(s), 158 credits left",
   "10-22 18:24 nhl: close pull, 14 games, 0 new flag(s), 155 credits left",
@@ -38,7 +36,9 @@
   "10-23 14:25 nfl: routine pull, 27 games, 0 new flag(s), 143 credits left",
   "10-23 14:25 nba: close pull, 17 games, 0 new flag(s), 140 credits left",
   "10-23 14:25 mlb: routine pull, 1 games, 0 new flag(s), 137 credits left",
-  "10-23 14:25 nhl: routine pull, 14 games, 0 new flag(s), 134 credits left"
+  "10-23 14:25 nhl: routine pull, 14 games, 0 new flag(s), 134 credits left",
+  "10-23 18:16 mlb: close pull, 1 games, 0 new flag(s), 131 credits left",
+  "10-23 18:16 nhl: close pull, 14 games, 0 new flag(s), 128 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -67,23 +67,88 @@
   "nba": {
    "label": "NBA",
    "last_pull": "2026-10-23T18:25:51Z",
-   "games": 17,
+   "games": 16,
    "flags": [],
    "watch": []
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-23T18:25:52Z",
+   "last_pull": "2026-10-23T22:16:54Z",
    "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-23T18:25:52Z",
+   "last_pull": "2026-10-23T22:16:54Z",
    "games": 14,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "totals",
+     "side": "Under",
+     "point": 6.0,
+     "book": "betmgm",
+     "price": -102,
+     "fair_p": 0.5165,
+     "fair_odds": -107,
+     "ev": 0.0229,
+     "n_books": 4,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "pinnacle",
+       -114
+      ],
+      [
+       "lowvig",
+       -115
+      ],
+      [
+       "betonlineag",
+       -115
+      ],
+      [
+       "bovada",
+       -117
+      ]
+     ],
+     "home": "Calgary Flames",
+     "away": "Detroit Red Wings",
+     "commence": "2026-10-25T02:10:00Z"
+    },
+    {
+     "market": "totals",
+     "side": "Under",
+     "point": 6.0,
+     "book": "betmgm",
+     "price": -105,
+     "fair_p": 0.5174,
+     "fair_odds": -107,
+     "ev": 0.0101,
+     "n_books": 2,
+     "sharps": [
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "pinnacle",
+       -115
+      ],
+      [
+       "bovada",
+       -117
+      ]
+     ],
+     "home": "Philadelphia Flyers",
+     "away": "Anaheim Ducks",
+     "commence": "2026-10-24T17:00:00Z"
+    }
+   ]
   }
  }
 }
