@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-23T13:31:52Z",
+ "generated": "2026-10-23T18:25:52Z",
  "credits": {
-  "remaining": 146,
-  "used": 354
+  "remaining": 134,
+  "used": 366
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-22 09:51 nba: props for 2 game(s), 4 credits (88/180 this month)",
-  "10-22 09:51 nhl: props for 4 game(s), 4 credits (92/180 this month)",
-  "10-22 14:35 nfl: routine pull, 28 games, 0 new flag(s), 173 credits left",
-  "10-22 14:35 nba: routine pull, 41 games, 0 new flag(s), 170 credits left",
   "10-22 14:35 mlb: routine pull, 1 games, 0 new flag(s), 167 credits left",
   "10-22 14:35 nhl: routine pull, 14 games, 0 new flag(s), 164 credits left",
   "10-22 18:24 nfl: close pull, 28 games, 1 new flag(s), 161 credits left",
@@ -38,7 +34,11 @@
   "10-22 18:24 nhl: close pull, 14 games, 0 new flag(s), 155 credits left",
   "10-23 09:31 nba: props for 3 game(s), 6 credits (98/180 this month)",
   "10-23 09:31 nhl: props for 2 game(s), 2 credits (100/180 this month)",
-  "10-23 09:31 mlb: props for 1 game(s), 1 credits (101/180 this month)"
+  "10-23 09:31 mlb: props for 1 game(s), 1 credits (101/180 this month)",
+  "10-23 14:25 nfl: routine pull, 27 games, 0 new flag(s), 143 credits left",
+  "10-23 14:25 nba: close pull, 17 games, 0 new flag(s), 140 credits left",
+  "10-23 14:25 mlb: routine pull, 1 games, 0 new flag(s), 137 credits left",
+  "10-23 14:25 nhl: routine pull, 14 games, 0 new flag(s), 134 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,129 +59,31 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-22T22:24:24Z",
+   "last_pull": "2026-10-23T18:25:51Z",
    "games": 27,
-   "flags": [
-    {
-     "market": "spreads",
-     "side": "Tampa Bay Buccaneers",
-     "point": 3.0,
-     "book": "draftkings",
-     "price": 100,
-     "fair_p": 0.5203,
-     "fair_odds": -108,
-     "ev": 0.0407,
-     "n_books": 7,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "betrivers",
-       -114
-      ],
-      [
-       "espnbet",
-       -115
-      ],
-      [
-       "hardrockbet",
-       -115
-      ],
-      [
-       "lowvig",
-       -116
-      ],
-      [
-       "betmgm",
-       -118
-      ],
-      [
-       "pinnacle",
-       -118
-      ]
-     ],
-     "home": "Carolina Panthers",
-     "away": "Tampa Bay Buccaneers",
-     "commence": "2026-10-25T17:00:00Z",
-     "logged": {
-      "price": 100,
-      "book": "draftkings",
-      "point": 3.0,
-      "at": "2026-10-22T22:24:24Z"
-     }
-    }
-   ],
+   "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-22T22:24:25Z",
-   "games": 39,
+   "last_pull": "2026-10-23T18:25:51Z",
+   "games": 17,
    "flags": [],
    "watch": []
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-22T18:35:45Z",
+   "last_pull": "2026-10-23T18:25:52Z",
    "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-22T22:24:26Z",
-   "games": 2,
+   "last_pull": "2026-10-23T18:25:52Z",
+   "games": 14,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Tampa Bay Lightning",
-     "point": 1.5,
-     "book": "fanduel",
-     "price": -215,
-     "fair_p": 0.6899,
-     "fair_odds": -222,
-     "ev": 0.0108,
-     "n_books": 9,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "betmgm",
-       -220
-      ],
-      [
-       "espnbet",
-       -235
-      ],
-      [
-       "draftkings",
-       -238
-      ],
-      [
-       "pinnacle",
-       -243
-      ],
-      [
-       "lowvig",
-       -245
-      ],
-      [
-       "betonlineag",
-       -245
-      ]
-     ],
-     "home": "Colorado Avalanche",
-     "away": "Tampa Bay Lightning",
-     "commence": "2026-10-24T01:10:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }

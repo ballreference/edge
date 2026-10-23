@@ -347,8 +347,8 @@
    "away": "Tampa Bay Buccaneers",
    "commence": "2026-10-25T17:00:00Z",
    "flagged_at": "2026-10-19T23:45:46Z",
-   "last_seen": "2026-10-22T22:24:24Z",
-   "last_ev": -0.0199,
+   "last_seen": "2026-10-23T18:25:51Z",
+   "last_ev": -0.0318,
    "peak_ev": 0.0553,
    "status": "open"
   },
@@ -400,8 +400,8 @@
    "away": "Tampa Bay Buccaneers",
    "commence": "2026-10-25T17:00:00Z",
    "flagged_at": "2026-10-22T22:24:24Z",
-   "last_seen": "2026-10-22T22:24:24Z",
-   "last_ev": 0.0407,
+   "last_seen": "2026-10-23T18:25:51Z",
+   "last_ev": -0.0188,
    "peak_ev": 0.0407,
    "status": "open"
   }
