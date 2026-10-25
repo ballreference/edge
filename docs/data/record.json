@@ -1,33 +1,33 @@
 {
- "generated": "2026-10-25T19:42:27Z",
+ "generated": "2026-10-25T22:37:02Z",
  "overall": {
-  "n": 5,
-  "w": 3,
+  "n": 7,
+  "w": 5,
   "l": 2,
   "p": 0,
-  "win_pct": 0.6,
-  "expected_pct": 0.5848,
-  "units": 0.52,
-  "roi": 0.104,
-  "avg_ev": 0.0321,
-  "clv_n": 4,
-  "beat_close_pct": 0.5,
-  "avg_clv": 0.0316
+  "win_pct": 0.7143,
+  "expected_pct": 0.5479,
+  "units": 3.22,
+  "roi": 0.46,
+  "avg_ev": 0.0366,
+  "clv_n": 6,
+  "beat_close_pct": 0.6667,
+  "avg_clv": 0.0405
  },
  "by_sport": {
   "NFL": {
-   "n": 2,
-   "w": 1,
+   "n": 4,
+   "w": 3,
    "l": 1,
    "p": 0,
-   "win_pct": 0.5,
-   "expected_pct": 0.5394,
-   "units": -0.13,
-   "roi": -0.065,
-   "avg_ev": 0.0374,
-   "clv_n": 2,
+   "win_pct": 0.75,
+   "expected_pct": 0.4975,
+   "units": 2.57,
+   "roi": 0.6425,
+   "avg_ev": 0.0427,
+   "clv_n": 4,
    "beat_close_pct": 1.0,
-   "avg_clv": 0.1376
+   "avg_clv": 0.0818
   },
   "NHL": {
    "n": 3,
@@ -46,18 +46,18 @@
  },
  "by_market": {
   "spreads": {
-   "n": 3,
-   "w": 1,
+   "n": 4,
+   "w": 2,
    "l": 2,
    "p": 0,
-   "win_pct": 0.3333,
-   "expected_pct": 0.6186,
-   "units": -1.35,
-   "roi": -0.45,
-   "avg_ev": 0.0323,
-   "clv_n": 2,
-   "beat_close_pct": 0.5,
-   "avg_clv": -0.0388
+   "win_pct": 0.5,
+   "expected_pct": 0.594,
+   "units": -0.35,
+   "roi": -0.0875,
+   "avg_ev": 0.0344,
+   "clv_n": 3,
+   "beat_close_pct": 0.6667,
+   "avg_clv": -0.0083
   },
   "totals": {
    "n": 1,
@@ -74,18 +74,18 @@
    "avg_clv": -0.0039
   },
   "h2h": {
-   "n": 1,
-   "w": 1,
+   "n": 2,
+   "w": 2,
    "l": 0,
    "p": 0,
    "win_pct": 1.0,
-   "expected_pct": 0.5547,
-   "units": 0.87,
-   "roi": 0.87,
-   "avg_ev": 0.037,
-   "clv_n": 1,
+   "expected_pct": 0.4728,
+   "units": 2.57,
+   "roi": 1.285,
+   "avg_ev": 0.0461,
+   "clv_n": 2,
    "beat_close_pct": 1.0,
-   "avg_clv": 0.1376
+   "avg_clv": 0.1116
   }
  },
  "by_ev": {
@@ -102,9 +102,24 @@
    "clv_n": 4,
    "beat_close_pct": 0.5,
    "avg_clv": 0.0316
+  },
+  "4\u20136%": {
+   "n": 2,
+   "w": 2,
+   "l": 0,
+   "p": 0,
+   "win_pct": 1.0,
+   "expected_pct": 0.4556,
+   "units": 2.7,
+   "roi": 1.35,
+   "avg_ev": 0.048,
+   "clv_n": 2,
+   "beat_close_pct": 1.0,
+   "avg_clv": 0.0539
   }
  },
- "pending": [
+ "pending": [],
+ "recent": [
   {
    "id": "2823e986597c449ab94126cd5ed3fae9|h2h|Tampa Bay Buccaneers",
    "sport": "nfl",
@@ -127,10 +142,10 @@
    ],
    "flagged_at": "2026-10-19T23:45:46Z",
    "last_ev": -0.0334,
-   "status": "closed",
-   "result": null,
-   "units": null,
-   "final": null,
+   "status": "graded",
+   "result": "W",
+   "units": 1.7,
+   "final": "Tampa Bay Buccaneers 43 @ Carolina Panthers 13",
    "close": {
     "pulled_at": "2026-10-25T16:30:08Z",
     "mins_before": 29,
@@ -191,10 +206,10 @@
    ],
    "flagged_at": "2026-10-22T22:24:24Z",
    "last_ev": -0.0226,
-   "status": "closed",
-   "result": null,
-   "units": null,
-   "final": null,
+   "status": "graded",
+   "result": "W",
+   "units": 1.0,
+   "final": "Tampa Bay Buccaneers 43 @ Carolina Panthers 13",
    "close": {
     "pulled_at": "2026-10-25T16:30:08Z",
     "mins_before": 29,
@@ -232,9 +247,7 @@
     ]
    ],
    "book_name": "DraftKings"
-  }
- ],
- "recent": [
+  },
   {
    "id": "fd470e8ca75f778cf8dfdfcb340e2fa7|totals|Over",
    "sport": "nhl",

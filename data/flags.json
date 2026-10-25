@@ -350,7 +350,7 @@
    "last_seen": "2026-10-25T16:30:08Z",
    "last_ev": -0.0334,
    "peak_ev": 0.0553,
-   "status": "closed",
+   "status": "graded",
    "close": {
     "pulled_at": "2026-10-25T16:30:08Z",
     "mins_before": 29,
@@ -360,7 +360,10 @@
     "fair_odds": 149,
     "clv_ev": 0.0857,
     "beat": true
-   }
+   },
+   "result": "W",
+   "units": 1.7,
+   "final": "Tampa Bay Buccaneers 43 @ Carolina Panthers 13"
   },
   {
    "market": "spreads",
@@ -413,7 +416,7 @@
    "last_seen": "2026-10-25T16:30:08Z",
    "last_ev": -0.0226,
    "peak_ev": 0.0407,
-   "status": "closed",
+   "status": "graded",
    "close": {
     "pulled_at": "2026-10-25T16:30:08Z",
     "mins_before": 29,
@@ -423,7 +426,10 @@
     "fair_odds": -105,
     "clv_ev": 0.0221,
     "beat": true
-   }
+   },
+   "result": "W",
+   "units": 1.0,
+   "final": "Tampa Bay Buccaneers 43 @ Carolina Panthers 13"
   }
  ]
 }
