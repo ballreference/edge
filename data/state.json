@@ -1,10 +1,10 @@
 {
- "credits_remaining": 96,
- "credits_used": 404,
+ "credits_remaining": 81,
+ "credits_used": 419,
  "last_pull": {
-  "nfl": "2026-10-25T11:40:41Z",
+  "nfl": "2026-10-25T16:30:08Z",
   "mlb": "2026-10-24T23:20:16Z",
-  "nhl": "2026-10-24T14:37:01Z",
+  "nhl": "2026-10-25T16:30:09Z",
   "nba": "2026-10-24T20:55:23Z"
  },
  "close_pulls": {
@@ -12,10 +12,10 @@
    "2026-10-24": 1
   },
   "nfl": {
-   "2026-10-25": 1
+   "2026-10-25": 2
   },
   "nhl": {
-   "2026-10-24": 1
+   "2026-10-25": 1
   },
   "nba": {
    "2026-10-24": 1
@@ -26,10 +26,6 @@
   "nhl": "2026-10-21T07:45:03Z"
  },
  "log": [
-  "10-18 14:11 nfl: 1 closing line(s) recorded, 0 graded",
-  "10-18 14:11 mlb: close pull, 1 games, 0 new flag(s), 273 credits left",
-  "10-18 14:11 nhl: routine pull, 6 games, 0 new flag(s), 270 credits left",
-  "10-18 14:11 nhl: 0 closing line(s) recorded, 1 graded",
   "10-18 16:51 nhl: close pull, 6 games, 0 new flag(s), 265 credits left",
   "10-18 19:19 nfl: 0 closing line(s) recorded, 1 graded",
   "10-19 09:33 nba: routine pull, 46 games, 0 new flag(s), 260 credits left",
@@ -85,7 +81,11 @@
   "10-24 16:55 nba: close pull, 13 games, 0 new flag(s), 105 credits left",
   "10-24 16:55 mlb: routine pull, 1 games, 0 new flag(s), 102 credits left",
   "10-24 19:20 mlb: close pull, 1 games, 0 new flag(s), 99 credits left",
-  "10-25 07:40 nfl: close pull, 27 games, 0 new flag(s), 96 credits left"
+  "10-25 07:40 nfl: close pull, 27 games, 0 new flag(s), 96 credits left",
+  "10-25 12:30 nfl: close pull, 26 games, 0 new flag(s), 93 credits left",
+  "10-25 12:30 nhl: close pull, 8 games, 0 new flag(s), 90 credits left",
+  "10-25 12:30 nfl: props stopped at 3 games to protect credits",
+  "10-25 12:30 nfl: props for 3 game(s), 9 credits (121/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -103,14 +103,14 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-10-25T11:40:41Z",
+ "last_run": "2026-10-25T16:30:10Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-10",
-  "spent": 112
+  "spent": 121
  },
  "props_pulled": {
-  "nfl": "2026-10-24",
+  "nfl": "2026-10-25",
   "nba": "2026-10-24",
   "nhl": "2026-10-24",
   "mlb": "2026-10-24"

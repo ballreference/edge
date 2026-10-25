@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-25T11:40:41Z",
+ "generated": "2026-10-25T16:30:10Z",
  "credits": {
-  "remaining": 96,
-  "used": 404
+  "remaining": 81,
+  "used": 419
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-23 18:16 mlb: close pull, 1 games, 0 new flag(s), 131 credits left",
-  "10-23 18:16 nhl: close pull, 14 games, 0 new flag(s), 128 credits left",
-  "10-24 10:37 nfl: routine pull, 27 games, 0 new flag(s), 125 credits left",
-  "10-24 10:37 nhl: close pull, 17 games, 0 new flag(s), 122 credits left",
   "10-24 10:37 nba: props for 3 game(s), 6 credits (107/180 this month)",
   "10-24 10:37 nhl: props for 4 game(s), 4 credits (111/180 this month)",
   "10-24 10:37 mlb: props for 1 game(s), 1 credits (112/180 this month)",
@@ -38,7 +34,11 @@
   "10-24 16:55 nba: close pull, 13 games, 0 new flag(s), 105 credits left",
   "10-24 16:55 mlb: routine pull, 1 games, 0 new flag(s), 102 credits left",
   "10-24 19:20 mlb: close pull, 1 games, 0 new flag(s), 99 credits left",
-  "10-25 07:40 nfl: close pull, 27 games, 0 new flag(s), 96 credits left"
+  "10-25 07:40 nfl: close pull, 27 games, 0 new flag(s), 96 credits left",
+  "10-25 12:30 nfl: close pull, 26 games, 0 new flag(s), 93 credits left",
+  "10-25 12:30 nhl: close pull, 8 games, 0 new flag(s), 90 credits left",
+  "10-25 12:30 nfl: props stopped at 3 games to protect credits",
+  "10-25 12:30 nfl: props for 3 game(s), 9 credits (121/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,20 +59,20 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-25T11:40:41Z",
-   "games": 27,
+   "last_pull": "2026-10-25T16:30:08Z",
+   "games": 25,
    "flags": [],
    "watch": [
     {
-     "market": "h2h",
-     "side": "New York Jets",
-     "point": null,
-     "book": "fanduel",
-     "price": -190,
-     "fair_p": 0.6646,
-     "fair_odds": -198,
-     "ev": 0.0144,
-     "n_books": 9,
+     "market": "spreads",
+     "side": "Miami Dolphins",
+     "point": 3.5,
+     "book": "draftkings",
+     "price": 100,
+     "fair_p": 0.5052,
+     "fair_odds": -102,
+     "ev": 0.0105,
+     "n_books": 8,
      "sharps": [
       "betonlineag",
       "lowvig",
@@ -80,28 +80,28 @@
      ],
      "others": [
       [
-       "espnbet",
-       -200
+       "lowvig",
+       -107
       ],
       [
-       "betmgm",
-       -210
-      ],
-      [
-       "pinnacle",
-       -210
-      ],
-      [
-       "hardrockbet",
-       -210
+       "fanduel",
+       -110
       ],
       [
        "betonlineag",
-       -211
+       -110
       ],
       [
-       "lowvig",
-       -211
+       "espnbet",
+       -110
+      ],
+      [
+       "betmgm",
+       -110
+      ],
+      [
+       "hardrockbet",
+       -110
       ]
      ],
      "home": "New York Jets",
@@ -126,8 +126,8 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-24T14:37:01Z",
-   "games": 5,
+   "last_pull": "2026-10-25T16:30:09Z",
+   "games": 8,
    "flags": [],
    "watch": []
   }
