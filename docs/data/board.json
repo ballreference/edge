@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-25T06:13:11Z",
+ "generated": "2026-10-25T11:40:41Z",
  "credits": {
-  "remaining": 99,
-  "used": 401
+  "remaining": 96,
+  "used": 404
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-23 14:25 nhl: routine pull, 14 games, 0 new flag(s), 134 credits left",
   "10-23 18:16 mlb: close pull, 1 games, 0 new flag(s), 131 credits left",
   "10-23 18:16 nhl: close pull, 14 games, 0 new flag(s), 128 credits left",
   "10-24 10:37 nfl: routine pull, 27 games, 0 new flag(s), 125 credits left",
@@ -38,7 +37,8 @@
   "10-24 14:12 nba: routine pull, 13 games, 0 new flag(s), 108 credits left",
   "10-24 16:55 nba: close pull, 13 games, 0 new flag(s), 105 credits left",
   "10-24 16:55 mlb: routine pull, 1 games, 0 new flag(s), 102 credits left",
-  "10-24 19:20 mlb: close pull, 1 games, 0 new flag(s), 99 credits left"
+  "10-24 19:20 mlb: close pull, 1 games, 0 new flag(s), 99 credits left",
+  "10-25 07:40 nfl: close pull, 27 games, 0 new flag(s), 96 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,10 +59,56 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-24T14:37:00Z",
+   "last_pull": "2026-10-25T11:40:41Z",
    "games": 27,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "New York Jets",
+     "point": null,
+     "book": "fanduel",
+     "price": -190,
+     "fair_p": 0.6646,
+     "fair_odds": -198,
+     "ev": 0.0144,
+     "n_books": 9,
+     "sharps": [
+      "betonlineag",
+      "lowvig",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "espnbet",
+       -200
+      ],
+      [
+       "betmgm",
+       -210
+      ],
+      [
+       "pinnacle",
+       -210
+      ],
+      [
+       "hardrockbet",
+       -210
+      ],
+      [
+       "betonlineag",
+       -211
+      ],
+      [
+       "lowvig",
+       -211
+      ]
+     ],
+     "home": "New York Jets",
+     "away": "Miami Dolphins",
+     "commence": "2026-10-25T17:00:00Z"
+    }
+   ]
   },
   "nba": {
    "label": "NBA",
