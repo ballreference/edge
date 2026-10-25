@@ -350,7 +350,17 @@
    "last_seen": "2026-10-25T16:30:08Z",
    "last_ev": -0.0334,
    "peak_ev": 0.0553,
-   "status": "open"
+   "status": "closed",
+   "close": {
+    "pulled_at": "2026-10-25T16:30:08Z",
+    "mins_before": 29,
+    "later": true,
+    "point": null,
+    "fair_p": 0.4021,
+    "fair_odds": 149,
+    "clv_ev": 0.0857,
+    "beat": true
+   }
   },
   {
    "market": "spreads",
@@ -403,7 +413,17 @@
    "last_seen": "2026-10-25T16:30:08Z",
    "last_ev": -0.0226,
    "peak_ev": 0.0407,
-   "status": "open"
+   "status": "closed",
+   "close": {
+    "pulled_at": "2026-10-25T16:30:08Z",
+    "mins_before": 29,
+    "later": true,
+    "point": 3.0,
+    "fair_p": 0.511,
+    "fair_odds": -105,
+    "clv_ev": 0.0221,
+    "beat": true
+   }
   }
  ]
 }

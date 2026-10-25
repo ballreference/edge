@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T16:30:10Z",
+ "generated": "2026-10-25T19:42:27Z",
  "overall": {
   "n": 5,
   "w": 3,
@@ -127,11 +127,20 @@
    ],
    "flagged_at": "2026-10-19T23:45:46Z",
    "last_ev": -0.0334,
-   "status": "open",
+   "status": "closed",
    "result": null,
    "units": null,
    "final": null,
-   "close": null,
+   "close": {
+    "pulled_at": "2026-10-25T16:30:08Z",
+    "mins_before": 29,
+    "later": true,
+    "point": null,
+    "fair_p": 0.4021,
+    "fair_odds": 149,
+    "clv_ev": 0.0857,
+    "beat": true
+   },
    "others": [
     [
      "fanduel",
@@ -182,11 +191,20 @@
    ],
    "flagged_at": "2026-10-22T22:24:24Z",
    "last_ev": -0.0226,
-   "status": "open",
+   "status": "closed",
    "result": null,
    "units": null,
    "final": null,
-   "close": null,
+   "close": {
+    "pulled_at": "2026-10-25T16:30:08Z",
+    "mins_before": 29,
+    "later": true,
+    "point": 3.0,
+    "fair_p": 0.511,
+    "fair_odds": -105,
+    "clv_ev": 0.0221,
+    "beat": true
+   },
    "others": [
     [
      "betrivers",

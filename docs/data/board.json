@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-25T16:30:10Z",
+ "generated": "2026-10-25T19:42:27Z",
  "credits": {
-  "remaining": 81,
-  "used": 419
+  "remaining": 72,
+  "used": 428
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-24 10:37 nba: props for 3 game(s), 6 credits (107/180 this month)",
-  "10-24 10:37 nhl: props for 4 game(s), 4 credits (111/180 this month)",
-  "10-24 10:37 mlb: props for 1 game(s), 1 credits (112/180 this month)",
-  "10-24 14:12 nba: routine pull, 13 games, 0 new flag(s), 108 credits left",
   "10-24 16:55 nba: close pull, 13 games, 0 new flag(s), 105 credits left",
   "10-24 16:55 mlb: routine pull, 1 games, 0 new flag(s), 102 credits left",
   "10-24 19:20 mlb: close pull, 1 games, 0 new flag(s), 99 credits left",
@@ -38,7 +34,11 @@
   "10-25 12:30 nfl: close pull, 26 games, 0 new flag(s), 93 credits left",
   "10-25 12:30 nhl: close pull, 8 games, 0 new flag(s), 90 credits left",
   "10-25 12:30 nfl: props stopped at 3 games to protect credits",
-  "10-25 12:30 nfl: props for 3 game(s), 9 credits (121/180 this month)"
+  "10-25 12:30 nfl: props for 3 game(s), 9 credits (121/180 this month)",
+  "10-25 15:42 nfl: close pull, 12 games, 0 new flag(s), 78 credits left",
+  "10-25 15:42 nfl: 2 closing line(s) recorded, 0 graded",
+  "10-25 15:42 nba: close pull, 12 games, 0 new flag(s), 75 credits left",
+  "10-25 15:42 mlb: routine pull, 1 games, 0 new flag(s), 72 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,75 +59,29 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-25T16:30:08Z",
-   "games": 25,
+   "last_pull": "2026-10-25T19:42:26Z",
+   "games": 5,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Miami Dolphins",
-     "point": 3.5,
-     "book": "draftkings",
-     "price": 100,
-     "fair_p": 0.5052,
-     "fair_odds": -102,
-     "ev": 0.0105,
-     "n_books": 8,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "lowvig",
-       -107
-      ],
-      [
-       "fanduel",
-       -110
-      ],
-      [
-       "betonlineag",
-       -110
-      ],
-      [
-       "espnbet",
-       -110
-      ],
-      [
-       "betmgm",
-       -110
-      ],
-      [
-       "hardrockbet",
-       -110
-      ]
-     ],
-     "home": "New York Jets",
-     "away": "Miami Dolphins",
-     "commence": "2026-10-25T17:00:00Z"
-    }
-   ]
+   "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-24T20:55:23Z",
-   "games": 5,
+   "last_pull": "2026-10-25T19:42:26Z",
+   "games": 12,
    "flags": [],
    "watch": []
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-24T23:20:16Z",
-   "games": 0,
+   "last_pull": "2026-10-25T19:42:27Z",
+   "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-10-25T16:30:09Z",
-   "games": 8,
+   "games": 7,
    "flags": [],
    "watch": []
   }
