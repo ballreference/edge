@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-26T19:22:40Z",
+ "generated": "2026-10-26T23:11:04Z",
  "credits": {
-  "remaining": 58,
-  "used": 442
+  "remaining": 46,
+  "used": 454
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-25 12:30 nfl: props for 3 game(s), 9 credits (121/180 this month)",
-  "10-25 15:42 nfl: close pull, 12 games, 0 new flag(s), 78 credits left",
-  "10-25 15:42 nfl: 2 closing line(s) recorded, 0 graded",
-  "10-25 15:42 nba: close pull, 12 games, 0 new flag(s), 75 credits left",
   "10-25 15:42 mlb: routine pull, 1 games, 0 new flag(s), 72 credits left",
   "10-25 18:37 nfl: 0 closing line(s) recorded, 2 graded",
   "10-26 09:18 nfl: props stopped at 0 games to protect credits",
@@ -38,7 +34,11 @@
   "10-26 15:22 nfl: routine pull, 15 games, 0 new flag(s), 67 credits left",
   "10-26 15:22 nba: routine pull, 14 games, 0 new flag(s), 64 credits left",
   "10-26 15:22 mlb: routine pull, 1 games, 0 new flag(s), 61 credits left",
-  "10-26 15:22 nhl: routine pull, 14 games, 0 new flag(s), 58 credits left"
+  "10-26 15:22 nhl: routine pull, 14 games, 0 new flag(s), 58 credits left",
+  "10-26 19:11 nfl: close pull, 15 games, 0 new flag(s), 55 credits left",
+  "10-26 19:11 nba: close pull, 14 games, 0 new flag(s), 52 credits left",
+  "10-26 19:11 mlb: close pull, 1 games, 0 new flag(s), 49 credits left",
+  "10-26 19:11 nhl: close pull, 14 games, 0 new flag(s), 46 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,29 +59,29 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-10-26T19:22:39Z",
+   "last_pull": "2026-10-26T23:11:03Z",
    "games": 15,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-26T19:22:39Z",
-   "games": 14,
+   "last_pull": "2026-10-26T23:11:04Z",
+   "games": 13,
    "flags": [],
    "watch": []
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-26T19:22:39Z",
+   "last_pull": "2026-10-26T23:11:04Z",
    "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-26T19:22:40Z",
-   "games": 14,
+   "last_pull": "2026-10-26T23:11:04Z",
+   "games": 13,
    "flags": [],
    "watch": []
   }
