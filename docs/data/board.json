@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-28T18:53:43Z",
+ "generated": "2026-10-28T23:16:40Z",
  "credits": {
-  "remaining": 25,
-  "used": 475
+  "remaining": 16,
+  "used": 484
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-27 16:07 mlb: routine pull, 1 games, 0 new flag(s), 37 credits left",
-  "10-27 16:07 nhl: routine pull, 15 games, 0 new flag(s), 34 credits left",
-  "10-27 19:48 nba: close pull, 19 games, 0 new flag(s), 31 credits left",
-  "10-27 19:48 mlb: close pull, 1 games, 0 new flag(s), 28 credits left",
   "10-27 19:48 nhl: close pull, 15 games, 0 new flag(s), 25 credits left",
   "10-28 09:05 nba: props stopped at 0 games to protect credits",
   "10-28 09:05 nba: props for 0 game(s), 0 credits (121/180 this month)",
@@ -38,7 +34,11 @@
   "10-28 09:05 nhl: props for 0 game(s), 0 credits (121/180 this month)",
   "10-28 09:05 mlb: props stopped at 0 games to protect credits",
   "10-28 09:05 mlb: props for 0 game(s), 0 credits (121/180 this month)",
-  "10-28 14:53 nfl: routine pull skipped to protect credits (25 left)"
+  "10-28 14:53 nfl: routine pull skipped to protect credits (25 left)",
+  "10-28 19:16 nfl: routine pull skipped to protect credits (25 left)",
+  "10-28 19:16 nba: close pull, 18 games, 0 new flag(s), 22 credits left",
+  "10-28 19:16 mlb: close pull, 1 games, 0 new flag(s), 19 credits left",
+  "10-28 19:16 nhl: close pull, 15 games, 0 new flag(s), 16 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -66,24 +66,70 @@
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-10-27T23:48:52Z",
-   "games": 15,
+   "last_pull": "2026-10-28T23:16:39Z",
+   "games": 14,
    "flags": [],
    "watch": []
   },
   "mlb": {
    "label": "MLB",
-   "last_pull": "2026-10-27T23:48:52Z",
-   "games": 0,
+   "last_pull": "2026-10-28T23:16:39Z",
+   "games": 1,
    "flags": [],
    "watch": []
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-10-27T23:48:52Z",
-   "games": 4,
+   "last_pull": "2026-10-28T23:16:40Z",
+   "games": 15,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "Pittsburgh Penguins",
+     "point": 1.5,
+     "book": "fanduel",
+     "price": -192,
+     "fair_p": 0.6686,
+     "fair_odds": -202,
+     "ev": 0.0169,
+     "n_books": 9,
+     "sharps": [
+      "betonlineag",
+      "lowvig",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "draftkings",
+       -205
+      ],
+      [
+       "betmgm",
+       -210
+      ],
+      [
+       "hardrockbet",
+       -210
+      ],
+      [
+       "betonlineag",
+       -220
+      ],
+      [
+       "lowvig",
+       -220
+      ],
+      [
+       "pinnacle",
+       -220
+      ]
+     ],
+     "home": "Pittsburgh Penguins",
+     "away": "Utah Mammoth",
+     "commence": "2026-10-29T23:10:00Z"
+    }
+   ]
   }
  }
 }

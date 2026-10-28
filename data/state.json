@@ -1,24 +1,24 @@
 {
- "credits_remaining": 25,
- "credits_used": 475,
+ "credits_remaining": 16,
+ "credits_used": 484,
  "last_pull": {
   "nfl": "2026-10-27T20:07:13Z",
-  "mlb": "2026-10-27T23:48:52Z",
-  "nhl": "2026-10-27T23:48:52Z",
-  "nba": "2026-10-27T23:48:52Z"
+  "mlb": "2026-10-28T23:16:39Z",
+  "nhl": "2026-10-28T23:16:40Z",
+  "nba": "2026-10-28T23:16:39Z"
  },
  "close_pulls": {
   "mlb": {
-   "2026-10-27": 1
+   "2026-10-28": 1
   },
   "nfl": {
    "2026-10-26": 1
   },
   "nhl": {
-   "2026-10-27": 1
+   "2026-10-28": 1
   },
   "nba": {
-   "2026-10-27": 1
+   "2026-10-28": 1
   }
  },
  "last_scores": {
@@ -26,10 +26,6 @@
   "nhl": "2026-10-21T07:45:03Z"
  },
  "log": [
-  "10-22 18:24 nba: close pull, 41 games, 0 new flag(s), 158 credits left",
-  "10-22 18:24 nhl: close pull, 14 games, 0 new flag(s), 155 credits left",
-  "10-23 09:31 nba: props for 3 game(s), 6 credits (98/180 this month)",
-  "10-23 09:31 nhl: props for 2 game(s), 2 credits (100/180 this month)",
   "10-23 09:31 mlb: props for 1 game(s), 1 credits (101/180 this month)",
   "10-23 14:25 nfl: routine pull, 27 games, 0 new flag(s), 143 credits left",
   "10-23 14:25 nba: close pull, 17 games, 0 new flag(s), 140 credits left",
@@ -85,7 +81,11 @@
   "10-28 09:05 nhl: props for 0 game(s), 0 credits (121/180 this month)",
   "10-28 09:05 mlb: props stopped at 0 games to protect credits",
   "10-28 09:05 mlb: props for 0 game(s), 0 credits (121/180 this month)",
-  "10-28 14:53 nfl: routine pull skipped to protect credits (25 left)"
+  "10-28 14:53 nfl: routine pull skipped to protect credits (25 left)",
+  "10-28 19:16 nfl: routine pull skipped to protect credits (25 left)",
+  "10-28 19:16 nba: close pull, 18 games, 0 new flag(s), 22 credits left",
+  "10-28 19:16 mlb: close pull, 1 games, 0 new flag(s), 19 credits left",
+  "10-28 19:16 nhl: close pull, 15 games, 0 new flag(s), 16 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -103,7 +103,7 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-10-28T18:53:43Z",
+ "last_run": "2026-10-28T23:16:40Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-10",
