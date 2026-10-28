@@ -26,7 +26,6 @@
   "nhl": "2026-10-21T07:45:03Z"
  },
  "log": [
-  "10-22 18:24 nfl: close pull, 28 games, 1 new flag(s), 161 credits left",
   "10-22 18:24 nba: close pull, 41 games, 0 new flag(s), 158 credits left",
   "10-22 18:24 nhl: close pull, 14 games, 0 new flag(s), 155 credits left",
   "10-23 09:31 nba: props for 3 game(s), 6 credits (98/180 this month)",
@@ -85,7 +84,8 @@
   "10-28 09:05 nhl: props stopped at 0 games to protect credits",
   "10-28 09:05 nhl: props for 0 game(s), 0 credits (121/180 this month)",
   "10-28 09:05 mlb: props stopped at 0 games to protect credits",
-  "10-28 09:05 mlb: props for 0 game(s), 0 credits (121/180 this month)"
+  "10-28 09:05 mlb: props for 0 game(s), 0 credits (121/180 this month)",
+  "10-28 14:53 nfl: routine pull skipped to protect credits (25 left)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -103,7 +103,7 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-10-28T13:05:31Z",
+ "last_run": "2026-10-28T18:53:43Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-10",
