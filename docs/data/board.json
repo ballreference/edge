@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T02:29:03Z",
+ "generated": "2026-10-29T10:06:55Z",
  "credits": {
   "remaining": 16,
   "used": 484
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-28 09:05 nba: props stopped at 0 games to protect credits",
   "10-28 09:05 nba: props for 0 game(s), 0 credits (121/180 this month)",
   "10-28 09:05 nhl: props stopped at 0 games to protect credits",
   "10-28 09:05 nhl: props for 0 game(s), 0 credits (121/180 this month)",
@@ -38,7 +37,8 @@
   "10-28 19:16 nba: close pull, 18 games, 0 new flag(s), 22 credits left",
   "10-28 19:16 mlb: close pull, 1 games, 0 new flag(s), 19 credits left",
   "10-28 19:16 nhl: close pull, 15 games, 0 new flag(s), 16 credits left",
-  "10-28 22:29 nfl: routine pull skipped to protect credits (16 left)"
+  "10-28 22:29 nfl: routine pull skipped to protect credits (16 left)",
+  "10-29 06:06 nfl: routine pull skipped to protect credits (16 left)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -67,7 +67,7 @@
   "nba": {
    "label": "NBA",
    "last_pull": "2026-10-28T23:16:39Z",
-   "games": 7,
+   "games": 6,
    "flags": [],
    "watch": []
   },
