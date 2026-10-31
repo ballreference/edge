@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T20:51:18Z",
+ "generated": "2026-10-31T00:52:04Z",
  "credits": {
   "remaining": 7,
   "used": 493
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-29 12:57 nhl: props stopped at 0 games to protect credits",
-  "10-29 12:57 nhl: props for 0 game(s), 0 credits (121/180 this month)",
-  "10-29 17:51 nfl: close pull, 29 games, 0 new flag(s), 13 credits left",
   "10-29 17:51 nba: close pull, 18 games, 0 new flag(s), 10 credits left",
   "10-29 17:51 nhl: close pull, 14 games, 0 new flag(s), 7 credits left",
   "10-30 11:59 nba: props stopped at 0 games to protect credits",
@@ -38,7 +35,10 @@
   "10-30 11:59 nhl: props for 0 game(s), 0 credits (121/180 this month)",
   "10-30 16:51 nfl: routine pull skipped to protect credits (7 left)",
   "10-30 16:51 nba: close pull skipped to protect credits (7 left)",
-  "10-30 16:51 nhl: close pull skipped to protect credits (7 left)"
+  "10-30 16:51 nhl: close pull skipped to protect credits (7 left)",
+  "10-30 20:52 nfl: routine pull skipped to protect credits (7 left)",
+  "10-30 20:52 nba: close pull skipped to protect credits (7 left)",
+  "10-30 20:52 nhl: routine pull skipped to protect credits (7 left)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -67,47 +67,9 @@
   "nba": {
    "label": "NBA",
    "last_pull": "2026-10-29T21:51:11Z",
-   "games": 15,
+   "games": 7,
    "flags": [],
-   "watch": [
-    {
-     "market": "h2h",
-     "side": "Charlotte Hornets",
-     "point": null,
-     "book": "fanduel",
-     "price": 106,
-     "fair_p": 0.4928,
-     "fair_odds": 103,
-     "ev": 0.0152,
-     "n_books": 5,
-     "sharps": [],
-     "others": [
-      [
-       "betmgm",
-       100
-      ],
-      [
-       "hardrockbet",
-       -105
-      ],
-      [
-       "espnbet",
-       -105
-      ],
-      [
-       "draftkings",
-       -110
-      ],
-      [
-       "betrivers",
-       -115
-      ]
-     ],
-     "home": "Washington Wizards",
-     "away": "Charlotte Hornets",
-     "commence": "2026-10-30T23:10:00Z"
-    }
-   ]
+   "watch": []
   },
   "mlb": {
    "label": "MLB",
@@ -119,7 +81,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-10-29T21:51:11Z",
-   "games": 3,
+   "games": 0,
    "flags": [],
    "watch": []
   }
