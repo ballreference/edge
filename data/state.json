@@ -26,13 +26,6 @@
   "nhl": "2026-10-21T07:45:03Z"
  },
  "log": [
-  "10-25 18:37 nfl: 0 closing line(s) recorded, 2 graded",
-  "10-26 09:18 nfl: props stopped at 0 games to protect credits",
-  "10-26 09:18 nfl: props for 0 game(s), 0 credits (121/180 this month)",
-  "10-26 15:22 nfl: routine pull, 15 games, 0 new flag(s), 67 credits left",
-  "10-26 15:22 nba: routine pull, 14 games, 0 new flag(s), 64 credits left",
-  "10-26 15:22 mlb: routine pull, 1 games, 0 new flag(s), 61 credits left",
-  "10-26 15:22 nhl: routine pull, 14 games, 0 new flag(s), 58 credits left",
   "10-26 19:11 nfl: close pull, 15 games, 0 new flag(s), 55 credits left",
   "10-26 19:11 nba: close pull, 14 games, 0 new flag(s), 52 credits left",
   "10-26 19:11 mlb: close pull, 1 games, 0 new flag(s), 49 credits left",
@@ -85,7 +78,14 @@
   "10-30 20:52 nhl: routine pull skipped to protect credits (7 left)",
   "10-31 03:03 nfl: routine pull skipped to protect credits (7 left)",
   "10-31 03:03 nba: routine pull skipped to protect credits (7 left)",
-  "10-31 03:03 nhl: routine pull skipped to protect credits (7 left)"
+  "10-31 03:03 nhl: routine pull skipped to protect credits (7 left)",
+  "10-31 09:41 nfl: routine pull skipped to protect credits (7 left)",
+  "10-31 09:41 nba: routine pull skipped to protect credits (7 left)",
+  "10-31 09:41 nhl: routine pull skipped to protect credits (7 left)",
+  "10-31 09:41 nba: props stopped at 0 games to protect credits",
+  "10-31 09:41 nba: props for 0 game(s), 0 credits (121/180 this month)",
+  "10-31 09:41 nhl: props stopped at 0 games to protect credits",
+  "10-31 09:41 nhl: props for 0 game(s), 0 credits (121/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -103,16 +103,16 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-10-31T07:03:14Z",
+ "last_run": "2026-10-31T13:41:40Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-10",
   "spent": 121
  },
  "props_pulled": {
-  "nfl": "2026-10-30",
-  "nba": "2026-10-30",
-  "nhl": "2026-10-30",
-  "mlb": "2026-10-30"
+  "nfl": "2026-10-31",
+  "nba": "2026-10-31",
+  "nhl": "2026-10-31",
+  "mlb": "2026-10-31"
  }
 }
