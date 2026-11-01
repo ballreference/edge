@@ -1,13 +1,10 @@
 {
- "generated": "2026-11-01T02:18:07Z",
- "date": "2026-10-31",
- "pulled": {
-  "NBA": "2026-10-31T13:41:40Z",
-  "NHL": "2026-10-31T13:41:40Z"
- },
+ "generated": "2026-11-01T09:21:17Z",
+ "date": "2026-11-01",
+ "pulled": {},
  "budget": {
-  "month": "2026-10",
-  "spent": 121
+  "month": "2026-11",
+  "spent": 0
  },
  "monthly_budget": 180,
  "error": null,
