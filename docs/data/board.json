@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-01T09:21:17Z",
+ "generated": "2026-11-01T16:07:59Z",
  "credits": {
-  "remaining": 491,
-  "used": 9
+  "remaining": 449,
+  "used": 51
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-31 09:41 nba: props for 0 game(s), 0 credits (121/180 this month)",
-  "10-31 09:41 nhl: props stopped at 0 games to protect credits",
-  "10-31 09:41 nhl: props for 0 game(s), 0 credits (121/180 this month)",
   "10-31 14:37 nfl: routine pull skipped to protect credits (7 left)",
   "10-31 14:37 nba: close pull skipped to protect credits (7 left)",
   "10-31 14:37 nhl: close pull skipped to protect credits (7 left)",
@@ -38,7 +35,10 @@
   "10-31 18:32 nhl: close pull skipped to protect credits (7 left)",
   "10-31 22:18 nfl: routine pull, 28 games, 0 new flag(s), 497 credits left",
   "10-31 22:18 nba: routine pull, 12 games, 0 new flag(s), 494 credits left",
-  "10-31 22:18 nhl: routine pull, 7 games, 0 new flag(s), 491 credits left"
+  "10-31 22:18 nhl: routine pull, 7 games, 0 new flag(s), 491 credits left",
+  "11-01 11:07 nfl: close pull, 28 games, 0 new flag(s), 488 credits left",
+  "11-01 11:07 nhl: close pull, 5 games, 0 new flag(s), 485 credits left",
+  "11-01 11:07 nfl: props for 12 game(s), 36 credits (36/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,10 +59,56 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-01T02:18:06Z",
+   "last_pull": "2026-11-01T16:07:56Z",
    "games": 28,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "Dallas Cowboys",
+     "point": null,
+     "book": "draftkings",
+     "price": -310,
+     "fair_p": 0.7672,
+     "fair_odds": -330,
+     "ev": 0.0147,
+     "n_books": 9,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "pinnacle",
+       -340
+      ],
+      [
+       "betmgm",
+       -350
+      ],
+      [
+       "hardrockbet",
+       -350
+      ],
+      [
+       "bovada",
+       -355
+      ],
+      [
+       "fanduel",
+       -360
+      ],
+      [
+       "lowvig",
+       -360
+      ]
+     ],
+     "home": "Dallas Cowboys",
+     "away": "Arizona Cardinals",
+     "commence": "2026-11-01T18:00:00Z"
+    }
+   ]
   },
   "nba": {
    "label": "NBA",
@@ -80,10 +126,56 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-01T02:18:07Z",
+   "last_pull": "2026-11-01T16:07:57Z",
    "games": 5,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "Philadelphia Flyers",
+     "point": 1.5,
+     "book": "betmgm",
+     "price": -160,
+     "fair_p": 0.6255,
+     "fair_odds": -167,
+     "ev": 0.0165,
+     "n_books": 9,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "espnbet",
+       -165
+      ],
+      [
+       "bovada",
+       -175
+      ],
+      [
+       "lowvig",
+       -178
+      ],
+      [
+       "betonlineag",
+       -178
+      ],
+      [
+       "pinnacle",
+       -179
+      ],
+      [
+       "draftkings",
+       -180
+      ]
+     ],
+     "home": "Philadelphia Flyers",
+     "away": "Utah Mammoth",
+     "commence": "2026-11-01T21:10:00Z"
+    }
+   ]
   }
  }
 }
