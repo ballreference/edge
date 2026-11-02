@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-01T20:33:26Z",
+ "generated": "2026-11-02T00:49:16Z",
  "credits": {
-  "remaining": 443,
-  "used": 57
+  "remaining": 440,
+  "used": 60
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "10-31 14:37 nhl: close pull skipped to protect credits (7 left)",
   "10-31 18:32 nfl: routine pull skipped to protect credits (7 left)",
   "10-31 18:32 nba: close pull skipped to protect credits (7 left)",
   "10-31 18:32 nhl: close pull skipped to protect credits (7 left)",
@@ -38,7 +37,8 @@
   "11-01 11:07 nhl: close pull, 5 games, 0 new flag(s), 485 credits left",
   "11-01 11:07 nfl: props for 12 game(s), 36 credits (36/180 this month)",
   "11-01 15:33 nfl: close pull, 13 games, 0 new flag(s), 446 credits left",
-  "11-01 15:33 nba: close pull, 9 games, 0 new flag(s), 443 credits left"
+  "11-01 15:33 nba: close pull, 9 games, 0 new flag(s), 443 credits left",
+  "11-01 19:49 nfl: close pull, 18 games, 0 new flag(s), 440 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,15 +59,15 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-01T20:33:26Z",
-   "games": 5,
+   "last_pull": "2026-11-02T00:49:15Z",
+   "games": 17,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
    "last_pull": "2026-11-01T20:33:26Z",
-   "games": 9,
+   "games": 7,
    "flags": [],
    "watch": []
   },
@@ -81,55 +81,9 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-01T16:07:57Z",
-   "games": 4,
+   "games": 1,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Philadelphia Flyers",
-     "point": 1.5,
-     "book": "betmgm",
-     "price": -160,
-     "fair_p": 0.6255,
-     "fair_odds": -167,
-     "ev": 0.0165,
-     "n_books": 9,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "espnbet",
-       -165
-      ],
-      [
-       "bovada",
-       -175
-      ],
-      [
-       "lowvig",
-       -178
-      ],
-      [
-       "betonlineag",
-       -178
-      ],
-      [
-       "pinnacle",
-       -179
-      ],
-      [
-       "draftkings",
-       -180
-      ]
-     ],
-     "home": "Philadelphia Flyers",
-     "away": "Utah Mammoth",
-     "commence": "2026-11-01T21:10:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
