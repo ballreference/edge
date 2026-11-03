@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-03T17:53:25Z",
+ "generated": "2026-11-03T23:28:20Z",
  "credits": {
-  "remaining": 422,
-  "used": 78
+  "remaining": 413,
+  "used": 87
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-01 11:07 nfl: close pull, 28 games, 0 new flag(s), 488 credits left",
-  "11-01 11:07 nhl: close pull, 5 games, 0 new flag(s), 485 credits left",
-  "11-01 11:07 nfl: props for 12 game(s), 36 credits (36/180 this month)",
   "11-01 15:33 nfl: close pull, 13 games, 0 new flag(s), 446 credits left",
   "11-01 15:33 nba: close pull, 9 games, 0 new flag(s), 443 credits left",
   "11-01 19:49 nfl: close pull, 18 games, 0 new flag(s), 440 credits left",
@@ -38,7 +35,10 @@
   "11-02 13:29 nfl: props for 1 game(s), 3 credits (39/180 this month)",
   "11-02 20:38 nfl: routine pull, 14 games, 0 new flag(s), 428 credits left",
   "11-02 20:38 nba: close pull, 20 games, 0 new flag(s), 425 credits left",
-  "11-02 20:38 nhl: close pull, 15 games, 0 new flag(s), 422 credits left"
+  "11-02 20:38 nhl: close pull, 15 games, 0 new flag(s), 422 credits left",
+  "11-03 18:28 nfl: routine pull, 29 games, 0 new flag(s), 419 credits left",
+  "11-03 18:28 nba: routine pull, 15 games, 0 new flag(s), 416 credits left",
+  "11-03 18:28 nhl: close pull, 15 games, 0 new flag(s), 413 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,43 +59,15 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-03T01:38:25Z",
-   "games": 13,
+   "last_pull": "2026-11-03T23:28:19Z",
+   "games": 29,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Baltimore Ravens",
-     "point": 10.0,
-     "book": "betmgm",
-     "price": -110,
-     "fair_p": 0.5346,
-     "fair_odds": -115,
-     "ev": 0.0205,
-     "n_books": 2,
-     "sharps": [
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "draftkings",
-       -112
-      ],
-      [
-       "pinnacle",
-       -127
-      ]
-     ],
-     "home": "Baltimore Ravens",
-     "away": "Jacksonville Jaguars",
-     "commence": "2026-11-06T01:15:00Z"
-    }
-   ]
+   "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-03T01:38:26Z",
-   "games": 5,
+   "last_pull": "2026-11-03T23:28:20Z",
+   "games": 15,
    "flags": [],
    "watch": []
   },
@@ -108,56 +80,10 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-03T01:38:26Z",
-   "games": 11,
+   "last_pull": "2026-11-03T23:28:20Z",
+   "games": 15,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "St Louis Blues",
-     "point": 1.5,
-     "book": "betmgm",
-     "price": -225,
-     "fair_p": 0.7,
-     "fair_odds": -233,
-     "ev": 0.0111,
-     "n_books": 9,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "draftkings",
-       -250
-      ],
-      [
-       "fanduel",
-       -250
-      ],
-      [
-       "hardrockbet",
-       -250
-      ],
-      [
-       "lowvig",
-       -255
-      ],
-      [
-       "betonlineag",
-       -255
-      ],
-      [
-       "pinnacle",
-       -255
-      ]
-     ],
-     "home": "New York Rangers",
-     "away": "St Louis Blues",
-     "commence": "2026-11-04T00:10:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
