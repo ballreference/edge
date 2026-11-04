@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T23:28:20Z",
+ "generated": "2026-11-04T06:36:08Z",
  "credits": {
   "remaining": 413,
   "used": 87
@@ -81,7 +81,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-03T23:28:20Z",
-   "games": 15,
+   "games": 4,
    "flags": [],
    "watch": []
   }
