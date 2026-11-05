@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-05T11:05:08Z",
+ "generated": "2026-11-05T18:48:02Z",
  "credits": {
-  "remaining": 404,
-  "used": 96
+  "remaining": 392,
+  "used": 108
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-02 13:29 nba: routine pull, 20 games, 0 new flag(s), 437 credits left",
-  "11-02 13:29 nhl: routine pull, 15 games, 0 new flag(s), 434 credits left",
-  "11-02 13:29 nfl: props for 1 game(s), 3 credits (39/180 this month)",
-  "11-02 20:38 nfl: routine pull, 14 games, 0 new flag(s), 428 credits left",
   "11-02 20:38 nba: close pull, 20 games, 0 new flag(s), 425 credits left",
   "11-02 20:38 nhl: close pull, 15 games, 0 new flag(s), 422 credits left",
   "11-03 18:28 nfl: routine pull, 29 games, 0 new flag(s), 419 credits left",
@@ -38,7 +34,11 @@
   "11-03 18:28 nhl: close pull, 15 games, 0 new flag(s), 413 credits left",
   "11-04 16:56 nfl: routine pull, 28 games, 0 new flag(s), 410 credits left",
   "11-04 16:56 nba: close pull, 18 games, 0 new flag(s), 407 credits left",
-  "11-04 16:56 nhl: close pull, 15 games, 0 new flag(s), 404 credits left"
+  "11-04 16:56 nhl: close pull, 15 games, 0 new flag(s), 404 credits left",
+  "11-05 13:48 nfl: routine pull, 28 games, 0 new flag(s), 401 credits left",
+  "11-05 13:48 nba: routine pull, 6 games, 0 new flag(s), 398 credits left",
+  "11-05 13:48 nhl: routine pull, 14 games, 0 new flag(s), 395 credits left",
+  "11-05 13:48 nfl: props for 1 game(s), 3 credits (42/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,15 +59,15 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-04T21:56:05Z",
+   "last_pull": "2026-11-05T18:48:01Z",
    "games": 28,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-04T21:56:06Z",
-   "games": 4,
+   "last_pull": "2026-11-05T18:48:01Z",
+   "games": 6,
    "flags": [],
    "watch": []
   },
@@ -80,101 +80,10 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-04T21:56:07Z",
-   "games": 11,
+   "last_pull": "2026-11-05T18:48:02Z",
+   "games": 14,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Vancouver Canucks",
-     "point": 1.5,
-     "book": "fanduel",
-     "price": -124,
-     "fair_p": 0.5632,
-     "fair_odds": -129,
-     "ev": 0.0173,
-     "n_books": 8,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "betmgm",
-       -130
-      ],
-      [
-       "pinnacle",
-       -139
-      ],
-      [
-       "betonlineag",
-       -140
-      ],
-      [
-       "lowvig",
-       -140
-      ],
-      [
-       "bovada",
-       -140
-      ],
-      [
-       "draftkings",
-       -142
-      ]
-     ],
-     "home": "Winnipeg Jets",
-     "away": "Vancouver Canucks",
-     "commence": "2026-11-06T00:10:00Z"
-    },
-    {
-     "market": "spreads",
-     "side": "St Louis Blues",
-     "point": 1.5,
-     "book": "fanduel",
-     "price": -150,
-     "fair_p": 0.6097,
-     "fair_odds": -156,
-     "ev": 0.0162,
-     "n_books": 8,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "betmgm",
-       -155
-      ],
-      [
-       "hardrockbet",
-       -165
-      ],
-      [
-       "draftkings",
-       -166
-      ],
-      [
-       "betonlineag",
-       -170
-      ],
-      [
-       "lowvig",
-       -170
-      ],
-      [
-       "pinnacle",
-       -171
-      ]
-     ],
-     "home": "New Jersey Devils",
-     "away": "St Louis Blues",
-     "commence": "2026-11-06T00:10:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
