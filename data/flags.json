@@ -430,6 +430,49 @@
    "result": "W",
    "units": 1.0,
    "final": "Tampa Bay Buccaneers 43 @ Carolina Panthers 13"
+  },
+  {
+   "market": "h2h",
+   "side": "Toronto Raptors",
+   "point": null,
+   "book": "draftkings",
+   "price": -239,
+   "fair_p": 0.7235,
+   "fair_odds": -262,
+   "ev": 0.0262,
+   "n_books": 4,
+   "sharps": [
+    "pinnacle"
+   ],
+   "others": [
+    [
+     "espnbet",
+     -240
+    ],
+    [
+     "fanduel",
+     -270
+    ],
+    [
+     "pinnacle",
+     -297
+    ],
+    [
+     "betrivers",
+     -305
+    ]
+   ],
+   "id": "1c60a090180de530cfe273a5d6a381e6|h2h|Toronto Raptors",
+   "sport": "nba",
+   "event_id": "1c60a090180de530cfe273a5d6a381e6",
+   "home": "Milwaukee Bucks",
+   "away": "Toronto Raptors",
+   "commence": "2026-11-07T01:10:00Z",
+   "flagged_at": "2026-11-06T00:22:38Z",
+   "last_seen": "2026-11-06T00:22:38Z",
+   "last_ev": 0.0262,
+   "peak_ev": 0.0262,
+   "status": "open"
   }
  ]
 }

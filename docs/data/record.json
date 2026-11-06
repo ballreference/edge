@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T18:48:02Z",
+ "generated": "2026-11-06T00:22:38Z",
  "overall": {
   "n": 7,
   "w": 5,
@@ -118,7 +118,53 @@
    "avg_clv": 0.0539
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "id": "1c60a090180de530cfe273a5d6a381e6|h2h|Toronto Raptors",
+   "sport": "nba",
+   "home": "Milwaukee Bucks",
+   "away": "Toronto Raptors",
+   "commence": "2026-11-07T01:10:00Z",
+   "market": "h2h",
+   "side": "Toronto Raptors",
+   "point": null,
+   "book": "draftkings",
+   "price": -239,
+   "fair_p": 0.7235,
+   "fair_odds": -262,
+   "ev": 0.0262,
+   "n_books": 4,
+   "sharps": [
+    "pinnacle"
+   ],
+   "flagged_at": "2026-11-06T00:22:38Z",
+   "last_ev": 0.0262,
+   "status": "open",
+   "result": null,
+   "units": null,
+   "final": null,
+   "close": null,
+   "others": [
+    [
+     "espnbet",
+     -240
+    ],
+    [
+     "fanduel",
+     -270
+    ],
+    [
+     "pinnacle",
+     -297
+    ],
+    [
+     "betrivers",
+     -305
+    ]
+   ],
+   "book_name": "DraftKings"
+  }
+ ],
  "recent": [
   {
    "id": "2823e986597c449ab94126cd5ed3fae9|h2h|Tampa Bay Buccaneers",
