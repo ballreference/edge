@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-06T15:08:41Z",
+ "generated": "2026-11-06T20:55:58Z",
  "credits": {
-  "remaining": 383,
-  "used": 117
+  "remaining": 374,
+  "used": 126
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-03 18:28 nba: routine pull, 15 games, 0 new flag(s), 416 credits left",
-  "11-03 18:28 nhl: close pull, 15 games, 0 new flag(s), 413 credits left",
-  "11-04 16:56 nfl: routine pull, 28 games, 0 new flag(s), 410 credits left",
   "11-04 16:56 nba: close pull, 18 games, 0 new flag(s), 407 credits left",
   "11-04 16:56 nhl: close pull, 15 games, 0 new flag(s), 404 credits left",
   "11-05 13:48 nfl: routine pull, 28 games, 0 new flag(s), 401 credits left",
@@ -38,7 +35,10 @@
   "11-05 13:48 nfl: props for 1 game(s), 3 credits (42/180 this month)",
   "11-05 19:22 nfl: close pull, 28 games, 0 new flag(s), 389 credits left",
   "11-05 19:22 nba: close pull, 13 games, 1 new flag(s), 386 credits left",
-  "11-05 19:22 nhl: close pull, 14 games, 0 new flag(s), 383 credits left"
+  "11-05 19:22 nhl: close pull, 14 games, 0 new flag(s), 383 credits left",
+  "11-06 15:55 nfl: routine pull, 27 games, 0 new flag(s), 380 credits left",
+  "11-06 15:55 nba: routine pull, 13 games, 0 new flag(s), 377 credits left",
+  "11-06 15:55 nhl: routine pull, 15 games, 0 new flag(s), 374 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,95 +59,63 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-06T00:22:37Z",
+   "last_pull": "2026-11-06T20:55:58Z",
    "games": 27,
    "flags": [],
-   "watch": []
-  },
-  "nba": {
-   "label": "NBA",
-   "last_pull": "2026-11-06T00:22:38Z",
-   "games": 11,
-   "flags": [
-    {
-     "market": "h2h",
-     "side": "Toronto Raptors",
-     "point": null,
-     "book": "draftkings",
-     "price": -239,
-     "fair_p": 0.7235,
-     "fair_odds": -262,
-     "ev": 0.0262,
-     "n_books": 4,
-     "sharps": [
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "espnbet",
-       -240
-      ],
-      [
-       "fanduel",
-       -270
-      ],
-      [
-       "pinnacle",
-       -297
-      ],
-      [
-       "betrivers",
-       -305
-      ]
-     ],
-     "home": "Milwaukee Bucks",
-     "away": "Toronto Raptors",
-     "commence": "2026-11-07T01:10:00Z",
-     "logged": {
-      "price": -239,
-      "book": "draftkings",
-      "point": null,
-      "at": "2026-11-06T00:22:38Z"
-     }
-    }
-   ],
    "watch": [
     {
      "market": "h2h",
-     "side": "Philadelphia 76ers",
+     "side": "New York Giants",
      "point": null,
      "book": "draftkings",
-     "price": -124,
-     "fair_p": 0.5607,
-     "fair_odds": -128,
-     "ev": 0.0128,
-     "n_books": 4,
+     "price": -155,
+     "fair_p": 0.6141,
+     "fair_odds": -159,
+     "ev": 0.0102,
+     "n_books": 9,
      "sharps": [
+      "betonlineag",
+      "lowvig",
       "pinnacle"
      ],
      "others": [
       [
-       "espnbet",
-       -125
+       "betonlineag",
+       -168
+      ],
+      [
+       "lowvig",
+       -168
+      ],
+      [
+       "hardrockbet",
+       -170
       ],
       [
        "pinnacle",
-       -137
+       -170
+      ],
+      [
+       "bovada",
+       -170
       ],
       [
        "fanduel",
-       -142
-      ],
-      [
-       "betrivers",
-       -148
+       -174
       ]
      ],
-     "home": "Cleveland Cavaliers",
-     "away": "Philadelphia 76ers",
-     "commence": "2026-11-07T00:40:00Z"
+     "home": "Philadelphia Eagles",
+     "away": "New York Giants",
+     "commence": "2026-11-08T18:00:00Z"
     }
    ]
+  },
+  "nba": {
+   "label": "NBA",
+   "last_pull": "2026-11-06T20:55:58Z",
+   "games": 13,
+   "flags": [],
+   "watch": []
   },
   "mlb": {
    "label": "MLB",
@@ -158,8 +126,8 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-06T00:22:38Z",
-   "games": 3,
+   "last_pull": "2026-11-06T20:55:58Z",
+   "games": 15,
    "flags": [],
    "watch": []
   }
