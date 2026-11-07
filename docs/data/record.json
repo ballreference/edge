@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-07T00:57:45Z",
+ "generated": "2026-11-07T07:16:10Z",
  "overall": {
-  "n": 7,
-  "w": 5,
+  "n": 8,
+  "w": 6,
   "l": 2,
   "p": 0,
-  "win_pct": 0.7143,
-  "expected_pct": 0.5479,
-  "units": 3.22,
-  "roi": 0.46,
-  "avg_ev": 0.0366,
-  "clv_n": 6,
-  "beat_close_pct": 0.6667,
-  "avg_clv": 0.0405
+  "win_pct": 0.75,
+  "expected_pct": 0.5698,
+  "units": 3.64,
+  "roi": 0.455,
+  "avg_ev": 0.0353,
+  "clv_n": 7,
+  "beat_close_pct": 0.5714,
+  "avg_clv": 0.0076
  },
  "by_sport": {
   "NFL": {
@@ -28,6 +28,20 @@
    "clv_n": 4,
    "beat_close_pct": 1.0,
    "avg_clv": 0.0818
+  },
+  "NBA": {
+   "n": 1,
+   "w": 1,
+   "l": 0,
+   "p": 0,
+   "win_pct": 1.0,
+   "expected_pct": 0.7235,
+   "units": 0.42,
+   "roi": 0.42,
+   "avg_ev": 0.0262,
+   "clv_n": 1,
+   "beat_close_pct": 0.0,
+   "avg_clv": -0.1572
   },
   "NHL": {
    "n": 3,
@@ -74,34 +88,34 @@
    "avg_clv": -0.0039
   },
   "h2h": {
-   "n": 2,
-   "w": 2,
+   "n": 3,
+   "w": 3,
    "l": 0,
    "p": 0,
    "win_pct": 1.0,
-   "expected_pct": 0.4728,
-   "units": 2.57,
-   "roi": 1.285,
-   "avg_ev": 0.0461,
-   "clv_n": 2,
-   "beat_close_pct": 1.0,
-   "avg_clv": 0.1116
+   "expected_pct": 0.5564,
+   "units": 2.99,
+   "roi": 0.9967,
+   "avg_ev": 0.0395,
+   "clv_n": 3,
+   "beat_close_pct": 0.6667,
+   "avg_clv": 0.022
   }
  },
  "by_ev": {
   "2.5\u20134%": {
-   "n": 5,
-   "w": 3,
+   "n": 6,
+   "w": 4,
    "l": 2,
    "p": 0,
-   "win_pct": 0.6,
-   "expected_pct": 0.5848,
-   "units": 0.52,
-   "roi": 0.104,
-   "avg_ev": 0.0321,
-   "clv_n": 4,
-   "beat_close_pct": 0.5,
-   "avg_clv": 0.0316
+   "win_pct": 0.6667,
+   "expected_pct": 0.6079,
+   "units": 0.94,
+   "roi": 0.1567,
+   "avg_ev": 0.0311,
+   "clv_n": 5,
+   "beat_close_pct": 0.4,
+   "avg_clv": -0.0156
   },
   "4\u20136%": {
    "n": 2,
@@ -118,7 +132,8 @@
    "avg_clv": 0.0539
   }
  },
- "pending": [
+ "pending": [],
+ "recent": [
   {
    "id": "1c60a090180de530cfe273a5d6a381e6|h2h|Toronto Raptors",
    "sport": "nba",
@@ -139,11 +154,20 @@
    ],
    "flagged_at": "2026-11-06T00:22:38Z",
    "last_ev": 0.01,
-   "status": "open",
-   "result": null,
-   "units": null,
-   "final": null,
-   "close": null,
+   "status": "graded",
+   "result": "W",
+   "units": 0.4184,
+   "final": "Toronto Raptors 121 @ Milwaukee Bucks 107",
+   "close": {
+    "pulled_at": "2026-11-07T00:57:44Z",
+    "mins_before": 12,
+    "later": true,
+    "point": null,
+    "fair_p": 0.5942,
+    "fair_odds": -146,
+    "clv_ev": -0.1572,
+    "beat": false
+   },
    "others": [
     [
      "espnbet",
@@ -163,9 +187,7 @@
     ]
    ],
    "book_name": "DraftKings"
-  }
- ],
- "recent": [
+  },
   {
    "id": "2823e986597c449ab94126cd5ed3fae9|h2h|Tampa Bay Buccaneers",
    "sport": "nfl",

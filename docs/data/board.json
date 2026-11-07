@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-07T00:57:45Z",
+ "generated": "2026-11-07T07:16:10Z",
  "credits": {
-  "remaining": 368,
-  "used": 132
+  "remaining": 366,
+  "used": 134
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-05 13:48 nfl: routine pull, 28 games, 0 new flag(s), 401 credits left",
   "11-05 13:48 nba: routine pull, 6 games, 0 new flag(s), 398 credits left",
   "11-05 13:48 nhl: routine pull, 14 games, 0 new flag(s), 395 credits left",
   "11-05 13:48 nfl: props for 1 game(s), 3 credits (42/180 this month)",
@@ -38,7 +37,8 @@
   "11-06 15:55 nba: routine pull, 13 games, 0 new flag(s), 377 credits left",
   "11-06 15:55 nhl: routine pull, 15 games, 0 new flag(s), 374 credits left",
   "11-06 19:57 nba: close pull, 13 games, 0 new flag(s), 371 credits left",
-  "11-06 19:57 nhl: close pull, 15 games, 0 new flag(s), 368 credits left"
+  "11-06 19:57 nhl: close pull, 15 games, 0 new flag(s), 368 credits left",
+  "11-07 02:16 nba: 1 closing line(s) recorded, 1 graded"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -113,61 +113,9 @@
   "nba": {
    "label": "NBA",
    "last_pull": "2026-11-07T00:57:44Z",
-   "games": 10,
+   "games": 4,
    "flags": [],
-   "watch": [
-    {
-     "market": "h2h",
-     "side": "Toronto Raptors",
-     "point": null,
-     "book": "fanduel",
-     "price": -144,
-     "fair_p": 0.5961,
-     "fair_odds": -148,
-     "ev": 0.01,
-     "n_books": 9,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "pinnacle",
-       -150
-      ],
-      [
-       "lowvig",
-       -157
-      ],
-      [
-       "betonlineag",
-       -157
-      ],
-      [
-       "bovada",
-       -160
-      ],
-      [
-       "betmgm",
-       -160
-      ],
-      [
-       "hardrockbet",
-       -160
-      ]
-     ],
-     "home": "Milwaukee Bucks",
-     "away": "Toronto Raptors",
-     "commence": "2026-11-07T01:10:00Z",
-     "logged": {
-      "price": -239,
-      "book": "draftkings",
-      "point": null,
-      "at": "2026-11-06T00:22:38Z"
-     }
-    }
-   ]
+   "watch": []
   },
   "mlb": {
    "label": "MLB",
@@ -179,7 +127,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-07T00:57:45Z",
-   "games": 14,
+   "games": 12,
    "flags": [],
    "watch": []
   }

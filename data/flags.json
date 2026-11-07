@@ -472,7 +472,20 @@
    "last_seen": "2026-11-07T00:57:44Z",
    "last_ev": 0.01,
    "peak_ev": 0.0262,
-   "status": "open"
+   "status": "graded",
+   "close": {
+    "pulled_at": "2026-11-07T00:57:44Z",
+    "mins_before": 12,
+    "later": true,
+    "point": null,
+    "fair_p": 0.5942,
+    "fair_odds": -146,
+    "clv_ev": -0.1572,
+    "beat": false
+   },
+   "result": "W",
+   "units": 0.4184,
+   "final": "Toronto Raptors 121 @ Milwaukee Bucks 107"
   }
  ]
 }
