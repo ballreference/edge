@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-07T14:07:09Z",
+ "generated": "2026-11-07T18:49:55Z",
  "credits": {
-  "remaining": 366,
-  "used": 134
+  "remaining": 363,
+  "used": 137
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-05 13:48 nba: routine pull, 6 games, 0 new flag(s), 398 credits left",
   "11-05 13:48 nhl: routine pull, 14 games, 0 new flag(s), 395 credits left",
   "11-05 13:48 nfl: props for 1 game(s), 3 credits (42/180 this month)",
   "11-05 19:22 nfl: close pull, 28 games, 0 new flag(s), 389 credits left",
@@ -38,7 +37,8 @@
   "11-06 15:55 nhl: routine pull, 15 games, 0 new flag(s), 374 credits left",
   "11-06 19:57 nba: close pull, 13 games, 0 new flag(s), 371 credits left",
   "11-06 19:57 nhl: close pull, 15 games, 0 new flag(s), 368 credits left",
-  "11-07 02:16 nba: 1 closing line(s) recorded, 1 graded"
+  "11-07 02:16 nba: 1 closing line(s) recorded, 1 graded",
+  "11-07 13:49 nfl: routine pull, 27 games, 0 new flag(s), 363 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,56 +59,10 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-06T20:55:58Z",
+   "last_pull": "2026-11-07T18:49:55Z",
    "games": 27,
    "flags": [],
-   "watch": [
-    {
-     "market": "h2h",
-     "side": "New York Giants",
-     "point": null,
-     "book": "draftkings",
-     "price": -155,
-     "fair_p": 0.6141,
-     "fair_odds": -159,
-     "ev": 0.0102,
-     "n_books": 9,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "betonlineag",
-       -168
-      ],
-      [
-       "lowvig",
-       -168
-      ],
-      [
-       "hardrockbet",
-       -170
-      ],
-      [
-       "pinnacle",
-       -170
-      ],
-      [
-       "bovada",
-       -170
-      ],
-      [
-       "fanduel",
-       -174
-      ]
-     ],
-     "home": "Philadelphia Eagles",
-     "away": "New York Giants",
-     "commence": "2026-11-08T18:00:00Z"
-    }
-   ]
+   "watch": []
   },
   "nba": {
    "label": "NBA",
@@ -127,7 +81,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-07T00:57:45Z",
-   "games": 12,
+   "games": 10,
    "flags": [],
    "watch": []
   }
