@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-09T08:03:26Z",
+ "generated": "2026-11-09T18:52:40Z",
  "credits": {
-  "remaining": 306,
-  "used": 194
+  "remaining": 297,
+  "used": 203
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-06 19:57 nba: close pull, 13 games, 0 new flag(s), 371 credits left",
-  "11-06 19:57 nhl: close pull, 15 games, 0 new flag(s), 368 credits left",
-  "11-07 02:16 nba: 1 closing line(s) recorded, 1 graded",
   "11-07 13:49 nfl: routine pull, 27 games, 0 new flag(s), 363 credits left",
   "11-07 17:47 nba: close pull, 14 games, 0 new flag(s), 360 credits left",
   "11-07 17:47 nhl: close pull, 16 games, 0 new flag(s), 357 credits left",
@@ -38,7 +35,10 @@
   "11-08 12:06 nfl: props for 12 game(s), 36 credits (78/180 this month)",
   "11-08 16:12 nfl: close pull, 12 games, 0 new flag(s), 312 credits left",
   "11-08 16:12 nba: close pull, 13 games, 0 new flag(s), 309 credits left",
-  "11-08 19:57 nfl: close pull, 16 games, 0 new flag(s), 306 credits left"
+  "11-08 19:57 nfl: close pull, 16 games, 0 new flag(s), 306 credits left",
+  "11-09 13:52 nba: routine pull, 13 games, 0 new flag(s), 303 credits left",
+  "11-09 13:52 nhl: routine pull, 10 games, 0 new flag(s), 300 credits left",
+  "11-09 13:52 nfl: props for 1 game(s), 3 credits (81/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -139,10 +139,52 @@
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-08T21:12:50Z",
-   "games": 6,
+   "last_pull": "2026-11-09T18:52:39Z",
+   "games": 13,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "Philadelphia 76ers",
+     "point": null,
+     "book": "fanduel",
+     "price": 102,
+     "fair_p": 0.5006,
+     "fair_odds": -100,
+     "ev": 0.0111,
+     "n_books": 6,
+     "sharps": [],
+     "others": [
+      [
+       "hardrockbet",
+       -105
+      ],
+      [
+       "betmgm",
+       -105
+      ],
+      [
+       "draftkings",
+       -109
+      ],
+      [
+       "espnbet",
+       -110
+      ],
+      [
+       "bovada",
+       -115
+      ],
+      [
+       "betrivers",
+       -118
+      ]
+     ],
+     "home": "Philadelphia 76ers",
+     "away": "Boston Celtics",
+     "commence": "2026-11-11T01:10:00Z"
+    }
+   ]
   },
   "mlb": {
    "label": "MLB",
@@ -153,8 +195,8 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-08T17:06:03Z",
-   "games": 3,
+   "last_pull": "2026-11-09T18:52:40Z",
+   "games": 10,
    "flags": [],
    "watch": []
   }
