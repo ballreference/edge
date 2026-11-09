@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-08T21:12:50Z",
+ "generated": "2026-11-09T00:57:36Z",
  "credits": {
-  "remaining": 309,
-  "used": 191
+  "remaining": 306,
+  "used": 194
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-06 15:55 nhl: routine pull, 15 games, 0 new flag(s), 374 credits left",
   "11-06 19:57 nba: close pull, 13 games, 0 new flag(s), 371 credits left",
   "11-06 19:57 nhl: close pull, 15 games, 0 new flag(s), 368 credits left",
   "11-07 02:16 nba: 1 closing line(s) recorded, 1 graded",
@@ -38,7 +37,8 @@
   "11-08 12:06 nhl: close pull, 9 games, 0 new flag(s), 351 credits left",
   "11-08 12:06 nfl: props for 12 game(s), 36 credits (78/180 this month)",
   "11-08 16:12 nfl: close pull, 12 games, 0 new flag(s), 312 credits left",
-  "11-08 16:12 nba: close pull, 13 games, 0 new flag(s), 309 credits left"
+  "11-08 16:12 nba: close pull, 13 games, 0 new flag(s), 309 credits left",
+  "11-08 19:57 nfl: close pull, 16 games, 0 new flag(s), 306 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,15 +59,88 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-08T21:12:49Z",
-   "games": 5,
+   "last_pull": "2026-11-09T00:57:35Z",
+   "games": 16,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "Seattle Seahawks",
+     "point": -3.0,
+     "book": "espnbet",
+     "price": 100,
+     "fair_p": 0.5071,
+     "fair_odds": -103,
+     "ev": 0.0142,
+     "n_books": 4,
+     "sharps": [
+      "lowvig",
+      "betonlineag"
+     ],
+     "others": [
+      [
+       "draftkings",
+       -110
+      ],
+      [
+       "fanduel",
+       -110
+      ],
+      [
+       "lowvig",
+       -110
+      ],
+      [
+       "betonlineag",
+       -115
+      ]
+     ],
+     "home": "Las Vegas Raiders",
+     "away": "Seattle Seahawks",
+     "commence": "2026-11-15T21:05:00Z"
+    },
+    {
+     "market": "totals",
+     "side": "Under",
+     "point": 42.5,
+     "book": "espnbet",
+     "price": 100,
+     "fair_p": 0.5057,
+     "fair_odds": -102,
+     "ev": 0.0115,
+     "n_books": 4,
+     "sharps": [
+      "betonlineag",
+      "lowvig"
+     ],
+     "others": [
+      [
+       "betmgm",
+       -105
+      ],
+      [
+       "draftkings",
+       -110
+      ],
+      [
+       "lowvig",
+       -113
+      ],
+      [
+       "betonlineag",
+       -115
+      ]
+     ],
+     "home": "Indianapolis Colts",
+     "away": "Miami Dolphins",
+     "commence": "2026-11-15T18:00:00Z"
+    }
+   ]
   },
   "nba": {
    "label": "NBA",
    "last_pull": "2026-11-08T21:12:50Z",
-   "games": 12,
+   "games": 9,
    "flags": [],
    "watch": []
   },
@@ -81,7 +154,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-08T17:06:03Z",
-   "games": 7,
+   "games": 4,
    "flags": [],
    "watch": []
   }
