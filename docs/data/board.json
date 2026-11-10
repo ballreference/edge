@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-10T17:54:56Z",
+ "generated": "2026-11-10T23:27:50Z",
  "credits": {
-  "remaining": 288,
-  "used": 212
+  "remaining": 279,
+  "used": 221
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-08 12:06 nfl: close pull, 25 games, 0 new flag(s), 354 credits left",
-  "11-08 12:06 nhl: close pull, 9 games, 0 new flag(s), 351 credits left",
-  "11-08 12:06 nfl: props for 12 game(s), 36 credits (78/180 this month)",
   "11-08 16:12 nfl: close pull, 12 games, 0 new flag(s), 312 credits left",
   "11-08 16:12 nba: close pull, 13 games, 0 new flag(s), 309 credits left",
   "11-08 19:57 nfl: close pull, 16 games, 0 new flag(s), 306 credits left",
@@ -38,7 +35,10 @@
   "11-09 13:52 nfl: props for 1 game(s), 3 credits (81/180 this month)",
   "11-09 21:12 nfl: routine pull, 13 games, 0 new flag(s), 294 credits left",
   "11-09 21:12 nba: close pull, 17 games, 0 new flag(s), 291 credits left",
-  "11-09 21:12 nhl: close pull, 10 games, 0 new flag(s), 288 credits left"
+  "11-09 21:12 nhl: close pull, 10 games, 0 new flag(s), 288 credits left",
+  "11-10 18:27 nfl: routine pull, 27 games, 0 new flag(s), 285 credits left",
+  "11-10 18:27 nba: close pull, 15 games, 0 new flag(s), 282 credits left",
+  "11-10 18:27 nhl: close pull, 13 games, 0 new flag(s), 279 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,15 +59,15 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-10T02:12:16Z",
-   "games": 12,
+   "last_pull": "2026-11-10T23:27:49Z",
+   "games": 27,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-10T02:12:17Z",
-   "games": 9,
+   "last_pull": "2026-11-10T23:27:50Z",
+   "games": 15,
    "flags": [],
    "watch": []
   },
@@ -80,56 +80,10 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-10T02:12:18Z",
-   "games": 7,
+   "last_pull": "2026-11-10T23:27:50Z",
+   "games": 13,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Columbus Blue Jackets",
-     "point": 1.5,
-     "book": "betmgm",
-     "price": -235,
-     "fair_p": 0.7119,
-     "fair_odds": -247,
-     "ev": 0.0149,
-     "n_books": 9,
-     "sharps": [
-      "betonlineag",
-      "lowvig",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "fanduel",
-       -250
-      ],
-      [
-       "betonlineag",
-       -260
-      ],
-      [
-       "lowvig",
-       -260
-      ],
-      [
-       "draftkings",
-       -270
-      ],
-      [
-       "pinnacle",
-       -272
-      ],
-      [
-       "espnbet",
-       -275
-      ]
-     ],
-     "home": "Columbus Blue Jackets",
-     "away": "Florida Panthers",
-     "commence": "2026-11-11T00:40:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
