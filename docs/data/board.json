@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-12T11:25:38Z",
+ "generated": "2026-11-12T20:01:33Z",
  "credits": {
-  "remaining": 270,
-  "used": 230
+  "remaining": 258,
+  "used": 242
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,10 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-09 13:52 nba: routine pull, 13 games, 0 new flag(s), 303 credits left",
-  "11-09 13:52 nhl: routine pull, 10 games, 0 new flag(s), 300 credits left",
-  "11-09 13:52 nfl: props for 1 game(s), 3 credits (81/180 this month)",
-  "11-09 21:12 nfl: routine pull, 13 games, 0 new flag(s), 294 credits left",
   "11-09 21:12 nba: close pull, 17 games, 0 new flag(s), 291 credits left",
   "11-09 21:12 nhl: close pull, 10 games, 0 new flag(s), 288 credits left",
   "11-10 18:27 nfl: routine pull, 27 games, 0 new flag(s), 285 credits left",
@@ -38,7 +34,11 @@
   "11-10 18:27 nhl: close pull, 13 games, 0 new flag(s), 279 credits left",
   "11-11 17:01 nfl: routine pull, 27 games, 0 new flag(s), 276 credits left",
   "11-11 17:01 nba: close pull, 14 games, 0 new flag(s), 273 credits left",
-  "11-11 17:01 nhl: close pull, 17 games, 0 new flag(s), 270 credits left"
+  "11-11 17:01 nhl: close pull, 17 games, 0 new flag(s), 270 credits left",
+  "11-12 15:01 nfl: routine pull, 27 games, 0 new flag(s), 267 credits left",
+  "11-12 15:01 nba: routine pull, 8 games, 0 new flag(s), 264 credits left",
+  "11-12 15:01 nhl: routine pull, 12 games, 0 new flag(s), 261 credits left",
+  "11-12 15:01 nfl: props for 1 game(s), 3 credits (84/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,15 +59,15 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-11T22:01:44Z",
+   "last_pull": "2026-11-12T20:01:32Z",
    "games": 27,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-11T22:01:45Z",
-   "games": 4,
+   "last_pull": "2026-11-12T20:01:32Z",
+   "games": 8,
    "flags": [],
    "watch": []
   },
@@ -80,8 +80,8 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-11T22:01:45Z",
-   "games": 11,
+   "last_pull": "2026-11-12T20:01:32Z",
+   "games": 12,
    "flags": [],
    "watch": []
   }
