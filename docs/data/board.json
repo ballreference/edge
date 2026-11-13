@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-13T16:30:08Z",
+ "generated": "2026-11-13T22:41:19Z",
  "credits": {
-  "remaining": 249,
-  "used": 251
+  "remaining": 240,
+  "used": 260
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-10 18:27 nba: close pull, 15 games, 0 new flag(s), 282 credits left",
-  "11-10 18:27 nhl: close pull, 13 games, 0 new flag(s), 279 credits left",
-  "11-11 17:01 nfl: routine pull, 27 games, 0 new flag(s), 276 credits left",
   "11-11 17:01 nba: close pull, 14 games, 0 new flag(s), 273 credits left",
   "11-11 17:01 nhl: close pull, 17 games, 0 new flag(s), 270 credits left",
   "11-12 15:01 nfl: routine pull, 27 games, 0 new flag(s), 267 credits left",
@@ -38,7 +35,10 @@
   "11-12 15:01 nfl: props for 1 game(s), 3 credits (84/180 this month)",
   "11-12 20:09 nfl: close pull, 27 games, 0 new flag(s), 255 credits left",
   "11-12 20:09 nba: close pull, 17 games, 0 new flag(s), 252 credits left",
-  "11-12 20:09 nhl: close pull, 12 games, 0 new flag(s), 249 credits left"
+  "11-12 20:09 nhl: close pull, 12 games, 0 new flag(s), 249 credits left",
+  "11-13 17:41 nfl: routine pull, 26 games, 0 new flag(s), 246 credits left",
+  "11-13 17:41 nba: close pull, 9 games, 0 new flag(s), 243 credits left",
+  "11-13 17:41 nhl: routine pull, 16 games, 0 new flag(s), 240 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,15 +59,15 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-13T01:09:40Z",
+   "last_pull": "2026-11-13T22:41:18Z",
    "games": 26,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-13T01:09:40Z",
-   "games": 13,
+   "last_pull": "2026-11-13T22:41:18Z",
+   "games": 9,
    "flags": [],
    "watch": []
   },
@@ -80,10 +80,56 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-13T01:09:40Z",
-   "games": 2,
+   "last_pull": "2026-11-13T22:41:19Z",
+   "games": 16,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "St Louis Blues",
+     "point": 1.5,
+     "book": "fanduel",
+     "price": -250,
+     "fair_p": 0.7232,
+     "fair_odds": -261,
+     "ev": 0.0125,
+     "n_books": 8,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "draftkings",
+       -278
+      ],
+      [
+       "pinnacle",
+       -280
+      ],
+      [
+       "bovada",
+       -280
+      ],
+      [
+       "lowvig",
+       -290
+      ],
+      [
+       "betonlineag",
+       -290
+      ],
+      [
+       "betrivers",
+       -295
+      ]
+     ],
+     "home": "St Louis Blues",
+     "away": "Florida Panthers",
+     "commence": "2026-11-15T00:10:00Z"
+    }
+   ]
   }
  }
 }
