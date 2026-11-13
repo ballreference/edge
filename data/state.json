@@ -1,24 +1,24 @@
 {
- "credits_remaining": 258,
- "credits_used": 242,
+ "credits_remaining": 249,
+ "credits_used": 251,
  "last_pull": {
-  "nfl": "2026-11-12T20:01:32Z",
+  "nfl": "2026-11-13T01:09:40Z",
   "mlb": "2026-10-28T23:16:39Z",
-  "nhl": "2026-11-12T20:01:32Z",
-  "nba": "2026-11-12T20:01:32Z"
+  "nhl": "2026-11-13T01:09:40Z",
+  "nba": "2026-11-13T01:09:40Z"
  },
  "close_pulls": {
   "mlb": {
    "2026-10-28": 1
   },
   "nfl": {
-   "2026-11-08": 3
+   "2026-11-12": 1
   },
   "nhl": {
-   "2026-11-11": 1
+   "2026-11-12": 1
   },
   "nba": {
-   "2026-11-11": 1
+   "2026-11-12": 1
   }
  },
  "last_scores": {
@@ -27,9 +27,6 @@
   "nba": "2026-11-07T07:16:09Z"
  },
  "log": [
-  "10-31 18:32 nhl: close pull skipped to protect credits (7 left)",
-  "10-31 22:18 nfl: routine pull, 28 games, 0 new flag(s), 497 credits left",
-  "10-31 22:18 nba: routine pull, 12 games, 0 new flag(s), 494 credits left",
   "10-31 22:18 nhl: routine pull, 7 games, 0 new flag(s), 491 credits left",
   "11-01 11:07 nfl: close pull, 28 games, 0 new flag(s), 488 credits left",
   "11-01 11:07 nhl: close pull, 5 games, 0 new flag(s), 485 credits left",
@@ -86,7 +83,10 @@
   "11-12 15:01 nfl: routine pull, 27 games, 0 new flag(s), 267 credits left",
   "11-12 15:01 nba: routine pull, 8 games, 0 new flag(s), 264 credits left",
   "11-12 15:01 nhl: routine pull, 12 games, 0 new flag(s), 261 credits left",
-  "11-12 15:01 nfl: props for 1 game(s), 3 credits (84/180 this month)"
+  "11-12 15:01 nfl: props for 1 game(s), 3 credits (84/180 this month)",
+  "11-12 20:09 nfl: close pull, 27 games, 0 new flag(s), 255 credits left",
+  "11-12 20:09 nba: close pull, 17 games, 0 new flag(s), 252 credits left",
+  "11-12 20:09 nhl: close pull, 12 games, 0 new flag(s), 249 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -104,7 +104,7 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-11-12T20:01:33Z",
+ "last_run": "2026-11-13T01:09:40Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-11",
