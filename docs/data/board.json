@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-14T10:40:15Z",
+ "generated": "2026-11-14T17:10:57Z",
  "credits": {
-  "remaining": 240,
-  "used": 260
+  "remaining": 237,
+  "used": 263
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-11 17:01 nba: close pull, 14 games, 0 new flag(s), 273 credits left",
   "11-11 17:01 nhl: close pull, 17 games, 0 new flag(s), 270 credits left",
   "11-12 15:01 nfl: routine pull, 27 games, 0 new flag(s), 267 credits left",
   "11-12 15:01 nba: routine pull, 8 games, 0 new flag(s), 264 credits left",
@@ -38,7 +37,8 @@
   "11-12 20:09 nhl: close pull, 12 games, 0 new flag(s), 249 credits left",
   "11-13 17:41 nfl: routine pull, 26 games, 0 new flag(s), 246 credits left",
   "11-13 17:41 nba: close pull, 9 games, 0 new flag(s), 243 credits left",
-  "11-13 17:41 nhl: routine pull, 16 games, 0 new flag(s), 240 credits left"
+  "11-13 17:41 nhl: routine pull, 16 games, 0 new flag(s), 240 credits left",
+  "11-14 12:10 nhl: close pull, 19 games, 0 new flag(s), 237 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -80,56 +80,10 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-13T22:41:19Z",
-   "games": 14,
+   "last_pull": "2026-11-14T17:10:57Z",
+   "games": 19,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "St Louis Blues",
-     "point": 1.5,
-     "book": "fanduel",
-     "price": -250,
-     "fair_p": 0.7232,
-     "fair_odds": -261,
-     "ev": 0.0125,
-     "n_books": 8,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "draftkings",
-       -278
-      ],
-      [
-       "pinnacle",
-       -280
-      ],
-      [
-       "bovada",
-       -280
-      ],
-      [
-       "lowvig",
-       -290
-      ],
-      [
-       "betonlineag",
-       -290
-      ],
-      [
-       "betrivers",
-       -295
-      ]
-     ],
-     "home": "St Louis Blues",
-     "away": "Florida Panthers",
-     "commence": "2026-11-15T00:10:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
