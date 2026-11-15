@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-15T17:14:31Z",
+ "generated": "2026-11-15T21:51:59Z",
  "credits": {
-  "remaining": 189,
-  "used": 311
+  "remaining": 186,
+  "used": 314
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-12 20:09 nba: close pull, 17 games, 0 new flag(s), 252 credits left",
   "11-12 20:09 nhl: close pull, 12 games, 0 new flag(s), 249 credits left",
   "11-13 17:41 nfl: routine pull, 26 games, 0 new flag(s), 246 credits left",
   "11-13 17:41 nba: close pull, 9 games, 0 new flag(s), 243 credits left",
@@ -38,7 +37,8 @@
   "11-15 12:14 nfl: close pull, 25 games, 0 new flag(s), 228 credits left",
   "11-15 12:14 nba: close pull, 9 games, 0 new flag(s), 225 credits left",
   "11-15 12:14 nhl: routine pull, 7 games, 0 new flag(s), 222 credits left",
-  "11-15 12:14 nfl: props for 11 game(s), 33 credits (117/180 this month)"
+  "11-15 12:14 nfl: props for 11 game(s), 33 credits (117/180 this month)",
+  "11-15 16:51 nhl: close pull, 7 games, 0 new flag(s), 186 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -60,14 +60,14 @@
   "nfl": {
    "label": "NFL",
    "last_pull": "2026-11-15T17:14:29Z",
-   "games": 24,
+   "games": 14,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
    "last_pull": "2026-11-15T17:14:29Z",
-   "games": 9,
+   "games": 6,
    "flags": [],
    "watch": []
   },
@@ -80,42 +80,10 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-15T17:14:30Z",
+   "last_pull": "2026-11-15T21:51:59Z",
    "games": 7,
    "flags": [],
-   "watch": [
-    {
-     "market": "spreads",
-     "side": "Vancouver Canucks",
-     "point": 2.5,
-     "book": "betmgm",
-     "price": -118,
-     "fair_p": 0.5481,
-     "fair_odds": -121,
-     "ev": 0.0126,
-     "n_books": 3,
-     "sharps": [
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "hardrockbet",
-       -120
-      ],
-      [
-       "pinnacle",
-       -131
-      ],
-      [
-       "espnbet",
-       -135
-      ]
-     ],
-     "home": "Vegas Golden Knights",
-     "away": "Vancouver Canucks",
-     "commence": "2026-11-16T02:10:00Z"
-    }
-   ]
+   "watch": []
   }
  }
 }
