@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-20T13:02:54Z",
+ "generated": "2026-11-20T21:13:28Z",
  "credits": {
-  "remaining": 144,
-  "used": 356
+  "remaining": 135,
+  "used": 365
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-16 15:32 nhl: routine pull, 13 games, 0 new flag(s), 177 credits left",
-  "11-16 15:32 nfl: props for 1 game(s), 3 credits (120/180 this month)",
-  "11-17 17:27 nfl: routine pull, 29 games, 0 new flag(s), 171 credits left",
   "11-17 17:27 nba: close pull, 5 games, 0 new flag(s), 168 credits left",
   "11-17 17:27 nhl: close pull, 14 games, 0 new flag(s), 165 credits left",
   "11-18 17:03 nfl: routine pull, 29 games, 0 new flag(s), 162 credits left",
@@ -38,7 +35,10 @@
   "11-19 16:40 nfl: routine pull, 29 games, 0 new flag(s), 153 credits left",
   "11-19 16:40 nba: routine pull, 4 games, 0 new flag(s), 150 credits left",
   "11-19 16:40 nhl: close pull, 12 games, 0 new flag(s), 147 credits left",
-  "11-19 16:40 nfl: props for 1 game(s), 3 credits (123/180 this month)"
+  "11-19 16:40 nfl: props for 1 game(s), 3 credits (123/180 this month)",
+  "11-20 16:13 nfl: routine pull, 28 games, 0 new flag(s), 141 credits left",
+  "11-20 16:13 nba: close pull, 9 games, 0 new flag(s), 138 credits left",
+  "11-20 16:13 nhl: routine pull, 14 games, 0 new flag(s), 135 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,15 +59,61 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-19T21:40:31Z",
+   "last_pull": "2026-11-20T21:13:27Z",
    "games": 28,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "Los Angeles Chargers",
+     "point": null,
+     "book": "fanduel",
+     "price": -154,
+     "fair_p": 0.6162,
+     "fair_odds": -161,
+     "ev": 0.0163,
+     "n_books": 9,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "betmgm",
+       -165
+      ],
+      [
+       "hardrockbet",
+       -165
+      ],
+      [
+       "espnbet",
+       -170
+      ],
+      [
+       "draftkings",
+       -171
+      ],
+      [
+       "lowvig",
+       -172
+      ],
+      [
+       "betonlineag",
+       -172
+      ]
+     ],
+     "home": "Los Angeles Chargers",
+     "away": "New York Jets",
+     "commence": "2026-11-22T21:05:00Z"
+    }
+   ]
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-19T21:40:31Z",
-   "games": 0,
+   "last_pull": "2026-11-20T21:13:27Z",
+   "games": 9,
    "flags": [],
    "watch": []
   },
@@ -80,10 +126,54 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-19T21:40:31Z",
-   "games": 0,
+   "last_pull": "2026-11-20T21:13:28Z",
+   "games": 14,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "spreads",
+     "side": "St Louis Blues",
+     "point": 1.5,
+     "book": "betmgm",
+     "price": -210,
+     "fair_p": 0.6871,
+     "fair_odds": -220,
+     "ev": 0.0143,
+     "n_books": 7,
+     "sharps": [
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "fanduel",
+       -230
+      ],
+      [
+       "betrivers",
+       -235
+      ],
+      [
+       "draftkings",
+       -238
+      ],
+      [
+       "pinnacle",
+       -241
+      ],
+      [
+       "bovada",
+       -245
+      ],
+      [
+       "espnbet",
+       -250
+      ]
+     ],
+     "home": "St Louis Blues",
+     "away": "New Jersey Devils",
+     "commence": "2026-11-22T00:00:00Z"
+    }
+   ]
   }
  }
 }
