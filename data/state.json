@@ -1,11 +1,11 @@
 {
- "credits_remaining": 135,
- "credits_used": 365,
+ "credits_remaining": 126,
+ "credits_used": 374,
  "last_pull": {
-  "nfl": "2026-11-20T21:13:27Z",
+  "nfl": "2026-11-21T18:01:39Z",
   "mlb": "2026-10-28T23:16:39Z",
-  "nhl": "2026-11-20T21:13:28Z",
-  "nba": "2026-11-20T21:13:27Z"
+  "nhl": "2026-11-21T18:01:41Z",
+  "nba": "2026-11-21T18:01:40Z"
  },
  "close_pulls": {
   "mlb": {
@@ -15,10 +15,10 @@
    "2026-11-15": 1
   },
   "nhl": {
-   "2026-11-19": 1
+   "2026-11-21": 1
   },
   "nba": {
-   "2026-11-20": 1
+   "2026-11-21": 1
   }
  },
  "last_scores": {
@@ -27,9 +27,6 @@
   "nba": "2026-11-07T07:16:09Z"
  },
  "log": [
-  "11-06 15:55 nhl: routine pull, 15 games, 0 new flag(s), 374 credits left",
-  "11-06 19:57 nba: close pull, 13 games, 0 new flag(s), 371 credits left",
-  "11-06 19:57 nhl: close pull, 15 games, 0 new flag(s), 368 credits left",
   "11-07 02:16 nba: 1 closing line(s) recorded, 1 graded",
   "11-07 13:49 nfl: routine pull, 27 games, 0 new flag(s), 363 credits left",
   "11-07 17:47 nba: close pull, 14 games, 0 new flag(s), 360 credits left",
@@ -86,7 +83,10 @@
   "11-19 16:40 nfl: props for 1 game(s), 3 credits (123/180 this month)",
   "11-20 16:13 nfl: routine pull, 28 games, 0 new flag(s), 141 credits left",
   "11-20 16:13 nba: close pull, 9 games, 0 new flag(s), 138 credits left",
-  "11-20 16:13 nhl: routine pull, 14 games, 0 new flag(s), 135 credits left"
+  "11-20 16:13 nhl: routine pull, 14 games, 0 new flag(s), 135 credits left",
+  "11-21 13:01 nfl: routine pull, 28 games, 0 new flag(s), 132 credits left",
+  "11-21 13:01 nba: close pull, 6 games, 0 new flag(s), 129 credits left",
+  "11-21 13:01 nhl: close pull, 19 games, 0 new flag(s), 126 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -104,14 +104,14 @@
    "betrivers": 16
   }
  },
- "last_run": "2026-11-21T11:16:34Z",
+ "last_run": "2026-11-21T18:01:41Z",
  "last_errors": [],
  "props_month": {
   "month": "2026-11",
   "spent": 123
  },
  "props_pulled": {
-  "nfl": "2026-11-20",
+  "nfl": "2026-11-21",
   "nba": "2026-10-31",
   "nhl": "2026-10-31",
   "mlb": "2026-10-31"
