@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-22T06:59:33Z",
+ "generated": "2026-11-22T15:26:01Z",
  "credits": {
-  "remaining": 126,
-  "used": 374
+  "remaining": 87,
+  "used": 413
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-18 17:03 nba: close pull, 12 games, 0 new flag(s), 159 credits left",
-  "11-18 17:03 nhl: close pull, 15 games, 0 new flag(s), 156 credits left",
-  "11-19 16:40 nfl: routine pull, 29 games, 0 new flag(s), 153 credits left",
   "11-19 16:40 nba: routine pull, 4 games, 0 new flag(s), 150 credits left",
   "11-19 16:40 nhl: close pull, 12 games, 0 new flag(s), 147 credits left",
   "11-19 16:40 nfl: props for 1 game(s), 3 credits (123/180 this month)",
@@ -38,7 +35,10 @@
   "11-20 16:13 nhl: routine pull, 14 games, 0 new flag(s), 135 credits left",
   "11-21 13:01 nfl: routine pull, 28 games, 0 new flag(s), 132 credits left",
   "11-21 13:01 nba: close pull, 6 games, 0 new flag(s), 129 credits left",
-  "11-21 13:01 nhl: close pull, 19 games, 0 new flag(s), 126 credits left"
+  "11-21 13:01 nhl: close pull, 19 games, 0 new flag(s), 126 credits left",
+  "11-22 10:25 nfl: close pull, 28 games, 0 new flag(s), 123 credits left",
+  "11-22 10:26 nhl: close pull, 5 games, 0 new flag(s), 120 credits left",
+  "11-22 10:26 nfl: props for 11 game(s), 33 credits (156/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,7 +59,7 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-21T18:01:39Z",
+   "last_pull": "2026-11-22T15:25:59Z",
    "games": 28,
    "flags": [],
    "watch": []
@@ -80,7 +80,7 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-21T18:01:41Z",
+   "last_pull": "2026-11-22T15:26:00Z",
    "games": 5,
    "flags": [],
    "watch": []
