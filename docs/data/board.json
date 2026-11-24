@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T00:58:42Z",
+ "generated": "2026-11-24T11:03:02Z",
  "credits": {
   "remaining": 75,
   "used": 425
@@ -60,62 +60,16 @@
   "nfl": {
    "label": "NFL",
    "last_pull": "2026-11-24T00:58:41Z",
-   "games": 17,
+   "games": 16,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
    "last_pull": "2026-11-24T00:58:41Z",
-   "games": 8,
+   "games": 3,
    "flags": [],
-   "watch": [
-    {
-     "market": "h2h",
-     "side": "San Antonio Spurs",
-     "point": null,
-     "book": "fanduel",
-     "price": -510,
-     "fair_p": 0.8483,
-     "fair_odds": -559,
-     "ev": 0.0146,
-     "n_books": 9,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "pinnacle",
-       -584
-      ],
-      [
-       "bovada",
-       -585
-      ],
-      [
-       "betmgm",
-       -600
-      ],
-      [
-       "lowvig",
-       -610
-      ],
-      [
-       "betonlineag",
-       -620
-      ],
-      [
-       "draftkings",
-       -640
-      ]
-     ],
-     "home": "Sacramento Kings",
-     "away": "San Antonio Spurs",
-     "commence": "2026-11-24T03:10:00Z"
-    }
-   ]
+   "watch": []
   },
   "mlb": {
    "label": "MLB",
@@ -127,7 +81,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-24T00:58:42Z",
-   "games": 3,
+   "games": 1,
    "flags": [],
    "watch": []
   }
