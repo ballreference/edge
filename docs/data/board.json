@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-26T08:30:16Z",
+ "generated": "2026-11-26T19:05:46Z",
  "credits": {
-  "remaining": 57,
-  "used": 443
+  "remaining": 54,
+  "used": 446
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,9 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-23 19:58 nba: close pull, 13 games, 0 new flag(s), 78 credits left",
-  "11-23 19:58 nhl: close pull, 8 games, 0 new flag(s), 75 credits left",
-  "11-23 19:58 nfl: props stopped at 0 games to protect credits",
   "11-23 19:58 nfl: props for 0 game(s), 0 credits (156/180 this month)",
   "11-24 16:19 nfl: routine pull, 30 games, 0 new flag(s), 72 credits left",
   "11-24 16:19 nba: close pull, 7 games, 0 new flag(s), 69 credits left",
@@ -38,7 +35,10 @@
   "11-25 09:32 nfl: props for 0 game(s), 0 credits (156/180 this month)",
   "11-25 18:40 nfl: close pull, 30 games, 0 new flag(s), 63 credits left",
   "11-25 18:40 nba: close pull, 9 games, 0 new flag(s), 60 credits left",
-  "11-25 18:40 nhl: close pull, 14 games, 0 new flag(s), 57 credits left"
+  "11-25 18:40 nhl: close pull, 14 games, 0 new flag(s), 57 credits left",
+  "11-26 14:05 nfl: close pull, 27 games, 0 new flag(s), 54 credits left",
+  "11-26 14:05 nfl: props stopped at 0 games to protect credits",
+  "11-26 14:05 nfl: props for 0 game(s), 0 credits (156/180 this month)"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,56 +59,10 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-25T23:40:05Z",
-   "games": 29,
+   "last_pull": "2026-11-26T19:05:45Z",
+   "games": 26,
    "flags": [],
-   "watch": [
-    {
-     "market": "h2h",
-     "side": "New York Jets",
-     "point": null,
-     "book": "draftkings",
-     "price": -205,
-     "fair_p": 0.6807,
-     "fair_odds": -213,
-     "ev": 0.0128,
-     "n_books": 9,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "fanduel",
-       -215
-      ],
-      [
-       "hardrockbet",
-       -220
-      ],
-      [
-       "pinnacle",
-       -229
-      ],
-      [
-       "betrivers",
-       -230
-      ],
-      [
-       "lowvig",
-       -235
-      ],
-      [
-       "betonlineag",
-       -235
-      ]
-     ],
-     "home": "Miami Dolphins",
-     "away": "New York Jets",
-     "commence": "2026-11-29T18:00:00Z"
-    }
-   ]
+   "watch": []
   },
   "nba": {
    "label": "NBA",
