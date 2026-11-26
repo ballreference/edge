@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T23:40:09Z",
+ "generated": "2026-11-26T08:30:16Z",
  "credits": {
   "remaining": 57,
   "used": 443
@@ -60,7 +60,7 @@
   "nfl": {
    "label": "NFL",
    "last_pull": "2026-11-25T23:40:05Z",
-   "games": 30,
+   "games": 29,
    "flags": [],
    "watch": [
     {
@@ -113,7 +113,7 @@
   "nba": {
    "label": "NBA",
    "last_pull": "2026-11-25T23:40:07Z",
-   "games": 8,
+   "games": 0,
    "flags": [],
    "watch": []
   },
@@ -127,7 +127,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-25T23:40:08Z",
-   "games": 14,
+   "games": 0,
    "flags": [],
    "watch": []
   }
