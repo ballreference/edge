@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-27T10:57:39Z",
+ "generated": "2026-11-27T20:00:23Z",
  "credits": {
-  "remaining": 48,
-  "used": 452
+  "remaining": 42,
+  "used": 458
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,8 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-24 16:19 nba: close pull, 7 games, 0 new flag(s), 69 credits left",
-  "11-24 16:19 nhl: routine pull, 15 games, 0 new flag(s), 66 credits left",
   "11-25 09:32 nfl: props stopped at 0 games to protect credits",
   "11-25 09:32 nfl: props for 0 game(s), 0 credits (156/180 this month)",
   "11-25 18:40 nfl: close pull, 30 games, 0 new flag(s), 63 credits left",
@@ -38,7 +36,9 @@
   "11-26 14:05 nfl: props stopped at 0 games to protect credits",
   "11-26 14:05 nfl: props for 0 game(s), 0 credits (156/180 this month)",
   "11-26 21:15 nba: routine pull, 11 games, 0 new flag(s), 51 credits left",
-  "11-26 21:15 nhl: routine pull, 15 games, 0 new flag(s), 48 credits left"
+  "11-26 21:15 nhl: routine pull, 15 games, 0 new flag(s), 48 credits left",
+  "11-27 15:00 nfl: routine pull, 26 games, 0 new flag(s), 45 credits left",
+  "11-27 15:00 nhl: close pull, 28 games, 0 new flag(s), 42 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -59,8 +59,8 @@
  "sports": {
   "nfl": {
    "label": "NFL",
-   "last_pull": "2026-11-26T19:05:45Z",
-   "games": 24,
+   "last_pull": "2026-11-27T20:00:23Z",
+   "games": 26,
    "flags": [],
    "watch": []
   },
@@ -122,10 +122,136 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-27T02:15:54Z",
-   "games": 15,
+   "last_pull": "2026-11-27T20:00:23Z",
+   "games": 24,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "Calgary Flames",
+     "point": null,
+     "book": "fanduel",
+     "price": 176,
+     "fair_p": 0.369,
+     "fair_odds": 171,
+     "ev": 0.0183,
+     "n_books": 5,
+     "sharps": [
+      "betonlineag",
+      "lowvig"
+     ],
+     "others": [
+      [
+       "espnbet",
+       170
+      ],
+      [
+       "betrivers",
+       160
+      ],
+      [
+       "draftkings",
+       154
+      ],
+      [
+       "betonlineag",
+       153
+      ],
+      [
+       "lowvig",
+       153
+      ]
+     ],
+     "home": "New York Rangers",
+     "away": "Calgary Flames",
+     "commence": "2026-11-29T00:10:00Z"
+    },
+    {
+     "market": "totals",
+     "side": "Under",
+     "point": 6.5,
+     "book": "espnbet",
+     "price": -105,
+     "fair_p": 0.5214,
+     "fair_odds": -109,
+     "ev": 0.018,
+     "n_books": 8,
+     "sharps": [
+      "lowvig",
+      "betonlineag",
+      "pinnacle"
+     ],
+     "others": [
+      [
+       "bovada",
+       -112
+      ],
+      [
+       "hardrockbet",
+       -115
+      ],
+      [
+       "pinnacle",
+       -116
+      ],
+      [
+       "draftkings",
+       -118
+      ],
+      [
+       "lowvig",
+       -120
+      ],
+      [
+       "betonlineag",
+       -120
+      ]
+     ],
+     "home": "Washington Capitals",
+     "away": "Florida Panthers",
+     "commence": "2026-11-27T20:04:00Z"
+    },
+    {
+     "market": "h2h",
+     "side": "Washington Capitals",
+     "point": null,
+     "book": "fanduel",
+     "price": 104,
+     "fair_p": 0.4979,
+     "fair_odds": 101,
+     "ev": 0.0158,
+     "n_books": 5,
+     "sharps": [
+      "betonlineag",
+      "lowvig"
+     ],
+     "others": [
+      [
+       "espnbet",
+       100
+      ],
+      [
+       "betrivers",
+       -107
+      ],
+      [
+       "draftkings",
+       -108
+      ],
+      [
+       "betonlineag",
+       -110
+      ],
+      [
+       "lowvig",
+       -110
+      ]
+     ],
+     "home": "St Louis Blues",
+     "away": "Washington Capitals",
+     "commence": "2026-11-29T00:10:00Z"
+    }
+   ]
   }
  }
 }
