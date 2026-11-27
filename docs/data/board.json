@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-26T19:05:46Z",
+ "generated": "2026-11-27T02:15:54Z",
  "credits": {
-  "remaining": 54,
-  "used": 446
+  "remaining": 48,
+  "used": 452
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,8 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-23 19:58 nfl: props for 0 game(s), 0 credits (156/180 this month)",
-  "11-24 16:19 nfl: routine pull, 30 games, 0 new flag(s), 72 credits left",
   "11-24 16:19 nba: close pull, 7 games, 0 new flag(s), 69 credits left",
   "11-24 16:19 nhl: routine pull, 15 games, 0 new flag(s), 66 credits left",
   "11-25 09:32 nfl: props stopped at 0 games to protect credits",
@@ -38,7 +36,9 @@
   "11-25 18:40 nhl: close pull, 14 games, 0 new flag(s), 57 credits left",
   "11-26 14:05 nfl: close pull, 27 games, 0 new flag(s), 54 credits left",
   "11-26 14:05 nfl: props stopped at 0 games to protect credits",
-  "11-26 14:05 nfl: props for 0 game(s), 0 credits (156/180 this month)"
+  "11-26 14:05 nfl: props for 0 game(s), 0 credits (156/180 this month)",
+  "11-26 21:15 nba: routine pull, 11 games, 0 new flag(s), 51 credits left",
+  "11-26 21:15 nhl: routine pull, 15 games, 0 new flag(s), 48 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -60,16 +60,58 @@
   "nfl": {
    "label": "NFL",
    "last_pull": "2026-11-26T19:05:45Z",
-   "games": 26,
+   "games": 24,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-25T23:40:07Z",
-   "games": 0,
+   "last_pull": "2026-11-27T02:15:54Z",
+   "games": 11,
    "flags": [],
-   "watch": []
+   "watch": [
+    {
+     "market": "h2h",
+     "side": "Detroit Pistons",
+     "point": null,
+     "book": "fanduel",
+     "price": -370,
+     "fair_p": 0.7954,
+     "fair_odds": -389,
+     "ev": 0.0104,
+     "n_books": 6,
+     "sharps": [],
+     "others": [
+      [
+       "betmgm",
+       -400
+      ],
+      [
+       "hardrockbet",
+       -400
+      ],
+      [
+       "draftkings",
+       -410
+      ],
+      [
+       "espnbet",
+       -425
+      ],
+      [
+       "betrivers",
+       -480
+      ],
+      [
+       "bovada",
+       -490
+      ]
+     ],
+     "home": "Detroit Pistons",
+     "away": "Milwaukee Bucks",
+     "commence": "2026-11-28T00:40:00Z"
+    }
+   ]
   },
   "mlb": {
    "label": "MLB",
@@ -80,8 +122,8 @@
   },
   "nhl": {
    "label": "NHL",
-   "last_pull": "2026-11-25T23:40:08Z",
-   "games": 0,
+   "last_pull": "2026-11-27T02:15:54Z",
+   "games": 15,
    "flags": [],
    "watch": []
   }
