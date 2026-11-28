@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-27T20:00:23Z",
+ "generated": "2026-11-28T02:44:59Z",
  "credits": {
-  "remaining": 42,
-  "used": 458
+  "remaining": 39,
+  "used": 461
  },
  "min_ev": 0.025,
  "book_names": {
@@ -27,7 +27,6 @@
  ],
  "errors": [],
  "log": [
-  "11-25 09:32 nfl: props stopped at 0 games to protect credits",
   "11-25 09:32 nfl: props for 0 game(s), 0 credits (156/180 this month)",
   "11-25 18:40 nfl: close pull, 30 games, 0 new flag(s), 63 credits left",
   "11-25 18:40 nba: close pull, 9 games, 0 new flag(s), 60 credits left",
@@ -38,7 +37,8 @@
   "11-26 21:15 nba: routine pull, 11 games, 0 new flag(s), 51 credits left",
   "11-26 21:15 nhl: routine pull, 15 games, 0 new flag(s), 48 credits left",
   "11-27 15:00 nfl: routine pull, 26 games, 0 new flag(s), 45 credits left",
-  "11-27 15:00 nhl: close pull, 28 games, 0 new flag(s), 42 credits left"
+  "11-27 15:00 nhl: close pull, 28 games, 0 new flag(s), 42 credits left",
+  "11-27 21:44 nba: routine pull, 15 games, 0 new flag(s), 39 credits left"
  ],
  "check": {
   "at": "2026-09-29T15:35:17Z",
@@ -60,58 +60,16 @@
   "nfl": {
    "label": "NFL",
    "last_pull": "2026-11-27T20:00:23Z",
-   "games": 26,
+   "games": 25,
    "flags": [],
    "watch": []
   },
   "nba": {
    "label": "NBA",
-   "last_pull": "2026-11-27T02:15:54Z",
-   "games": 11,
+   "last_pull": "2026-11-28T02:44:59Z",
+   "games": 4,
    "flags": [],
-   "watch": [
-    {
-     "market": "h2h",
-     "side": "Detroit Pistons",
-     "point": null,
-     "book": "fanduel",
-     "price": -370,
-     "fair_p": 0.7954,
-     "fair_odds": -389,
-     "ev": 0.0104,
-     "n_books": 6,
-     "sharps": [],
-     "others": [
-      [
-       "betmgm",
-       -400
-      ],
-      [
-       "hardrockbet",
-       -400
-      ],
-      [
-       "draftkings",
-       -410
-      ],
-      [
-       "espnbet",
-       -425
-      ],
-      [
-       "betrivers",
-       -480
-      ],
-      [
-       "bovada",
-       -490
-      ]
-     ],
-     "home": "Detroit Pistons",
-     "away": "Milwaukee Bucks",
-     "commence": "2026-11-28T00:40:00Z"
-    }
-   ]
+   "watch": []
   },
   "mlb": {
    "label": "MLB",
@@ -123,7 +81,7 @@
   "nhl": {
    "label": "NHL",
    "last_pull": "2026-11-27T20:00:23Z",
-   "games": 24,
+   "games": 13,
    "flags": [],
    "watch": [
     {
@@ -165,51 +123,6 @@
      "home": "New York Rangers",
      "away": "Calgary Flames",
      "commence": "2026-11-29T00:10:00Z"
-    },
-    {
-     "market": "totals",
-     "side": "Under",
-     "point": 6.5,
-     "book": "espnbet",
-     "price": -105,
-     "fair_p": 0.5214,
-     "fair_odds": -109,
-     "ev": 0.018,
-     "n_books": 8,
-     "sharps": [
-      "lowvig",
-      "betonlineag",
-      "pinnacle"
-     ],
-     "others": [
-      [
-       "bovada",
-       -112
-      ],
-      [
-       "hardrockbet",
-       -115
-      ],
-      [
-       "pinnacle",
-       -116
-      ],
-      [
-       "draftkings",
-       -118
-      ],
-      [
-       "lowvig",
-       -120
-      ],
-      [
-       "betonlineag",
-       -120
-      ]
-     ],
-     "home": "Washington Capitals",
-     "away": "Florida Panthers",
-     "commence": "2026-11-27T20:04:00Z"
     },
     {
      "market": "h2h",
